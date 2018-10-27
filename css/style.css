@@ -217,7 +217,7 @@ footer hr
 .cardView p,h3
 {
 	color: #363636;/*dark grey*/
-	font-size: 12px;
+	font-size: 15px;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -237,7 +237,32 @@ footer hr
 .viewBtn a
 {
 	color: #363636;/*dark grey*/
-	font-size: 12px;
+	font-size: 15px;
 }
 
 /**********END OF CARD VIEW*************/
+
+/**************WELCOME TEXT****************/
+
+.welcomeText
+{
+	color: #363636;/*dark grey*/
+	margin: 20px;
+	width: 300px;
+}
+
+.welcomeText h1
+{
+	font-size: 20px;
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 10px;
+}
+
+.welcomeText p
+{
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 18px;
+}
+
+/**************END OF WELCOME TEXT****************/

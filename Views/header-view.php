@@ -40,5 +40,3 @@
 			</div><!--cartNav-->
 		</div><!--rightNav-->
 	</header>
-</body>
-</html>
