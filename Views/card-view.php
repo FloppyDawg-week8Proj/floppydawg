@@ -1,3 +1,4 @@
+<?php include("header-view.php");?>
 <div class="cardView">
 	<div class="productBox">
 		<div class="placeHolder">
@@ -13,9 +14,9 @@
 			<div class="price">
 				<p>$PRICE</p>
 			</div><!--price-->
-			<div class="viewBtn">
+			<div class="btn btn-primary">
 				<a href="#">VIEW DETAILS</a>
-			</div><!--viewBtn-->
+			</div><!--btn btn-primary-->
 		</div><!--placeholder-->
 	</div><!--productBox-->
 
@@ -33,9 +34,9 @@
 			<div class="price">
 				<p>$PRICE</p>
 			</div><!--price-->
-			<div class="viewBtn">
+			<div class="btn btn-primary">
 				<a href="#">VIEW DETAILS</a>
-			</div><!--viewBtn-->
+			</div><!--btn btn-primary-->
 		</div><!--placeholder-->
 	</div><!--productBox-->
 
@@ -53,9 +54,9 @@
 			<div class="price">
 				<p>$PRICE</p>
 			</div><!--price-->
-			<div class="viewBtn">
+			<div class="btn btn-primary">
 				<a href="#">VIEW DETAILS</a>
-			</div><!--viewBtn-->
+			</div><!--btn btn-primary-->
 		</div><!--placeholder-->
 	</div><!--productBox-->
 
@@ -73,9 +74,9 @@
 			<div class="price">
 				<p>$PRICE</p>
 			</div><!--price-->
-			<div class="viewBtn">
+			<div class="btn btn-primary">
 				<a href="#">VIEW DETAILS</a>
-			</div><!--viewBtn-->
+			</div><!--btn btn-primary-->
 		</div><!--placeholder-->
 	</div><!--productBox-->
 </div><!--cardView-->
