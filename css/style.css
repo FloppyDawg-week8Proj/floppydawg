@@ -189,7 +189,7 @@ color : #28beee; //light blue
 
 footer
 {
-   position: fixed;
+   position: absolute;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -325,34 +325,27 @@ footer hr
 
 /**************END OF WELCOME TEXT****************/
 
-<<<<<<< HEAD
-/********PRODUCTS VIEW***********/
-.categoriesFilter
-{
-
-}
-.productsView
-{
-	position: relative;
-	padding: 20px;
-	border: 1px solid #363636;
-}
-.categoryNav
-{
-	width: 20%;
-}
-.viewProducts
-{
-	background-color: teal;
-	width: 80%;
-}
-
-
-
-
-/**********END OF PRODUCTS VIEW*********/
-=======
 /*****************PRODUCTS VIEW********************/
+.productView>*
+{
+	display: inline-block;
+}
+
+.categoryNav{
+float: left;
+position: absolute;
+background-color: #c1b8b5;/*light grey*/
+width: 21%;
+height: 100%;
+}
+
+.productsContent
+{
+float: right;
+background-color: lightgrey;
+width: 79%;
+height: 100%;
+}
 
 .categoryNav ul li a
 {
@@ -379,11 +372,18 @@ footer hr
 {
 	position: fixed;
 	font-family: 'Roboto Slab', serif;
-	background-color: #c1b8b5;/*light grey*/
-	height: 100%;
-	width: 13%;
+}
+.categoryNav span
+{
+	color: #363636;
+	margin-left: 20px;
 }
 
+/****on click drop down*****/
+
+ul .dropList
+{
+	display: none;
+}
 
 /*****************END OF PRODUCTS VIEW********************/
->>>>>>> productsView
