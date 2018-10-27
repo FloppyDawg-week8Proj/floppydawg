@@ -13,7 +13,12 @@ color : #28beee; //light blue
 	list-style-type: none;
 	text-decoration: none;
 }
-
+.container{
+	position: relative;
+	max-width: 1000px;
+	width: 80%;
+	margin: auto;
+}
 /********HEADER*********/
 
 	header
@@ -124,7 +129,62 @@ color : #28beee; //light blue
 
 
 /*********END OF HEADER***********/
-
+/**********HERO SLIDER*************/
+.heroSlider{
+	height: 600px;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.slide-keyhole{
+	position: relative;
+	height: 100%;
+	display: block;
+	width: 100%;
+	/*-----------------------------remember to change if nescessary-------------*/overflow: hidden;
+}
+.slide-container{
+	height: 100%;
+}
+.slide-holder{
+	position: absolute;
+	height: 100%;
+	float: left;
+	transition: all 2s ease;
+}
+.slide-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.slide-imgWraper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+}
+.slide-imgHolder{
+	height: 100%;
+	width: 100%;
+}
+.slide-control{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-25px);
+	cursor: pointer;
+}
+.slide-control.slide-back{
+	left: 0 ;
+}
+.slide-control.slide-next{
+	right: 0 ;
+}
+/*********END OF HERO SLIDER***********/
 /*************FOOTER***************/
 
 footer
@@ -161,9 +221,7 @@ footer hr
 {
 	float: left;
 }
-
-.payment
-{
+.payment{
 	float: right;
 }
 .payment a
