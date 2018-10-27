@@ -266,3 +266,29 @@ footer hr
 }
 
 /**************END OF WELCOME TEXT****************/
+
+/********PRODUCTS VIEW***********/
+.categoriesFilter
+{
+
+}
+.productsView
+{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #363636;
+}
+.categoryNav
+{
+	width: 20%;
+}
+.viewProducts
+{
+	background-color: teal;
+	width: 80%;
+}
+
+
+
+
+/**********END OF PRODUCTS VIEW*********/
