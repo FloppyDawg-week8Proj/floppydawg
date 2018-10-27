@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+
 <footer>
 	<div class="topFooter">
 		<a href="#">Terms and Conditions</a>
