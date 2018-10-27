@@ -221,7 +221,7 @@ footer hr
 	font-family: 'Roboto Slab', serif;
 }
 
-.viewBtn
+.viewBtn 
 {
 	padding: 10px;
 	margin-top: 10px;
@@ -266,3 +266,38 @@ footer hr
 }
 
 /**************END OF WELCOME TEXT****************/
+
+/*****************PRODUCTS VIEW********************/
+
+.categoryNav ul li a
+{
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	margin-left: 20px;
+	color: #363636;
+}
+
+.categoryNav ul li a:hover
+{
+	opacity: 0.7;
+}
+.categoryNav ul h3
+{
+	font-family: 'Roboto Slab', serif;
+	color: #363636;
+	margin-left: 20px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.categoryNav ul
+{
+	position: fixed;
+	font-family: 'Roboto Slab', serif;
+	background-color: #c1b8b5;/*light grey*/
+	height: 100%;
+	width: 13%;
+}
+
+
+/*****************END OF PRODUCTS VIEW********************/
