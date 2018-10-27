@@ -3,6 +3,7 @@ color : #363636; //dark grey
 color : #c1b8b5; // light grey
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;
+color : #28beee; //light blue
 */
 
 *{
@@ -155,7 +156,6 @@ footer hr
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-/**********END OF FOOTER*************/
 
 .copyRight
 {
@@ -181,3 +181,63 @@ footer hr
 	font-family: 'Roboto Slab', serif;
 	color: #363636;/*dark grey*/
 }
+
+/**********END OF FOOTER*************/
+
+/**********CARD VIEW*************/
+.cardView
+{
+	margin: 10px;
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	max-width: 1000px;
+
+}
+
+.holderImage img
+{
+	width: 100%;
+
+}
+
+.productBox
+{
+	float: left;
+	text-align: center;
+	padding: 10px;
+	width: 25%;
+}
+
+.productBox>*
+{
+	width: 100%;
+}
+
+.cardView p,h3
+{
+	color: #363636;/*dark grey*/
+	font-size: 12px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.viewBtn
+{
+	padding: 10px;
+	margin-top: 10px;
+	border: 3px solid #28beee;/*light blue*/
+}
+.viewBtn:hover
+{
+	background-color: #28beee;/*light blue*/
+	color: #ffffff;/*white*/
+	transition: all ease 0.5s;
+}
+
+.viewBtn a
+{
+	color: #363636;/*dark grey*/
+	font-size: 12px;
+}
+
+/**********END OF CARD VIEW*************/
