@@ -13,109 +13,171 @@ font-family: 'Roboto Slab', serif;
 	text-decoration: none;
 }
 
-header
+/********HEADER*********/
+
+	header
+	{
+		position: relative;
+		background: #c1b8b5;
+		overflow: auto;
+	}
+	header>*{
+		float: left;
+		height: 100%;
+	}/*children inside first level*/
+	.logo img
+	{
+		margin: 0;
+		padding: 0;
+		max-height:100px;
+	}
+
+	/******NAVIGATION******/
+	.headerNav ul {
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: #c1b8b5; /*light grey*/
+	}
+
+	.headerNav nav>ul>li {
+	    float: left;
+	  
+	}
+	.headerNav nav
+	{
+		display: inline-block;
+	}
+	.headerNav li a, .dropbtn {
+	    display: inline-block;
+	    font-family: 'Roboto Slab', serif;
+	    font-size: 18px;
+	    color: #363636;/*dark grey*/
+	    text-align: center;
+	    padding: 14px 16px;
+	}
+
+	.headerNav li a:hover, .dropdown:hover .dropbtn {
+	    background-color: #363636;/*dark grey*/
+	    color: #fff;/*white*/
+	    transition: all ease 0.5s;
+	}
+
+	.headerNav li.dropdown {
+	    display: inline-block;
+	}
+
+	.dropdownContent {
+	    display: none;
+	    position: absolute;
+	    background-color: #c1b8b5; /*light grey*/
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdownContent a {
+	    color: #363636;/*dark grey*/
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.dropdownContent a:hover {
+		background-color: #363636;/*dark grey*/
+		border-top: 2px solid #fff;/*white*/
+		color:#fff; /*white*/
+	}
+
+	.dropdown:hover .dropdownContent {
+	    display: block;
+	}
+
+	/*******RIGHT NAV********/
+	.rightNav
+	{
+		float: right;
+		position: relative;
+		margin: 10px;
+	}
+
+	.rightNav img
+	{
+		max-width: 23px;
+	}
+
+	.rightNav a
+	{
+		font-family: 'Roboto Slab', serif;
+		margin-right: 10px;
+		color: #363636;/*dark grey*/
+	}
+
+	.socialNav
+	{
+		width: 50%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+
+/*********END OF HEADER***********/
+
+/*************FOOTER***************/
+
+footer
 {
-	position: relative;
-	background: #c1b8b5;
-	overflow: auto;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 20px;
+   background-color: #c1b8b5;/*light grey*/
+   color: #363636;/*dark grey*/
+   text-align: center;
 }
-header>*{
-	float: left;
-	height: 100%;
-}/*children inside first level*/
-.logo img
+
+footer .topFooter a
 {
-	margin: 0;
-	padding: 0;
-	max-height:100px;
-}
-
-.headerNav ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #c1b8b5; /*light grey*/
-}
-
-.headerNav nav>ul>li {
-    float: left;
-  
-}
-.headerNav nav
-{
-	display: inline-block;
-}
-.headerNav li a, .dropbtn {
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    color: #363636;/*dark grey*/
-    text-align: center;
-    padding: 14px 16px;
-}
-
-.headerNav li a:hover, .dropdown:hover .dropbtn {
-    background-color: #363636;/*dark grey*/
-    color: #fff;/*white*/
-    transition: all ease 0.5s;
-}
-
-.headerNav li.dropdown {
-    display: inline-block;
-}
-
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: #c1b8b5; /*light grey*/
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdownContent a {
-    color: #363636;/*dark grey*/
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdownContent a:hover {
-	background-color: #363636;/*dark grey*/
-	border-top: 2px solid #fff;/*white*/
-	color:#fff; /*white*/
-}
-
-.dropdown:hover .dropdownContent {
-    display: block;
-}
-
-
-.rightNav
-{
-	float: right;
-	position: relative;
-	margin: 10px;
-}
-
-.rightNav img
-{
-	max-width: 23px;
-}
-
-.rightNav a
-{
-	font-family: 'Roboto Slab', serif;
-	margin-right: 10px;
 	color: #363636;/*dark grey*/
-}
-
-.socialNav
-{
-	width: 50%;
 	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	padding: 30px;
 	margin-bottom: 20px;
 }
+.topFooter a:hover
+{
+	opacity: 0.7;
+}
+footer hr
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/**********END OF FOOTER*************/
 
+.copyRight
+{
+	float: left;
+}
 
+.payment
+{
+	float: right;
+}
+.payment a
+{
+	padding: 20px;
+	font-family: 'Roboto Slab', serif;
+	color: #363636;/*dark grey*/
+}
+.payment a:hover
+{
+	opacity: 0.7;
+}
+.copyRight
+{
+	font-family: 'Roboto Slab', serif;
+	color: #363636;/*dark grey*/
+}
