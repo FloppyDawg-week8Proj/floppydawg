@@ -1,4 +1,3 @@
-<?php include("header-view.php"); ?>
 <section class="heroSlider">
 	<div class="slide-keyhole container">
 		<div class="slide-container">
@@ -42,6 +41,3 @@
 		<span class="slide-control slide-next">RIGHT ARROW</span>
 	</div>
 </section>
-<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
-<script src="../js/makeCoverBg.js"></script>
-<script src="../js/heroSlider.js"></script>
