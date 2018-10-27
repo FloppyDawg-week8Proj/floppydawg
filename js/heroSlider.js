@@ -35,15 +35,19 @@ $(function(){
 			startSlider = setInterval(moveSlide, 3000);
 		}
 	);
-	function heroSlider(){		
-		var arrSlide = $(".slide-holder");
-		var slidesWidth = $(".slide-keyhole").outerWidth();
-		var containerWidth = arrSlide.length*(slidesWidth);
+	function setSizes(){		
+		const arrSlide = $(".slide-holder");
+		const slidesWidth = $(".slide-keyhole").outerWidth();
+		const containerWidth = arrSlide.length*(slidesWidth);
 		$(".slide-container").css({"width": containerWidth, "transform": "translate(-"+slidesWidth*(Math.floor(arrSlide.length/2))+"px)"});
-		
+		arrSlide.each(function(){
+			$(this).css("width", slidesWidth+"px")
+		});
+	}
+	function heroSlider(){
+		const arrSlide = $(".slide-holder");
 		for(var i=0; i<arrSlide.length ; i++){
-			var pos = i*slidesWidth;
-			arrSlide[i].style.width = slidesWidth+"px";
+			const pos = i*$(".slide-keyhole").outerWidth();
 			arrSlide[i].style.left = pos+"px";
 		}
 		startSlider = setInterval(moveSlide, 3000);
@@ -51,22 +55,31 @@ $(function(){
 	function moveSlide(direction = "next"){	
 		var arrSlide = $(".slide-holder");
 		var slidesWidth = $(".slide-keyhole").outerWidth();
+		
 		for(var a=0; a<arrSlide.length ; a++){
 			let newPos = '';
-			if(newPos<0){
-				newPos = (arrSlide.length-1)*slidesWidth;
-				arrSlide[a].style.zIndex = "-1";
-			}else{
-				arrSlide[a].style.zIndex = "2";
-			}
+			const minPos = 0;
+			const maxPos = (arrSlide.length-1)*slidesWidth;
 			
 			if(direction == "next"){
 				newPos = parseInt(arrSlide[a].style.left)-slidesWidth;
 			}else if(direction == "prev"){
 				newPos = parseInt(arrSlide[a].style.left)+slidesWidth;
 			}
+			
+			if(newPos<0){
+				newPos = maxPos;
+				arrSlide[a].style.zIndex = "-1";
+			}else if(newPos>maxPos){
+				newPos = minPos;
+				arrSlide[a].style.zIndex = "-1";
+			}else{
+				arrSlide[a].style.zIndex = "2";
+			}
+			
 			arrSlide[a].style.left = newPos+"px";
 		}
+		setSizes();
 	}
 	$(".slide-control").click(function(){
 	if($(this).hasClass("slide-back")){
@@ -76,5 +89,6 @@ $(function(){
 		moveSlide("next");
 	}
 	});
+	setSizes();
 	heroSlider();
 });
