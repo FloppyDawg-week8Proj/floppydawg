@@ -15,7 +15,7 @@
 		line-height: 30px;
 		margin-bottom: 20px;
 	}
-	.thanksBoxContainer a
+	.thanksBoxContainer a /*delete later*/
 	{
 		border: 1px solid #363636;
 		background-color: #363636;

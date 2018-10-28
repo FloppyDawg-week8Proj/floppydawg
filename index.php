@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "thanks-view";
+$pageOnWork = "addToCart-view";
 
 include("Views/header-view.php");
 
