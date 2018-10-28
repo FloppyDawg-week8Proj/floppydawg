@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 $pageOnWork = "history-view";
+=======
+$pageOnWork = "payment-view";
+>>>>>>> paymentView
 
 include("Views/header-view.php");
 

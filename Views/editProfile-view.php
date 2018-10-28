@@ -138,7 +138,7 @@
 		<div class="formHouse">
 			<div class="userInfo">
 				<h2>User Info</h2>
-				<form>
+				<form class="userInfoForm">
 					<label class="requiredLabel">First Name</label>
 					<input type="text" name="strFirstName" id="strFirstName" class="requiredField" value="">
 					<label class="requiredLabel">Last Name</label>
@@ -155,7 +155,7 @@
 		<div class="formHouse">
 			<div class="changePassword">
 				<h2>Change Password</h2>
-				<form>
+				<form class="changePasswordForm">
 					<input type="checkbox" name="changePassword">Change Password
 					<label class="requiredLabel">Actual Password</label>
 					<input type="text" name="strActualPassword" id="strActualPassword" class="requiredField" value="">
