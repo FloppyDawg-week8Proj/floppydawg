@@ -26,7 +26,6 @@
 			</ul> 
 		</div><!--categoryNav-->
 		<div class="products-view-content">
-			<h2 class="page-title">Products</h2>
-			<?php include("card-view.php");?>
+			<?php include("productDetails-view.php"); ?>
 		</div>
 	</div><!--productsView-->
