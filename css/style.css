@@ -15,12 +15,13 @@ color : #28beee; //light blue
 	color: #363636;
 }
 
-html{
+html {
 	position: relative;
 	min-height: 100%;
 	width: 100%;
 }
-body{
+
+body {
 	width: 100%;
 	padding: 104px 0;
 	display: inline-block;
@@ -34,33 +35,41 @@ body{
 }
 
 
-.btn{
+.btn {
 	font-size: 15px;
 	padding: 10px;
 	transition: all ease 0.5s;
 	cursor: pointer;
 }
-.btn-primary{	
-	border: 3px solid #28beee;	/*light blue*/
+
+.btn-primary {
+	border: 3px solid #28beee;
+	/*light blue*/
 }
-.btn-primary:hover{
-	background-color: #28beee;	/*light blue*/
+
+.btn-primary:hover {
+	background-color: #28beee;
+	/*light blue*/
 }
-.btn-primary:hover a{
-	color: #ffffff;	/*white*/
+
+.btn-primary:hover a {
+	color: #ffffff;
+	/*white*/
 }
+
 .btn-submit:hover {
 	background-color: #3e5885;
 	transition: all ease 0.3s;
 }
-.btn-submit{
+
+.btn-submit {
 	background-color: #5b80c0;
 	color: #fffff2;
 	border: none;
 	padding: 10px;
 }
 
-.page-title{
+.page-title {
 	display: block;
 	text-align: center;
 	padding: 60px 0;
@@ -71,126 +80,118 @@ body{
 
 header {
 	position: fixed;
+	display: inline-block;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 104px;
 	background: #c1b8b5;
-	overflow: auto;
 	z-index: 9;
 }
 
-header > * {
+header>* {
 	float: left;
 	height: 100%;
+	position: relative;
 }
 
 /*children inside first level*/
-
+.logo{
+	width: 20%;
+}
+.logo a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.logo img{
+	height: 100%;
+	width: 100%;
+}
 .logo img {
 	margin: 0;
 	padding: 0;
 	max-height: 100px;
 }
-/******NAVIGATION******/
-
-.headerNav ul {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #c1b8b5;
-	/*light grey*/
-}
-
-.headerNav nav > ul > li {
-	float: left;
-
-}
-
-.headerNav nav {
-	display: inline-block;
-}
-
-.headerNav li a,
-.dropbtn {
-	display: inline-block;
-	font-family: 'Roboto Slab', serif;
-	font-size: 18px;
-	color: #363636;
-	/*dark grey*/
-	text-align: center;
-	padding: 14px 16px;
-}
-
-.headerNav li a:hover,
-.dropdown:hover .dropbtn {
-	background-color: #363636;
-	/*dark grey*/
-	color: #fff;
-	/*white*/
-	transition: all ease 0.5s;
-}
-
-.headerNav li.dropdown {
-	display: inline-block;
-}
-
-.dropdownContent {
-	display: none;
-	position: absolute;
-	background-color: #c1b8b5;
-	/*light grey*/
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-}
-
-.dropdownContent a {
-	color: #363636;
-	/*dark grey*/
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-}
-
-.dropdownContent a:hover {
-	background-color: #363636;
-	/*dark grey*/
-	border-top: 2px solid #fff;
-	/*white*/
-	color: #fff;
-	/*white*/
-}
-
-.dropdown:hover .dropdownContent {
-	display: block;
-}
-
-/*******RIGHT NAV********/
-
-.rightNav {
-	float: right;
-	position: relative;
-	margin: 10px;
-}
-
-.rightNav img {
-	max-width: 23px;
-}
-
-.rightNav a {
-	font-family: 'Roboto Slab', serif;
-	margin-right: 10px;
-	color: #363636;
-	/*dark grey*/
-}
-
-.socialNav {
+.headerNav{
 	width: 50%;
+}
+.headerNav nav{
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+}
+.headerNav ul,
+.headerNav li{
+	display: inline-block;
 	text-align: center;
-	margin-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+.headerNav li{
+	padding: 8px 0;
+}
+.headerNav li:hover{
+	background: #363636;
+}
+.headerNav li:hover a{
+	color: #fff;
+}
+.headerNav ul{
+	height: 100%;
+}
+.headerNav nav>ul>li{
+	float: left;
+	width: 25%;
+}
+.headerNav nav>ul>li>ul{
+	background: #c1b8b5;
+	position: absolute;
+	overflow: hidden;
+	max-height: 0;
+	left: 0;
+	top: 100%;
+	transition: all 0.3s ease;
+}
+.headerNav nav>ul>li:hover>ul{
+	max-height: 50px;
 }
 
+.rightNav{
+	float: none;
+	position: absolute;
+	right: 20px;
+	width: 15%;
+}
+.rightNav .socialNav,
+.rightNav .cartNav{
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+.rightNav .socialNav>*,
+.rightNav .cartNav>*{
+	float: left;
+}
+.rightNav .socialNav a,
+.rightNav .cartNav a{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+}
+.rightNav .socialNav a img{
+	height: 20px;
+}
+.rightNav .cartNav a img{
+	height: 25px;
+}
+
+/******NAVIGATION******/
 
 /*********END OF HEADER***********/
 
@@ -292,11 +293,13 @@ header > * {
 	display: inline-block;
 	width: 100%;
 }
-.holderImage{ 
+
+.holderImage {
 	width: 100%;
 	height: 200px;
 	margin: 10px 0;
 }
+
 .holderImage img {
 	width: 100%;
 }
@@ -320,7 +323,7 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
-.productBox .btn-primary{
+.productBox .btn-primary {
 	display: inline-block;
 	margin-top: 10px;
 	width: auto;
@@ -330,45 +333,58 @@ h3 {
 /**********END OF CARD VIEW*************/
 
 /*****************PRODUCTS VIEW********************/
-.productsView{
+
+.productsView {
 	height: 100%;
 	position: relative;
 }
+
 .productsView ul,
-.productsView li{
+.productsView li {
 	display: block;
 }
-.productsView li>ul{
+
+.productsView li > ul {
 	padding-bottom: 15px;
 }
-.productsView>*{
+
+.productsView > * {
 	float: left;
 	display: inline-block;
 	position: relative;
 	padding: 15px;
 }
-.products-view-sideNav{
+
+.products-view-sideNav {
 	width: 18%;
 }
-.products-view-sideNav h3{
+
+.products-view-sideNav h3 {
 	font-size: 1.3rem;
 	margin-bottom: 40px;
 }
-.products-view-sideNav .dropList{
+
+.products-view-sideNav .dropList {
 	display: none;
 }
-.products-view-sideNav .dropList li{
+
+.products-view-sideNav .dropList li {
 	padding: 3px 20px 0;
 }
-.products-view-content{
+
+.products-view-content {
 	width: 82%;
 }
+
 /*****************END OF PRODUCTS VIEW********************/
+
 /*****************CONTACT VIEW********************/
+
 .contactView {
 	width: 100%;
 	height: 100%;
 }
+
 .contactClass {
 	background: #eee;
 	position: absolute;
@@ -381,44 +397,54 @@ h3 {
 	height: 600px;
 	padding: 15px;
 }
-.contactView>* {
+
+.contactView > * {
 	display: inline-block;
 }
+
 .addressView {
 	padding: 20px;
 	float: left;
 	width: 40%;
 }
+
 .addressView h2 {
 	font-family: 'Roboto Slab', serif;
 	margin-bottom: 10px;
 	font-size: 15px;
 	color: #363636;
 }
+
 .addressView h1 {
 	font-family: 'Roboto Slab', serif;
 	margin-bottom: 10px;
 	font-size: 18px;
 	color: #363636;
 }
+
 .addressView p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	line-height: 25px;
 	color: #363636;
 }
+
 #map {
 	width: 100%;
 	height: 220px;
 }
+
 .formDetails {
 	float: right;
 }
-.formDetails>*{
+
+.formDetails > * {
 	position: relative;
 }
+
 .formDetails form {
-	background-color: #c1b8b5;	/*light grey*/
+	background-color: #c1b8b5;
+	/*light grey*/
 	text-align: left;
 	padding: 20px;
 	color: #363636;
@@ -426,10 +452,12 @@ h3 {
 	width: 350px;
 	margin-bottom: 10px;
 }
+
 .formDetails input {
 	width: 100%;
 	display: block;
 }
+
 .formDetails input[type=text] {
 	padding: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -437,17 +465,21 @@ h3 {
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
 }
+
 .formDetails label {
 	font-size: 18px;
 	font-family: 'Roboto Slab', serif;
 	margin-top: 20px;
 	text-align: left;
 }
-.formDetails .btn-submit{
+
+.formDetails .btn-submit {
 	margin: 20px 0;
 	width: 100px;
 }
+
 /**********END OF FOOTER*************/
+
 /*************FOOTER***************/
 
 footer {
@@ -457,8 +489,10 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 20px;
-	background-color: #c1b8b5;	/*light grey*/
-	color: #363636;	/*dark grey*/
+	background-color: #c1b8b5;
+	/*light grey*/
+	color: #363636;
+	/*dark grey*/
 	text-align: center;
 	z-index: 9;
 }
@@ -491,7 +525,8 @@ footer hr {
 
 .payment a {
 	padding: 20px;
-	font-family: 'Roboto Slab', serif;	color: #363636;
+	font-family: 'Roboto Slab', serif;
+	color: #363636;
 	/*dark grey*/
 }
 

@@ -9,18 +9,20 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div class="logo coverBg">
 			<a href="#"><img src="images/LogoPlaceholder.png" alt="logo" ></a>
 		</div><!--logo-->
 		<div class="headerNav">
 			<nav>
 				<ul class="mainNav">
 				  <li><a href="#">Home</a></li>
-				  <li class="dropdown">
-				    <a href="#" class="dropbtn">Products</a>
-				    <div class="dropdownContent">
-				      <a href="#">Product Categories</a>
-				    </div><!--drop down content-->
+				  <li>
+				    <a href="#">Products</a>
+				    <ul class="dropdown">
+				    	<li>
+				      		<a href="#">Product Categories</a>
+						</li>
+				    </ul><!--drop down content-->
 				  </li><!--dropdown-->
 				  <li><a href="#">About</a></li>
 				  <li><a href="#">Contact</a></li>
@@ -35,10 +37,8 @@
 			</div><!--socialNav-->
 
 			<div class="cartNav">
-				<a href="">Login</a>
-				<a href="#"><img src="images/user.png" alt="user" class="user"></a>
-				<a href="">Cart</a>
-				<a href="#"><img src="images/cart.png" alt="cart" class="cart"></a>
+				<a href="">Login <img src="images/user.png" alt="user" class="user"></a>
+				<a href="">Cart <img src="images/cart.png" alt="cart" class="cart"></a>
 			</div><!--cartNav-->
 		</div><!--rightNav-->
 	</header>
