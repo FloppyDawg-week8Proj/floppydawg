@@ -12,15 +12,18 @@ color : #28beee; //light blue
 	box-sizing: border-box;
 	list-style-type: none;
 	text-decoration: none;
+	color: #363636;
 }
 
-html {
+html{
 	position: relative;
 	min-height: 100%;
 	width: 100%;
 }
 body{
-	padding-bottom: 104px;
+	width: 100%;
+	padding: 104px 0;
+	display: inline-block;
 }
 
 .container {
@@ -30,12 +33,40 @@ body{
 	margin: auto;
 }
 
+
+.btn{
+	font-size: 15px;
+	padding: 10px;
+	transition: all ease 0.5s;
+}
+
+.btn-primary{	
+	border: 3px solid #28beee;	/*light blue*/
+}
+.btn-primary:hover{
+	background-color: #28beee;	/*light blue*/
+}
+.btn-primary:hover a{
+	color: #ffffff;	/*white*/
+}
+
+.page-title{
+	display: block;
+	text-align: center;
+	padding: 60px 0;
+	font-size: 2rem;
+}
+
 /********HEADER*********/
 
 header {
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background: #c1b8b5;
 	overflow: auto;
+	z-index: 9;
 }
 
 header > * {
@@ -50,7 +81,6 @@ header > * {
 	padding: 0;
 	max-height: 100px;
 }
-
 /******NAVIGATION******/
 
 .headerNav ul {
@@ -168,7 +198,6 @@ header > * {
 	height: 100%;
 	display: block;
 	width: 100%;
-	/*-----------------------------remember to change if nescessary-------------*/
 	overflow: hidden;
 }
 
@@ -249,17 +278,17 @@ header > * {
 /**********CARD VIEW*************/
 
 .cardView {
-	margin: 10px;
 	position: relative;
 	display: inline-block;
-	width: 80%;
-	max-width: 1000px;
-
+	width: 100%;
 }
-
+.holderImage{ 
+	width: 100%;
+	height: 200px;
+	margin: 10px 0;
+}
 .holderImage img {
 	width: 100%;
-
 }
 
 .productBox {
@@ -281,93 +310,56 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
-.viewBtn {
-	padding: 10px;
+.productBox .btn-primary{
+	display: inline-block;
 	margin-top: 10px;
-	border: 3px solid #28beee;
-	/*light blue*/
+	width: auto;
 }
 
-.viewBtn:hover {
-	background-color: #28beee;
-	/*light blue*/
-	color: #ffffff;
-	/*white*/
-	transition: all ease 0.5s;
-}
-
-.viewBtn a {
-	color: #363636;
-	/*dark grey*/
-	font-size: 15px;
-}
 
 /**********END OF CARD VIEW*************/
 
 /*****************PRODUCTS VIEW********************/
-
-.productView > * {
-	display: inline-block;
+.productsView{
+	height: 100%;
+	position: relative;
 }
-
-.categoryNav {
+.productsView ul,
+.productsView li{
+	display: block;
+}
+.productsView li>ul{
+	padding-bottom: 15px;
+}
+.productsView>*{
 	float: left;
-	position: absolute;
-	background-color: #c1b8b5;
-	/*light grey*/
-	width: 21%;
-	height: 100%;
+	display: inline-block;
+	position: relative;
+	padding: 15px;
 }
-
-.productsContent {
-	float: right;
-	background-color: lightgrey;
-	width: 79%;
-	height: 100%;
+.products-view-sideNav{
+	width: 18%;
 }
-
-.categoryNav ul li a {
-	font-family: 'Roboto Slab', serif;
-	text-decoration: none;
-	margin-left: 20px;
-	color: #363636;
+.products-view-sideNav h3{
+	font-size: 1.3rem;
+	margin-bottom: 40px;
 }
-
-.categoryNav ul li a:hover {
-	opacity: 0.7;
-}
-
-.categoryNav ul h3 {
-	font-family: 'Roboto Slab', serif;
-	color: #363636;
-	margin-left: 20px;
-	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.categoryNav ul {
-	position: fixed;
-	font-family: 'Roboto Slab', serif;
-}
-
-.categoryNav span {
-	color: #363636;
-	margin-left: 20px;
-}
-
-/****on click drop down*****/
-
-ul .dropList {
+.products-view-sideNav .dropList{
 	display: none;
 }
-
+.products-view-sideNav .dropList li{
+	padding: 3px 20px 0;
+}
+.products-view-content{
+	width: 82%;
+}
 /*****************END OF PRODUCTS VIEW********************/
 
 /*************FOOTER***************/
 
 footer {
 	position: absolute;
+	display: block;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -375,6 +367,7 @@ footer {
 	background-color: #c1b8b5;	/*light grey*/
 	color: #363636;	/*dark grey*/
 	text-align: center;
+	z-index: 9;
 }
 
 footer .topFooter a {
@@ -405,8 +398,7 @@ footer hr {
 
 .payment a {
 	padding: 20px;
-	font-family: 'Roboto Slab', serif;
-	color: #363636;
+	font-family: 'Roboto Slab', serif;	color: #363636;
 	/*dark grey*/
 }
 

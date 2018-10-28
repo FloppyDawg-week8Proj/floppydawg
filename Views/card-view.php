@@ -1,10 +1,9 @@
-<?php include("header-view.php");?>
 <div class="cardView">
 	<div class="productBox">
 		<div class="placeHolder">
-			<div class="holderImage">
-				<img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
-			</div><!--holderImage-->
+			<div class="holderImage coverBg">
+				<img src="assets/placeholder.jpg">
+			</div><!--holderImage coverBg-->
 			<div class="productName">
 				<h3>Product Name</h3>
 			</div><!--productname-->
@@ -22,9 +21,9 @@
 
 	<div class="productBox">
 		<div class="placeHolder">
-			<div class="holderImage">
-				<img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
-			</div><!--holderImage-->
+			<div class="holderImage coverBg">
+				<img src="assets/placeholder.jpg">
+			</div><!--holderImage coverBg-->
 			<div class="productName">
 				<h3>Product Name</h3>
 			</div><!--productname-->
@@ -42,9 +41,9 @@
 
 	<div class="productBox">
 		<div class="placeHolder">
-			<div class="holderImage">
-				<img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
-			</div><!--holderImage-->
+			<div class="holderImage coverBg">
+				<img src="assets/placeholder.jpg">
+			</div><!--holderImage coverBg-->
 			<div class="productName">
 				<h3>Product Name</h3>
 			</div><!--productname-->
@@ -62,9 +61,9 @@
 
 	<div class="productBox">
 		<div class="placeHolder">
-			<div class="holderImage">
-				<img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
-			</div><!--holderImage-->
+			<div class="holderImage coverBg">
+				<img src="assets/placeholder.jpg">
+			</div><!--holderImage coverBg-->
 			<div class="productName">
 				<h3>Product Name</h3>
 			</div><!--productname-->
@@ -79,5 +78,6 @@
 			</div><!--btn btn-primary-->
 		</div><!--placeholder-->
 	</div><!--productBox-->
+	
 </div><!--cardView-->
 

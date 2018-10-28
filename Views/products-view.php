@@ -1,20 +1,32 @@
-<div class="productsView">
+	<div class="productsView">
 		<div class="products-view-sideNav">
-		<ul>
-				<h3>CATEGORIES AND FILTER</h3>
+			<h3>CATEGORIES AND FILTER</h3>
+			<ul>				
 				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Categories</a>
-				<ul class="dropList">
-					<li><a href="#">Dog Beds</a></li>
-					<li><a href="#">Accessories</a></li>
-				</ul>
+					<ul class="dropList">
+						<li><a href="#">Dog Beds</a></li>
+						<li><a href="#">Accessories</a></li>
+					</ul>
 				</li>
 				<li class="filterClass">
 					<span class="fas fa-angle-right"></span><a href="#">Size</a>
+					<ul class="dropList">
+						<li><a href="#">Small</a></li>
+						<li><a href="#">Medium</a></li>
+						<li><a href="#">Large</a></li>
+					</ul>
 				</li>
-				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Waterproof</a></li>
+				<li class="filterClass">
+					<span class="fas fa-angle-right"></span><a href="#">Waterproof</a>
+					<ul class="dropList">
+						<li><a href="#">Yes</a></li>
+						<li><a href="#">No</a></li>
+					</ul>
+				</li>
 			</ul> 
 		</div><!--categoryNav-->
 		<div class="products-view-content">
-			Content
+			<h2 class="page-title">Products</h2>
+			<?php include("card-view.php");?>
 		</div>
-</div><!--productsView-->
+	</div><!--productsView-->
