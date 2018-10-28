@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "userDashboard-view";
+$pageOnWork = "editProfile-view";
 
 include("Views/header-view.php");
 
