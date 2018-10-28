@@ -1,15 +1,15 @@
 <?php
 
-<<<<<<< HEAD
-$pageOnWork = "history-view";
-=======
-$pageOnWork = "payment-view";
->>>>>>> paymentView
+include("Controller/MainController.php");
 
-include("Views/header-view.php");
+session_start();
 
-include("Views/".$pageOnWork.".php");
+$controller = (isset($_GET["controller"]))?$_GET["controller"]:"main";
+$action = (isset($_GET["action"]))	?$_GET["action"]:"home";
 
-include("Views/footer-view.php");
+$controllerName = ucfirst($controller)."Controller"; // creates MainController
+$oController = new $controllerName(); // new MainController();
+
+$oController->$action();
 
 ?>
