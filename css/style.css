@@ -13,6 +13,9 @@ color : #28beee; //light blue
 	list-style-type: none;
 	text-decoration: none;
 	color: #363636;
+	border: none;
+	outline: none;
+	transition: all 0.2 ease;
 }
 
 html {
@@ -68,7 +71,12 @@ body {
 	border: none;
 	padding: 10px;
 }
-
+.btn-grey {
+	border: 3px solid #ccc;
+}
+.btn-grey:hover {
+	background: #ccc;
+}
 .page-title {
 	display: block;
 	text-align: center;
@@ -93,6 +101,11 @@ body {
 	right: 0;
 	background: #000;
 	opacity: 0.6;
+}
+
+.coverBg img{
+	height: 100%;
+	width: 100%;
 }
 /********HEADER*********/
 .modal-container .modal-holder{
@@ -219,6 +232,103 @@ header>* {
 /******NAVIGATION******/
 
 /*********END OF HEADER***********/
+/**********CART PAGE STYLE*************/
+
+.cart-item{
+	display: inline-block;
+	position: relative;
+	border: 2px solid black;
+	width: 100%;
+	padding: 20px;
+	margin: 10px 0;
+}
+.cart-intemcontent{
+	float: left;
+}
+.cart-intemcontent.cart-itemdetails{
+	width: 60%;
+}
+.cart-itemdetails>*{
+	display: block;
+}
+.cart-itemdetails .item-nameandrate,
+.cart-subtotal-label{
+	font-size: 1.5rem;
+}
+.cart-itemdetails .item-view{
+	height: 160px;
+}
+.cart-itemdetails .item-view>*{
+	float: left;
+	padding: 12px;
+	height: 100%;
+}
+.cart-itemdetails .item-view .item-preview{
+	width: 40%; 
+}
+.cart-itemdetails .item-view .item-details{
+	width: 60%;
+}
+.cart-itemdetails .item-price p{
+	display: inline-block;
+}
+.cart-itemdetails .item-details-row{
+	height: 33.33%;
+}
+.cart-itemdetails .item-colorandsize>*{
+	width: 50%;
+	float: left;
+}
+.cart-itemdetails .item-quantity>*{
+	float: left;
+}
+.cart-itemdetails .item-quantity input{
+	text-align: center;
+	width: 20px;
+	padding: 5px;
+}
+.cart-itemdetails label{
+	font-weight: 800;
+}
+.cart-itemdetails .item-quantity .fas{
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px;
+	background: #28beee;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.cart-itemdetails .item-quantity .fas:hover{
+	background: #228daf;
+}
+.cart-intemcontent.cart-itemsubtotal{
+	width: 40%;
+}
+.cart-itemsubtotal-row{
+	height: 40px;
+	text-align: right;
+}
+.cart-itemsubtotal-row .cart-subtotal-price{
+	text-align: right;
+	font-size: 2rem;
+}
+.cart-intemcontent.cart-itemsubtotal .btn{
+	padding: 8px 10px;
+	display: inline-block;
+}
+.cart-intemcontent.cart-itemsubtotal .btn a{
+	display: inline-block;
+}
+.cart-itemsubtotal-btn{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.cart-form .btn{
+	display: inline-block;
+}
+/**********END OF CART PAGE STYLE*************/
 
 /**********HERO SLIDER*************/
 
