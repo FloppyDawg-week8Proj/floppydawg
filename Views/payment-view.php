@@ -4,7 +4,7 @@
 	position: relative;
 	display: inline-block;
 	margin-left: 25%;
-	margin-top: 5%;
+	margin-top: 20px;
 }
 .formContainer h1
 {
@@ -20,7 +20,7 @@
 	background-color: #c1b8b5;/*light grey*/
 	float: left;
 	width: 50%;
-	height: 550px;
+	height: 580px;
 	padding: 20px;
 }
 /****************************/
@@ -28,7 +28,7 @@
 {
 	margin-bottom: 10px;
 }
-.billingInfo h2
+.paymentInfo h2
 {
 	margin-bottom: 10px;
 }
@@ -69,21 +69,21 @@
 	margin: 20px 0;
 	width: 100px;
 }
-.billingInfo 
+.paymentInfo 
 {
 	border-right: thick solid #363636;
 }
 
 /*******************/
-.billingInfo h2
+.paymentInfo h2
 {
 	margin-bottom: 10px;
 }
-.billingInfo > * {
+.paymentInfo > * {
 	position: relative;
 }
 
-.billingInfo form {
+.paymentInfo form {
 	text-align: left;
 	padding: 20px;
 	color: #363636;
@@ -92,11 +92,11 @@
 	margin-bottom: 10px;
 }
 
-.billingInfo input[type=checkbox] {
+.paymentInfo input[type=checkbox] {
 	display: inline-block;
 }
 
-.billingInfo input[type=text] {
+.paymentInfo input[type=text] {
 	padding: 10px;
 	width:100%;
 	font-family: 'Montserrat', sans-serif;
@@ -105,7 +105,7 @@
 	box-sizing: border-box;
 }
 
-.billingInfo label {
+.paymentInfo label {
 	font-size: 18px;
 	display: block;
 	font-family: 'Roboto Slab', serif;
@@ -113,7 +113,7 @@
 	text-align: left;
 }
 
-.billingInfo .btn-submit {
+.paymentInfo .btn-submit {
 	margin: 20px 0;
 	width: 100px;
 }
@@ -130,43 +130,61 @@
     -ms-user-select: none;
     user-select: none;
 }
+.shippingInfoForm h2
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 </style>
 
 <div class="formContainer">
-	<h1 class="pageTitle">Billing and Shipping Address</h1>
+	<h1 class="pageTitle">Payment and Review</h1>
 	<div class="formHolder">
 		<div class="formHouse">
-			<div class="billingInfo">
-				<h2>Billing Info</h2>
-				<form class="billingInfoForm">
-					<input type="checkbox" name="billingInfo">Same as Shipping Info
-					<label class="requiredLabel">First Name</label>
-					<input type="text" name="strFirstName" id="strFirstName" class="requiredField" value="">
-					<label class="requiredLabel">Last Name</label>
-					<input type="text" name="strLastName" id="strEmail"class="requiredField" value="">
-					<label class="requiredLabel">Street Address</label>
-					<input type="text" name="strStreetAddress" id="strStreetAddress"class="requiredField">
-					<label class="requiredLabel">Zip Code</label>
-					<input type="text" name="strZipCode" id="strZipCode"class="requiredField">
-					
+			<div class="paymentInfo">
+				<h2>Payment Info</h2>
+				<form class="paymentInfoForm">
+					<input type="radio" name="paymentInfo">Credit
+					<input type="radio" name="paymentInfo">Debit
+					<input type="radio" name="paymentInfo">Paypal
+					<label class="requiredLabel">Card Number</label>
+					<input type="text" name="nCardNumber" id="nCardNumber" class="requiredField" value="" placeholder="555-555-555-555">
+					<label class="requiredLabel">Name on Card</label>
+					<input type="text" name="strNameCard" id="strNameCard"class="requiredField" value="" placeholder="ex. John doe">
+					<label class="requiredLabel">Exp. Date:</label>
+					<input type="date" name="expDate" id="expDate"class="requiredField">
+					<label class="requiredLabel">CVV:</label>
+					<input type="text" name="cvv" id="strCvv"class="requiredField">
+					<input type="submit" name="strComplete" value="Complete Order" class="btn btn-primary" value="">
 				</form>
 			</div><!---password-->
 		</div><!--formHouse-->
 	<div class="formHouse">
 			<div class="shippingInfo">
-				<h2>Shipping Info</h2>
 				<form class="shippingInfoForm">
-					<label class="requiredLabel">First Name</label>
-					<input type="text" name="strFirstName" id="strFirstName" class="requiredField" value="">
-					<label class="requiredLabel">Last Name</label>
-					<input type="text" name="strLastName" id="strEmail"class="requiredField" value="">
-					<label class="requiredLabel">Street Address</label>
-					<input type="text" name="strStreetAddress" id="strStreetAddress"class="requiredField">
-					<label class="requiredLabel">Zip Code</label>
-					<input type="text" name="strZipCode" id="strZipCode"class="requiredField">
-					<label class="requiredLabel">Email</label>
-					<input type="text" name="strEmail" id="strEmail"class="requiredField">
-					<input type="submit" name="strNext" value="Next" class="btn btn-primary" value="">
+					<h2>Shipping to:</h2>
+					<label class="requiredLabel">Full Name</label>
+					<p>Tyler Smith</p>
+					<label class="requiredLabel">Address</label>
+					<p>1654, Comox st. Vancouver, X5X6X7</p>
+
+					<h2>Billing to:</h2>
+					<label class="requiredLabel">Full Name</label>
+					<p>Tyler Smith</p>
+					<label class="requiredLabel">Address</label>
+					<p>1654, Comox st. Vancouver, X5X6X7</p>
+					<label class="requiredLabel">e-mail</label>
+					<p>email@email.com</p>
+					<label class="requiredLabel">Phone</label>
+					<p>555-555-555</p>
+
+					<h2>Summary:</h2>
+					<label>Product Name----Qt-------Sub Total</label>
+					<p>Fluffy Bed----------X1----------100.00</p>
+					
+					<h2>TOTAL : 100$</h2>
+
+					<input type="submit" name="strEdit" value="Edit" class="btn btn-primary" value="">
 				</form>
 			</div><!---shippingInfo-->
 		</div><!--formHouse-->

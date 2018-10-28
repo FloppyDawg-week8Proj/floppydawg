@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "billing-view";
+$pageOnWork = "payment-view";
 
 include("Views/header-view.php");
 
