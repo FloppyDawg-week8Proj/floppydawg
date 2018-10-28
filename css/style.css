@@ -38,8 +38,8 @@ body{
 	font-size: 15px;
 	padding: 10px;
 	transition: all ease 0.5s;
+	cursor: pointer;
 }
-
 .btn-primary{	
 	border: 3px solid #28beee;	/*light blue*/
 }
@@ -48,6 +48,16 @@ body{
 }
 .btn-primary:hover a{
 	color: #ffffff;	/*white*/
+}
+.btn-submit:hover {
+	background-color: #3e5885;
+	transition: all ease 0.3s;
+}
+.btn-submit{
+	background-color: #5b80c0;
+	color: #fffff2;
+	border: none;
+	padding: 10px;
 }
 
 .page-title{
@@ -354,7 +364,90 @@ h3 {
 	width: 82%;
 }
 /*****************END OF PRODUCTS VIEW********************/
-
+/*****************CONTACT VIEW********************/
+.contactView {
+	width: 100%;
+	height: 100%;
+}
+.contactClass {
+	background: #eee;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 700px;
+	height: 600px;
+	padding: 15px;
+}
+.contactView>* {
+	display: inline-block;
+}
+.addressView {
+	padding: 20px;
+	float: left;
+	width: 40%;
+}
+.addressView h2 {
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #363636;
+}
+.addressView h1 {
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #363636;
+}
+.addressView p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	color: #363636;
+}
+#map {
+	width: 100%;
+	height: 220px;
+}
+.formDetails {
+	float: right;
+}
+.formDetails>*{
+	position: relative;
+}
+.formDetails form {
+	background-color: #c1b8b5;	/*light grey*/
+	text-align: left;
+	padding: 20px;
+	color: #363636;
+	align-self: center;
+	width: 350px;
+	margin-bottom: 10px;
+}
+.formDetails input {
+	width: 100%;
+	display: block;
+}
+.formDetails input[type=text] {
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 8px 0;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+.formDetails label {
+	font-size: 18px;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 20px;
+	text-align: left;
+}
+.formDetails .btn-submit{
+	margin: 20px 0;
+	width: 100px;
+}
+/**********END OF FOOTER*************/
 /*************FOOTER***************/
 
 footer {
