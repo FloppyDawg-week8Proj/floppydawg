@@ -4,7 +4,13 @@
 		<div class="cart-resume">
 			<div class="cart-item">
 				<div class="cart-intemcontent cart-itemdetails">
-					<div class="item-nameandrate">Product Name ****</div>
+					<div class="item-nameandrate">
+						Product Name
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i></div>
 					<div class="item-view">
 						<div class="item-preview coverBg"><img src="assets/placeholder.jpg" alt="placeholder"></div>
 						<div class="item-details">
@@ -16,17 +22,17 @@
 								<div class="item-color">
 									<label>Color:</label>
 									<select name="" id="">
-										<option>example</option>
-										<option>example</option>
-										<option>example</option>
+										<option>Blue</option>
+										<option>Red</option>
+										<option>Brown</option>
 									</select>
 								</div>
 								<div class="item-size">
 									<label>Size:</label>
 									<select name="strColor" id="">
-										<option>example</option>
-										<option>example</option>
-										<option>example</option>
+										<option>Small</option>
+										<option>Medium</option>
+										<option>Large</option>
 									</select>
 								</div>
 							</div>
