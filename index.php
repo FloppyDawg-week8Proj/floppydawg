@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "contact-view";
+$pageOnWork = "products-view";
 
 include("Views/header-view.php");
 
