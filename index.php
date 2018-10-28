@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "addToCart-view";
+$pageOnWork = "userDashboard-view";
 
 include("Views/header-view.php");
 
