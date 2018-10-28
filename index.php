@@ -1,11 +1,5 @@
 <?php
-//include("Libs/DBFact.php");
-//include("Libs/DB.php");
-//include("Libs/Cart.php");
-//include("Models/Categories.php");
-//include("Models/Products.php");
-//include("Models/Product.php");
-//include("Models/Category.php");
+
 include("Controller/MainController.php");
 
 session_start();
@@ -19,10 +13,3 @@ $oController = new $controllerName(); // new MainController();
 $oController->$action();
 
 ?>
-<!--
-
-include("Views/header-view.php");
-
-include("Views/".$pageOnWork.".php");
-
-include("Views/footer-view.php");-->
