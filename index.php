@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "editProfile-view";
+$pageOnWork = "billing-view";
 
 include("Views/header-view.php");
 
