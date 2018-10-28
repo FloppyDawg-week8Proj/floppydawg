@@ -1,6 +1,6 @@
 <?php
 
-$pageOnWork = "products-view";
+$pageOnWork = "modalHolder-view";
 
 include("Views/header-view.php");
 
