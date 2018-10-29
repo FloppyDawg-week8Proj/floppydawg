@@ -5,58 +5,43 @@ Class MainController
 	public function home()
 	{
 		/// home page
-//		$mainnav = $this->loadView("mainnav-view",$arrFeaturedCats);
-//
 		$content = $this->loadView("hero-slider");
 		$content .= $this->loadView("welcomeText");
-		$content .= $this->loadView("card");
+		
+		$arrData = array(1,2,3);
+		$content .= "<h2 class='page-title'>Feature Products</h2>";
+		$content .= $this->loadView("card",$arrData);
+		
 		include("Views/publiclayout-view.php");
 	}
 
-	public function category()
-	{
+	public function products()
+	{	
+		$arrData = array(1,2,3,4,5,6);
+		$productContent = $this->loadView("card",$arrData);
+		$content = $this->loadView("products", $productContent);
 		
-		$arrFeaturedCats = Categories::getFeatured(); 
-		$mainnav = $this->loadView("mainnav-view",$arrFeaturedCats);
-
-		$arrData["othercats"] = Categories::getSubcategories();
-		
-		$arrData["products"] = Products::getProductsByCategory($_GET['category']); 
-		$maincontent = $this->loadView("categoryLayout-view",$arrData);
-		include("views/main-container-short-view.php");
+		$contentMainClass = "productsView";
+		include("Views/publiclayout-view.php");
 	}
 
-	public function showproduct()
+	public function about()
 	{
-		
-		$arrFeaturedCats = Categories::getFeatured(); 
-		$mainnav = $this->loadView("mainnav-view",$arrFeaturedCats);
-
-		$arrData = Product::getProduct($_GET['id']);
-		$maincontent = $this->loadView("productDetails-view",$arrData);
-		include("views/main-container-short-view.php");
+		$content = $this->loadView("about");
+		include("Views/publiclayout-view.php");
 	}
 
-	public function addToCart()
-	{
-		
-		$oCart = new Cart();
-		$oCart->addToCart($_GET['item']);
-
-		header("location: index.php?controller=main&action=showproduct&id=".$_GET['item']);
+	public function contact()
+	{	
+		$content = $this->loadView("contact");
+		include("Views/publiclayout-view.php");
 	}
 
 	public function cart()
 	{
 		
-		$arrFeaturedCats = Categories::getFeatured(); 
-		$mainnav = $this->loadView("mainnav-view",$arrFeaturedCats);
-
-		$oCart = new Cart();
-		$arrCartItems = $oCart->getCartItems();
-
-		$maincontent = $this->loadView("cart-view",$arrCartItems);
-		include("views/main-container-short-view.php");
+		$content = $this->loadView("contact");
+		include("Views/publiclayout-view.php");
 	}
 
 	public function loadView($viewName ,$arrData="")

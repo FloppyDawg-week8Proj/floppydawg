@@ -1,3 +1,3 @@
 <section class="modal-container">
-	<div class = "modal-holder"><?=$modalContent?></div>
+	<div class = "modal-holder"><?=$arrData?></div>
 </section>

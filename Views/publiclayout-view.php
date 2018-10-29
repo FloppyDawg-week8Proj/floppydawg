@@ -1,5 +1,9 @@
 <?php
-include("header-view.php");
-echo "<section class='container'>".$content."</section>";
-include("footer-view.php");
+include("Views/header-view.php");
+?>
+<section class="<?=(isset($contentMainClass)?$contentMainClass:"container");?>">
+<?=$content?>	
+</section>
+<?php
+include("Views/footer-view.php");
 ?>
