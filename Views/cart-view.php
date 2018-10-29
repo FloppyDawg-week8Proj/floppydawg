@@ -29,7 +29,7 @@
 								</div>
 								<div class="item-size">
 									<label>Size:</label>
-									<select name="strColor" id="">
+									<select name="nSizeID" id="">
 										<option>Small</option>
 										<option>Medium</option>
 										<option>Large</option>

@@ -8,7 +8,7 @@ Class MainController
 		$content = $this->loadView("hero-slider");
 		$content .= $this->loadView("welcomeText");
 		
-		$arrData = array(1,2,3);
+
 		$content .= "<h2 class='page-title'>Feature Products</h2>";
 		$content .= $this->loadView("card",$arrData);
 		
@@ -17,12 +17,31 @@ Class MainController
 
 	public function products()
 	{	
-		$arrData = array(1,2,3,4,5,6);
-		$productContent = $this->loadView("card",$arrData);
-		$content = $this->loadView("products", $productContent);
+		$categoryID = isset($_GET['category'])?$_GET['category']:'';
+		$productID = isset($_GET['id'])?$_GET['id']:'';
 		
-		$contentMainClass = "productsView";
-		include("Views/publiclayout-view.php");
+		if(isset($_GET['category'])){
+			$arrData = Products::getProductsCategory($categoryID);
+			$productContent = $this->loadView("card",$arrData);
+
+			$content = $this->loadView("products", $productContent);
+			$contentMainClass = "productsView";
+			include("Views/publiclayout-view.php");
+		}
+		else if(isset($_GET['id'])){
+			$arrData = Product::getProduct($productID);
+			$prodDetails = $this->loadView("productDetails",$arrData);
+			
+			$prodDetails .= "<h2 class='page-title'>Feature Products</h2>";			
+			$arrData = Products::getFeatured();
+			$prodDetails .= $this->loadView("card",$arrData);
+			
+			$content = $this->loadView("products", $prodDetails);
+
+			
+			$contentMainClass = "productsView";
+			include("Views/publiclayout-view.php");
+		}
 	}
 
 	public function about()

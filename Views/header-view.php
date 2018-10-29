@@ -20,7 +20,10 @@
 				    <a href="#">Products</a>
 				    <ul class="dropdown">
 				    	<li>
-				      		<a href="#">Product Categories</a>
+				      		<a href="#">Beds</a>
+						</li>
+			      		<li>
+				      		<a href="#">Acessories</a>
 						</li>
 				    </ul><!--drop down content-->
 				  </li><!--dropdown-->

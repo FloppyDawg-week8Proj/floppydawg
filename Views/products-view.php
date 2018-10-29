@@ -1,4 +1,3 @@
-	<div class="productsView">
 		<div class="products-view-sideNav">
 			<h3>Cantegories and filters</h3>
 			<ul>				
@@ -26,7 +25,6 @@
 			</ul> 
 		</div><!--categoryNav-->
 		<div class="products-view-content">
-			<h2 class="page-title"><?=$contentTitle?></h2>
+			<h2 class="page-title">Products</h2>
 			<?=$arrData?>
 		</div>
-	</div><!--productsView-->

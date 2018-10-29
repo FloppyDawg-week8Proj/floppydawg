@@ -1,3 +1,4 @@
+<?=isset($arrData[0]['categoryName'])?"<h3 class='products-categoryname'>".$arrData[0]['categoryName']."</h3>":'';?>
 <div class="cardView">
 	<?php	foreach($arrData as $product){?>
 		<div class="productBox">
@@ -6,15 +7,15 @@
 					<img src="assets/placeholder.jpg">
 				</div><!--holderImage coverBg-->
 				<div class="productName">
-					<h3>Product Name</h3>
+					<h3><?=$product['strName']?></h3>
 				</div><!--productname-->
 				<div class="desc">
-					<p>Description</p>
+					<p><?=$product['strDescription']?></p>
 				</div><!--desc-->
 				<div class="price">
-					<p>$PRICE</p>
+					<p>$<?=$product['nPrice']?></p>
 				</div><!--price-->
-				<a class="btn btn-primary" href="?action=products&id=1">VIEW DETAILS</a>
+				<a class="btn btn-primary" href="?action=products&id=<?=$product['id']?>">View Details</a>
 			</div><!--placeholder-->
 		</div><!--productBox-->	
 	<?php } ?>
