@@ -1,4 +1,5 @@
 /* COLORS AND FONTS USED
+color : #ff5a1f /*orange/*;
 color : #363636; //dark grey
 color : #c1b8b5; // light grey
 font-family: 'Montserrat', sans-serif;
@@ -655,7 +656,63 @@ h3 {
 	width: 100px;
 }
 
-/**********END OF FOOTER*************/
+/**********END OF CONTACT VIEW*************/
+
+
+/*-- Admin Login --*/
+#loginForm {
+	width:250px;
+	margin:auto;
+	max-width:100%;
+}
+
+.logoHolder img {
+	width:75%;
+	margin:auto;
+	display:block;
+	margin-bottom:50px;
+}
+
+#loginForm label {
+	display:block;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	margin-bottom:10px;
+
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"] {
+	border:1px solid #c1b8b5; /*light grey*/;
+	padding:10px;
+	width:100%;
+	
+}
+
+#loginForm input[type="text"] {
+	margin-bottom:20px;
+}
+
+#loginForm ::placeholder {
+	font-family: 'Montserrat', sans-serif;
+	font-size:12px;
+}
+
+#loginForm input[type="submit"] {
+	background:#ff5a1f /*orange/*/;
+	width:100%;
+	font-size:14px;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	margin-top:20px;
+	transition:.3s ease;
+	text-transform: uppercase;
+}
+
+#loginForm input[type="submit"]:hover {
+	opacity:0.7;
+}
+
 
 /*************FOOTER***************/
 
@@ -666,17 +723,14 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 20px;
-	background-color: #c1b8b5;
-	/*light grey*/
-	color: #363636;
-	/*dark grey*/
+	background-color: #c1b8b5;/*light grey*/
+	color: #363636;/*dark grey*/
 	text-align: center;
 	z-index: 9;
 }
 
 footer .topFooter a {
-	color: #363636;
-	/*dark grey*/
+	color: #363636;/*dark grey*/
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
 	padding: 30px;
@@ -703,8 +757,7 @@ footer hr {
 .payment a {
 	padding: 20px;
 	font-family: 'Roboto Slab', serif;
-	color: #363636;
-	/*dark grey*/
+	color: #363636;/*dark grey*/
 }
 
 .payment a:hover {
@@ -713,8 +766,7 @@ footer hr {
 
 .copyRight {
 	font-family: 'Roboto Slab', serif;
-	color: #363636;
-	/*dark grey*/
+	color: #363636;/*dark grey*/
 }
 
 /**********END OF FOOTER*************/
