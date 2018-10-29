@@ -1,6 +1,6 @@
 	<div class="productsView">
 		<div class="products-view-sideNav">
-			<h3>CATEGORIES AND FILTER</h3>
+			<h3>Cantegories and filters</h3>
 			<ul>				
 				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Categories</a>
 					<ul class="dropList">
@@ -26,7 +26,7 @@
 			</ul> 
 		</div><!--categoryNav-->
 		<div class="products-view-content">
-			<h2 class="page-title">Products</h2>
+			<h2 class="page-title"><?=$contentTitle?></h2>
 			<?=$arrData?>
 		</div>
 	</div><!--productsView-->

@@ -2,12 +2,11 @@
 
 Class DB{
 
-	static function do()
+	static function getRecord()
 	{
-		$oDB = new DB();
-		return $oDB;
-	}
-	
+		$oConnection = new Connection();
+		return $oConnection;
+	}	
 }
 
 ?>
