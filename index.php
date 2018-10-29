@@ -1,5 +1,6 @@
 <?php
-
+include("../../ecomm-connect/dbqueries.php");
+include("libs/DB.php");
 include("Controller/MainController.php");
 
 session_start();

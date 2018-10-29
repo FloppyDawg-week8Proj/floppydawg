@@ -41,10 +41,10 @@ body {
 
 .btn {
 	font-size: 15px;
-	padding: 10px;
 	transition: all ease 0.5s;
 	cursor: pointer;
 	display: inline-block;
+	padding: 10px;
 }
 
 .btn-primary {
@@ -54,12 +54,9 @@ body {
 
 .btn-primary:hover {
 	background-color: #28beee;
-	/*light blue*/
-}
-
-.btn-primary:hover a {
 	color: #ffffff;
 	/*white*/
+	/*light blue*/
 }
 
 .btn-submit:hover {
@@ -469,7 +466,8 @@ header>* {
 .cardView {
 	position: relative;
 	display: inline-block;
-	width: 100%;
+	margin: auto;
+	width: 70%;
 }
 
 .holderImage {
@@ -552,6 +550,7 @@ h3 {
 
 .products-view-content {
 	width: 82%;
+	text-align: center;
 }
 
 /*****************END OF PRODUCTS VIEW********************/
@@ -559,8 +558,9 @@ h3 {
 /*****************CONTACT VIEW********************/
 
 .contactView {
+	display: inline-block;
 	width: 100%;
-	height: 100%;
+	height: 800px ;
 }
 
 .contactClass {
