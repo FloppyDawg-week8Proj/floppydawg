@@ -8,14 +8,14 @@
 	background-color: tomato;
 	color: #363636;
 }
-.editProfileRow
+.editRegisterForm
 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -16px;
 }
 
-.editProfileColumn
+.editRegisterColumn
 {
 	flex: 50%;
 	background-color: lightgrey;
@@ -23,17 +23,17 @@
 	border-radius: 3px;
 }
 
-.editProfileForm
+.editRegisterForm
 {
 	flex: 75%;
 }
 
-.editProfileColumn, .editProfileForm
+.editRegisterColumn, .editRegisterForm
 {
 	padding: 0 16px;
 }
 
-.editProfileForm [type=text]
+.editRegisterForm [type=text]
 {
 	width: 100%;
   margin-bottom: 20px;
@@ -42,7 +42,7 @@
   border-radius: 3px;
 }
 
-.editProfileForm label
+.editRegisterForm label
 {
   margin-bottom: 10px;
   display: block;
@@ -55,12 +55,12 @@
 }
 </style>
 
-<div class="editProfileRow">
+<div class="editRegisterForm">
 	<div class="formContainer">
-		<h1 class="pageTitle">Edit Profile</h1>
-		<form class="editProfileForm" form method="post" onsubmit="return validate()">
-			<div class="editProfileRow">
-				<div class="editProfileColumn">
+		<h1 class="pageTitle">User Info</h1>
+		<form class="editRegisterForm" form method="post" onsubmit="return validate()">
+			<div class="editRegisterForm">
+				<div class="editRegisterColumn">
 					<h3>User Info</h3>
 
 					<label class="required" for="firstName">First Name</label>
@@ -78,23 +78,21 @@
 					<label class="required" for="email">Email</label>
 					<input type="text" name="email" id="email" placeholder="ex. abc@abc.com">
 				</div>
-					<div class="editProfileColumn"><br>
+					<div class="editRegisterColumn"><br>
 					<h3>Password</h3>
-					<input type="checkbox" name="changePassword">Change Password
 
-					<label class="required" for="actualpassword">Actual Password</label>
-					<input type="text" name="actualpassword" id="actualpassword" placeholder="*******">
+					<label class="required" for="password"> Password</label>
+					<input type="text" name="password" id="password" placeholder="*******">
 					
-					<label class="required" for="newpassword">New Passwod</label>
-					<input type="text" name="newpassword" id="newpassword" placeholder="*******">
-
-					<label class="required" for="repeatPassword">Repeat New Password</label>
+					<label class="required" for="repeatPassword">Repeat Passwod</label>
 					<input type="text" name="repeatPassword" id="repeatPassword" placeholder="*******">
 
-						<input type="submit" name="strEdit" value="Update" class="btn btn-primary" value="">
+					<input type="checkbox" name="termsAndconditions"> I agree with the <a href="#">terms and conditions</a>of the privacy policy
+
+						<input type="submit" name="strEdit" value="Update" class="btn btn-primary" value="Update"><br>
 					</div>
-				</div><!--editProfileColumn--->
-			</div><!--editProfileRow-->
+				</div><!--editRegisterColumn--->
+			</div><!--editRegisterForm-->
 		</form>
 	</div><!--formContainer-->
 </div>

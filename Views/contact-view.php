@@ -1,3 +1,10 @@
+<style>
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
+</style>
 <div class="contactView">
 	<div class="contactClass">
 		<div class="addressView">
@@ -16,14 +23,14 @@
 		<!--addressView-->
 
 		<div class="formDetails">
-			<form>
-				<label class="requiredLabel">Enter Name</label>
-				<input type="text" name="strName" id="strName" placeholder="ex. Jane Doe" class="requiredField" value="">
-				<label class="requiredLabel">Enter Email</label>
-				<input type="text" name="strEmail" id="strEmail" placeholder="ex. abc@gmail.com" class="requiredField" value="">
-				<label class="requiredLabel">Enter Message</label>
-				<input type="text" name="strMessage" id="strMessage" placeholder="Any Specific requirements.." class="requiredField">
-				<input type="submit" name="submit" value="Submit" class="btn btn-submit" value="">
+			<form method="post" onsubmit="return validate()">
+				<label class="required">Enter Name</label>
+				<input type="text" name="strName" id="strName" placeholder="ex. Jane Doe" class="required" value="" >
+				<label class="required">Enter Email</label>
+				<input type="text" name="strEmail" id="strEmail" placeholder="ex. abc@gmail.com" class="required" value="" >
+				<label class="required">Enter Message</label>
+				<input type="text" name="strMessage" id="strMessage" placeholder="Any Specific requirements.." class="required" >
+				<input type="submit" name="submit" value="Submit" class="btn btn-submit">
 			</form>
 		</div>
 		<!--forDetails--->
