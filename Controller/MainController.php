@@ -9,7 +9,8 @@ Class MainController
 		$content .= $this->loadView("welcomeText");
 		
 
-		$content .= "<h2 class='page-title'>Feature Products</h2>";
+		$content .= "<h2 class='page-title'>Feature Products</h2>";		
+		$arrData = Products::getFeatured();
 		$content .= $this->loadView("card",$arrData);
 		
 		include("Views/publiclayout-view.php");
@@ -25,8 +26,6 @@ Class MainController
 			$productContent = $this->loadView("card",$arrData);
 
 			$content = $this->loadView("products", $productContent);
-			$contentMainClass = "productsView";
-			include("Views/publiclayout-view.php");
 		}
 		else if(isset($_GET['id'])){
 			$arrData = Product::getProduct($productID);
@@ -36,13 +35,17 @@ Class MainController
 			$arrData = Products::getFeatured();
 			$prodDetails .= $this->loadView("card",$arrData);
 			
-			$content = $this->loadView("products", $prodDetails);
-
+			$content = $this->loadView("products", $prodDetails);	
+		}else{
+			$arrData = Products::getAllProducts();
+			$allProducts = $this->loadView("card",$arrData);
 			
-			$contentMainClass = "productsView";
-			include("Views/publiclayout-view.php");
+			$content = $this->loadView("products", $allProducts);	
 		}
-	}
+
+		$contentMainClass = "productsView";
+		include("Views/publiclayout-view.php");
+}
 
 	public function about()
 	{

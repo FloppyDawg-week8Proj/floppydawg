@@ -13,12 +13,8 @@ Class Products
 	}
 	static function getProductsCategory($categoryID)
 	{
-		if(!empty($categoryID)){
-			$sql= "SELECT products.*, categories.strName as categoryName FROM (products LEFT JOIN categories ON categories.id=products.nCategory) WHERE products.nCategory=$categoryID";
-			return DB::getRecord()->runSQL("getAllData", $sql);
-		}else{
-			return Products::getAllProducts();
-		}
+		$sql= "SELECT products.*, categories.strName as categoryName FROM (products LEFT JOIN categories ON categories.id=products.nCategory) WHERE products.nCategory=$categoryID";
+		return DB::getRecord()->runSQL("getAllData", $sql);
 	}
 }
 ?>
