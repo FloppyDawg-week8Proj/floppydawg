@@ -4,11 +4,12 @@
 
 <nav>
 	<ul>
-		<a href=""><li>Products</li></a>
-		<a href=""><li>Pages</li></a>
-		<a href=""><li>Filters</li></a>
-		<a href=""><li>Admin Settings</li></a>
-		<a href=""><li>Log out</li></a>
+		<li><a href="">Products</a></li>
+		<li><a href="">Featured Products</a></li>
+		<li><a href="">Pages</a></li>
+		<li><a href="">Filters</a></li>
+		<li><a href="">Admin Settings</a></li>
+		<li><a href="">Log out</a></li>
 	</ul>
 </nav>
 </header><!--cmsSideNav-->
