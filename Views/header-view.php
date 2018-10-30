@@ -40,8 +40,8 @@
 			</div><!--socialNav-->
 
 			<div class="cartNav">
-				<a href="">Login <img src="images/user.png" alt="user" class="user"></a>
-				<a href="">Cart <img src="images/cart.png" alt="cart" class="cart"></a>
+				<a href="#">Login <img src="images/user.png" alt="user" class="user"></a>
+				<a href="#">Cart <img src="images/cart.png" alt="cart" class="cart"></a>
 			</div><!--cartNav-->
 		</div><!--rightNav-->
 	</header>
