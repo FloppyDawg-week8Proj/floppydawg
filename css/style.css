@@ -915,7 +915,19 @@ footer hr {
 	}
 	/*filter and category*/
 	.products-view-sideNav h3 {
-	font-size: 15px;
+	display: none;
+	}
+	.products-view-sideNav 
+	{
+		width: 100%;
+	}
+	.products-view-content
+	{
+		width: 100%;
+	}
+	.products-view-sideNav ul li
+	{
+		display: block;
 	}
 
 }
