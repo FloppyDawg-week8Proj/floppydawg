@@ -78,7 +78,7 @@ color : #28beee; //light blue
 
 /*-- CMS Header --*/
 #cmsSideNav {
-	width:200px;
+	width:175px;
 	position:fixed;
 	max-width:100%;
 	height:100vh;
@@ -110,8 +110,73 @@ color : #28beee; //light blue
 	text-align:left;
 }
 
-#cmsSideNav nav li:hover{
+#cmsSideNav nav li a:hover{
 	color:363636;/*/dark grey*/;
 }
 
 /*-- End of CMS Header --*/
+
+
+/*-- Dashboard --*/
+#dashboard{
+	width:auto;
+	margin-left:220px;
+	position: relative;
+    overflow: auto;
+    margin-top:50px;
+}
+
+#dashboard h2 {
+	font-size:30px;
+	margin-bottom:15px;
+}
+
+#dashboard h3 {
+	font-size:16px;
+	margin-bottom:50px;
+	font-weight:normal;
+}
+
+#dashboard .dashboardOptions {
+	width:200px;
+	max-width:100%;
+}
+
+.dashboardOptions span {
+	display:block;
+	width:100%;
+	transition:.5s ease;
+}
+
+.dashboardOptions span:hover {
+	opacity:0.7;
+	margin-left:5px;
+}
+
+.dashboardOptions .iconBox {
+	width:35px;
+	position: relative;
+	top:5px;
+}
+
+.dashboardOptions .iconPages, #dashboard .iconFilter {
+	width:30px;
+	position: relative;
+	top:10px;
+}
+
+.dashboardOptions p{
+	font-size:14px;
+	color: #ff5a1f/*orange*/;
+	margin-bottom:15px;
+	display:inline-block;
+	margin-left:10px;
+}
+
+.dashboardOptions p.productsOption {
+	margin-left:5px;
+}
+
+
+
+/*-- End of Dashboard --*/
