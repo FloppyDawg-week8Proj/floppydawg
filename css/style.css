@@ -1,4 +1,4 @@
- COLORS AND FONTS USED
+ /*COLORS AND FONTS USED
 color: #ff5a1f /*orange/*;
 color: #41c1c4 /*cyan/*;
 color : #363636; //dark grey
@@ -833,7 +833,6 @@ footer hr {
 	color: #363636;/*dark grey*/
 }
 
-<<<<<<< HEAD
 /**********END OF FOOTER*************/
 
 /****************MEDIA QUERIES**********************/
@@ -873,6 +872,10 @@ footer hr {
 	.copyRight{
 	font-size: 18px;
 	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 20px;
+	}
 
 }
 
@@ -910,6 +913,10 @@ footer hr {
 	}
 	.payment a {
 	font-size: 15px;
+	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 18px;
 	}
 }
 
@@ -959,10 +966,14 @@ footer hr {
 	.payment a {
 	font-size: 12px;
 	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 15px;
+	}
+
 }
 
 
 
-=======
 /**********END OF FOOTER************
->>>>>>> c0e600b5ea293b345cb359b396c51ff84daf8721
+
