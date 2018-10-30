@@ -599,6 +599,11 @@ h3 {
 /*****************END OF PRODUCTS VIEW********************/
 
 /*****************CONTACT VIEW********************/
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
 
 .contactView {
 	display: inline-block;
@@ -877,6 +882,7 @@ footer hr {
 		height: 500px;
 	}
 
+
 }
 
 @media only screen and (max-width: 625px)
@@ -889,11 +895,9 @@ footer hr {
 	.rightNav .socialNav a,
 	.rightNav .cartNav a
 	{
-		font-size: 15px;
+		font-size: 10px;
 		display: block;
-		width: 50%;
-		height: 100%;
-		padding: 1px;
+		margin-bottom: 5px;
 	}
 	/*-----product card----*/
 	.productBox 
@@ -934,13 +938,74 @@ footer hr {
 	{
 		height: 500px;
 	}
+	/*-------Contact form--------*/
+	.addressDetails 
+	{
+	display: inline-block;
+	width: 100%;
+	float: none;
+	}
+	.addressView h1
+	{
+		font-size: 20px;
+	}
+	.addressView
+	{
+		width: 100%;
+		background-color: #fff;
+	}
+	.addressView p
+	{
+		width: 300px;
+	}
+	.contactView
+	{
+		width: 100%;
+		display: inline-block;
+	}
+	.formDetails label
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.formDetails form
+	{
+		width: 360px;
+	}
+	.formDetails
+	{
+		width: 100%;
+	}
+	.contactClass
+	{
+		margin-top: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+	.formDetails input[type=text]
+	{
+		width: 300px;
+		font-size: 15px;
+	}
+	footer
+	{
+		position: fixed;
+	}
+	#map
+	{
+		width: 100%;
+		margin-bottom: 30%;
+	}
 }
 
 @media screen and (max-width: 425px)
 {
-	
+	.container
+	{
+		width: 100%;
+	}
 	/*-----Header-----*/
-	.logo a img
+	.logo img
 	{
 		max-width: 5%;
 	}
@@ -950,16 +1015,16 @@ footer hr {
 	}
 	nav .mainNav a
 	{
-		font-size: 15px;
+		font-size: 12px;
 		margin: 10px 0;
 		display: block;
 	}
 	.rightNav .socialNav a,
 	.rightNav .cartNav a
 	{
-		font-size: 12px;
+		font-size: 0px;
 		display: inline block;
-		width: 49%;
+		width: 50%;
 		height: 100%;
 		padding: 5px;
 	}
@@ -973,14 +1038,24 @@ footer hr {
 	}
 	/*-----footer----*/
 	.copyRight  {
-	font-size: 12px;
+	text-align: center;
+	font-size: 15px;
+	float: none;
+	}
+	.topFooter
+	{
+		display: none;
+	}
+	.payment
+	{
+	display: none;
 	}
 
 	footer .topFooter a {
-	font-size: 12px;
+	font-size: 10px;
 	}
 	.payment a {
-	font-size: 12px;
+	font-size: 10px;
 	}
 	/*filter and category*/
 	.products-view-sideNav h3 {
@@ -1013,6 +1088,65 @@ footer hr {
 	.aboutContainer
 	{
 		height: 500px;
+	}
+	/*-------Contact form--------*/
+	.addressDetails 
+	{
+	display: inline-block;
+	width: 100%;
+	float: none;
+	}
+	.addressView h1
+	{
+		font-size: 20px;
+	}
+	.addressView
+	{
+		width: 100%;
+		background-color: #fff;
+	}
+	.addressView p
+	{
+		width: 200px;
+	}
+	.contactView
+	{
+		width: 100%;
+		display: inline-block;
+	}
+	.formDetails label
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.formDetails form
+	{
+		width: 300px;
+	}
+	.formDetails
+	{
+		width: 100%;
+	}
+	.contactClass
+	{
+		margin-top: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+	.formDetails input[type=text]
+	{
+		width: 250px;
+		font-size: 15px;
+	}
+	footer
+	{
+		margin-top: 30%;
+		position: fixed;
+	}
+	#map
+	{
+		width: 100%;
+		margin-bottom: 50%;
 	}
 
 }

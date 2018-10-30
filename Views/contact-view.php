@@ -1,10 +1,3 @@
-<style>
-.error{
-	padding: 8px;
-	background-color: tomato;
-	color: #363636;
-}
-</style>
 <div class="contactView">
 	<div class="contactClass">
 		<div class="addressView">
@@ -36,6 +29,7 @@
 		<!--forDetails--->
 		<div id="map"></div><!--map-->
 	</div>
+	
 	<!--contactClass-->
 </div>
 <!--ContactView-->
