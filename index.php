@@ -3,8 +3,9 @@ include("../../ecomm-connect/dbqueries.php");
 include("libs/DB.php");
 include("Model/Product.php");
 include("Model/Products.php");
+include("Model/Cart.php");
+include("Model/Purchase.php");
 include("Controller/MainController.php");
-
 session_start();
 
 $controller = (isset($_GET["controller"]))?$_GET["controller"]:"main";
