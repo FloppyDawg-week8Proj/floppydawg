@@ -1,5 +1,9 @@
+/*COLORS AND FONTS USED
+color: #ff5a1f*/ /*orange/*;
+=======
  /*COLORS AND FONTS USED
 color: #ff5a1f /*orange/*;
+>>>>>>> e74771bd1df65b14f466225daeef149769b1c69b
 color: #41c1c4 /*cyan/*;
 color : #363636; //dark grey
 color : #c1b8b5; // light grey
@@ -230,8 +234,46 @@ header>* {
 }
 
 /******NAVIGATION******/
-
 /*********END OF HEADER***********/
+
+/**********ABOUT PAGE***********/
+.aboutContainer>*
+	{
+		display: inline-block;
+	}
+	.aboutContainer
+	{
+		border: 1px solid #363636;
+		background-color: #c1b8b5;
+		height: 400px;
+		padding: 20px;
+		margin: 0 auto;
+		max-width: 800px;
+		margin-top: 10%;
+	}
+	.aboutContainer img
+	{
+		float: left;
+		max-width: 400px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		float: right;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		color: #363636;
+	}
+	.aboutContainer h2
+	{
+		font-family: 'Roboto Slab', serif;
+		text-align: center;
+		margin-bottom: 20px;
+		color: #363636;
+	}
+
+/************END OF ABOUT PAGE*********/
+
 /**********CART PAGE STYLE*************/
 
 .cart-item{
@@ -557,6 +599,11 @@ h3 {
 /*****************END OF PRODUCTS VIEW********************/
 
 /*****************CONTACT VIEW********************/
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
 
 .contactView {
 	display: inline-block;
@@ -660,62 +707,6 @@ h3 {
 /**********END OF CONTACT VIEW*************/
 
 
-/*-- Admin Login --*/
-#loginForm {
-	width:250px;
-	margin:auto;
-	max-width:100%;
-}
-
-.logoHolder img {
-	width:75%;
-	margin:auto;
-	display:block;
-	margin-bottom:50px;
-}
-
-#loginForm label {
-	display:block;
-	font-family: 'Montserrat', sans-serif;
-	font-size:14px;
-	margin-bottom:10px;
-}
-
-#loginForm input[type="text"], #loginForm input[type="password"] {
-	border:1px solid #c1b8b5; /*light grey*/;
-	padding:10px;
-	width:100%;
-}
-
-#loginForm input[type="text"] {
-	margin-bottom:20px;
-}
-
-#loginForm ::placeholder {
-	font-family: 'Montserrat', sans-serif;
-	font-size:12px;
-}
-
-#loginForm input[type="submit"] {
-	background:#ff5a1f /*orange/*/;
-	width:100%;
-	font-size:14px;
-	padding:10px;
-	text-align:center;
-	color:#fff;
-	margin-top:20px;
-	transition:.3s ease;
-	text-transform: uppercase;
-}
-
-#loginForm input[type="submit"]:hover {
-	opacity:0.7;
-}
-
-
-/*-- End of Login Form --*/
-
-
 
 /*-- Filter search --*/
 
@@ -774,7 +765,6 @@ h3 {
 	}
 }
 /*-- End of filter search --*/
-
 
 
 
@@ -876,6 +866,22 @@ footer hr {
 	.products-view-sideNav h3 {
 	font-size: 20px;
 	}
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
+	}
+
 
 }
 
@@ -889,11 +895,9 @@ footer hr {
 	.rightNav .socialNav a,
 	.rightNav .cartNav a
 	{
-		font-size: 15px;
+		font-size: 10px;
 		display: block;
-		width: 50%;
-		height: 100%;
-		padding: 1px;
+		margin-bottom: 5px;
 	}
 	/*-----product card----*/
 	.productBox 
@@ -918,13 +922,90 @@ footer hr {
 	.products-view-sideNav h3 {
 	font-size: 18px;
 	}
+		/*-------About---------*/
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
+	}
+	/*-------Contact form--------*/
+	.addressDetails 
+	{
+	display: inline-block;
+	width: 100%;
+	float: none;
+	}
+	.addressView h1
+	{
+		font-size: 20px;
+	}
+	.addressView
+	{
+		width: 100%;
+		background-color: #fff;
+	}
+	.addressView p
+	{
+		width: 300px;
+	}
+	.contactView
+	{
+		width: 100%;
+		display: inline-block;
+	}
+	.formDetails label
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.formDetails form
+	{
+		width: 360px;
+	}
+	.formDetails
+	{
+		width: 100%;
+	}
+	.contactClass
+	{
+		margin-top: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+	.formDetails input[type=text]
+	{
+		width: 300px;
+		font-size: 15px;
+	}
+	footer
+	{
+		position: fixed;
+	}
+	#map
+	{
+		width: 100%;
+		margin-bottom: 30%;
+	}
 }
 
 @media screen and (max-width: 425px)
 {
-	
+	.container
+	{
+		width: 100%;
+	}
 	/*-----Header-----*/
-	.logo a img
+	.logo img
 	{
 		max-width: 5%;
 	}
@@ -934,16 +1015,16 @@ footer hr {
 	}
 	nav .mainNav a
 	{
-		font-size: 15px;
+		font-size: 12px;
 		margin: 10px 0;
 		display: block;
 	}
 	.rightNav .socialNav a,
 	.rightNav .cartNav a
 	{
-		font-size: 12px;
+		font-size: 0px;
 		display: inline block;
-		width: 49%;
+		width: 50%;
 		height: 100%;
 		padding: 5px;
 	}
@@ -957,18 +1038,115 @@ footer hr {
 	}
 	/*-----footer----*/
 	.copyRight  {
-	font-size: 12px;
+	text-align: center;
+	font-size: 15px;
+	float: none;
+	}
+	.topFooter
+	{
+		display: none;
+	}
+	.payment
+	{
+	display: none;
 	}
 
 	footer .topFooter a {
-	font-size: 12px;
+	font-size: 10px;
 	}
 	.payment a {
-	font-size: 12px;
+	font-size: 10px;
 	}
 	/*filter and category*/
 	.products-view-sideNav h3 {
-	font-size: 15px;
+	display: none;
+	}
+	.products-view-sideNav 
+	{
+		width: 100%;
+	}
+	.products-view-content
+	{
+		width: 100%;
+	}
+	.products-view-sideNav ul li
+	{
+		display: block;
+	}
+	/*-------About---------*/
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
+	}
+	/*-------Contact form--------*/
+	.addressDetails 
+	{
+	display: inline-block;
+	width: 100%;
+	float: none;
+	}
+	.addressView h1
+	{
+		font-size: 20px;
+	}
+	.addressView
+	{
+		width: 100%;
+		background-color: #fff;
+	}
+	.addressView p
+	{
+		width: 200px;
+	}
+	.contactView
+	{
+		width: 100%;
+		display: inline-block;
+	}
+	.formDetails label
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.formDetails form
+	{
+		width: 300px;
+	}
+	.formDetails
+	{
+		width: 100%;
+	}
+	.contactClass
+	{
+		margin-top: 0;
+		width: 100%;
+		background-color: #fff;
+	}
+	.formDetails input[type=text]
+	{
+		width: 250px;
+		font-size: 15px;
+	}
+	footer
+	{
+		margin-top: 30%;
+		position: fixed;
+	}
+	#map
+	{
+		width: 100%;
+		margin-bottom: 50%;
 	}
 
 }

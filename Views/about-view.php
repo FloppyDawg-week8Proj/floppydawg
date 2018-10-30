@@ -1,5 +1,5 @@
 <?php include("header-view.php");?>
-<style type="text/css">
+<!-- <style type="text/css">
 	.aboutContainer>*
 	{
 		display: inline-block;
@@ -34,7 +34,7 @@
 		margin-bottom: 20px;
 		color: #363636;
 	}
-</style>
+</style> -->
 <div class="aboutContainer">
 	<h2>About Us</h2>
 		<p><img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
