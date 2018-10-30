@@ -28,7 +28,7 @@ Class Purchase
 			'nSizeID',
 			'nQuantity',
 			'nColorID',
-			'nOrderID')
+			'nPurchaseID')
 		VALUES ('
 			".$cartItem['strName'].",
 			".$cartItem['nPrice'].",
