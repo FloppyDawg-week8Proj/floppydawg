@@ -1,5 +1,6 @@
-/* COLORS AND FONTS USED
-color : #ff5a1f /*orange/*;
+ COLORS AND FONTS USED
+color: #ff5a1f /*orange/*;
+color: #41c1c4 /*cyan/*;
 color : #363636; //dark grey
 color : #c1b8b5; // light grey
 font-family: 'Montserrat', sans-serif;
@@ -13,7 +14,7 @@ color : #28beee; //light blue
 	box-sizing: border-box;
 	list-style-type: none;
 	text-decoration: none;
-	color: #363636;
+	color: #363636 /*dark grey*/;
 	border: none;
 	outline: none;
 	transition: all 0.2 ease;
@@ -678,14 +679,12 @@ h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size:14px;
 	margin-bottom:10px;
-
 }
 
 #loginForm input[type="text"], #loginForm input[type="password"] {
 	border:1px solid #c1b8b5; /*light grey*/;
 	padding:10px;
 	width:100%;
-	
 }
 
 #loginForm input[type="text"] {
@@ -712,6 +711,71 @@ h3 {
 #loginForm input[type="submit"]:hover {
 	opacity:0.7;
 }
+
+
+/*-- End of Login Form --*/
+
+
+
+/*-- Filter search --*/
+
+#filterSearch {
+	position:relative;
+	width:100%;
+	margin:auto;
+}
+
+#filterSearch .searchField input[type="text"]{
+	display:block;
+	width:375px;
+	max-width:100%;
+	border:1px solid #c1b8b5; /*light grey*/;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+#filterSearch .searchField input[type="text"]::placeholder {
+	font-family:montserrat;
+	font-size:12px;
+}
+
+.filterTable {
+	width: 100%;
+}
+
+.filterTable table thead td {
+	padding: 5px;
+	background:#ff5a1f /*orange*/;
+	color: #fff;
+}
+
+.filterTable table thead td a {
+	color: #fff; 
+	border-bottom: 1px dotted #fff; 
+	text-decoration: none;
+	font-family:montserrat;
+	font-size:12px;
+}
+
+.filterTable table td {
+	width:15%;
+	text-align: left;
+}
+
+.filterTable table tbody tr td, #searchResults .noResults {
+	padding-top: 10px;
+	font-family:montserrat;
+	font-size:12px;
+}
+
+@media only screen and (max-width:600px) {
+	#filterSearch .searchField input[type="text"]{
+		width:75%;
+	}
+}
+/*-- End of filter search --*/
+
+
 
 
 /*************FOOTER***************/
@@ -769,6 +833,7 @@ footer hr {
 	color: #363636;/*dark grey*/
 }
 
+<<<<<<< HEAD
 /**********END OF FOOTER*************/
 
 /****************MEDIA QUERIES**********************/
@@ -898,3 +963,6 @@ footer hr {
 
 
 
+=======
+/**********END OF FOOTER************
+>>>>>>> c0e600b5ea293b345cb359b396c51ff84daf8721

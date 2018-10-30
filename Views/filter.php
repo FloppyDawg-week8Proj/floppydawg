@@ -4,22 +4,35 @@ include_once("dbqueries.php");
 $sort = (isset($_GET["strSortBy"]))?" ORDER BY ".$_GET["strSortBy"] : "";
 
 if (isset($_GET["strKeyword"]))
-{
-	$sqlRegister = "SELECT * FROM register WHERE strFirstName LIKE '%".$_GET['strKeyword']."%' $sort";
+{	
+	$test  = "register
+
+	LEFT JOIN purchase
+
+	ON register.id = purchase.nRegisterID";
+	
+	$sql = "SELECT strFirstName, strLastName, strEmail, nOrderNumber, nOrderDate
+					FROM ".$test."
+					WHERE strFirstName LIKE '%".$_GET['strKeyword']."%' OR strLastName LIKE '%".$_GET['strKeyword']."%' OR strEmail LIKE '%".$_GET['strKeyword']."%' OR nOrderNumber LIKE '%".$_GET['strKeyword']."%' OR nOrderDate LIKE '%".$_GET['strKeyword']."%' $sort";
 }
 else {
-	$sqlRegister = "SELECT * FROM register $sort";
+	$sql = "SELECT * FROM register
+
+	LEFT JOIN purchase
+
+	ON register.id = purchase.nRegisterID";
 }
 
-$arrResults = runSelectSQL($sqlRegister);
+$arrResults = runSelectSQL($sql);
 
 if ($arrResults){
-	$sqlRegister = runSelectSQL(
+	runSelectSQL(
 	"SELECT
 	register.strFirstName,
 	register.strLastName,
 	register.strEmail,
-	purchase.nOrderNumber
+	purchase.nOrderNumber,
+	purchase.nOrderDate
 
 	FROM register
 
@@ -34,14 +47,14 @@ if ($arrResults){
 		<td><?=$result['strFirstName']?></td>
 		<td><?=$result['strLastName']?></td>
 		<td><?=$result['strEmail']?></td>
-		<!-- <td><?=$result['nOrderNumber']?></td> -->
-	
+		<td><?=$result['nOrderNumber']?></td>
+		<td><?=$result['nOrderDate']?></td>
 	</tr>
 	<?php
 	}
 }
 
 else {
-	echo "No results found.";
+	echo "<div class='noResults'>No results found.</div>";
 }
 ?>
