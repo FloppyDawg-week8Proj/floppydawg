@@ -234,8 +234,46 @@ header>* {
 }
 
 /******NAVIGATION******/
-
 /*********END OF HEADER***********/
+
+/**********ABOUT PAGE***********/
+.aboutContainer>*
+	{
+		display: inline-block;
+	}
+	.aboutContainer
+	{
+		border: 1px solid #363636;
+		background-color: #c1b8b5;
+		height: 400px;
+		padding: 20px;
+		margin: 0 auto;
+		max-width: 800px;
+		margin-top: 10%;
+	}
+	.aboutContainer img
+	{
+		float: left;
+		max-width: 400px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		float: right;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		color: #363636;
+	}
+	.aboutContainer h2
+	{
+		font-family: 'Roboto Slab', serif;
+		text-align: center;
+		margin-bottom: 20px;
+		color: #363636;
+	}
+
+/************END OF ABOUT PAGE*********/
+
 /**********CART PAGE STYLE*************/
 
 .cart-item{
@@ -823,6 +861,21 @@ footer hr {
 	.products-view-sideNav h3 {
 	font-size: 20px;
 	}
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
+	}
 
 }
 
@@ -864,6 +917,22 @@ footer hr {
 	/*filter and category*/
 	.products-view-sideNav h3 {
 	font-size: 18px;
+	}
+		/*-------About---------*/
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
 	}
 }
 
@@ -928,6 +997,22 @@ footer hr {
 	.products-view-sideNav ul li
 	{
 		display: block;
+	}
+	/*-------About---------*/
+	.aboutContainer img
+	{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.aboutContainer p
+	{
+		font-size: 15px;
+	}
+	.aboutContainer
+	{
+		height: 500px;
 	}
 
 }
