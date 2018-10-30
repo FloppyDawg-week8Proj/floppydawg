@@ -22,6 +22,7 @@
 		<script src="js/heroSlider.js"></script>
 		<script src="js/showDropList.js"></script>
 		<script src="js/initMap.js"></script>
+		<script src="js/form_validation.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMaFf1MASfiqfZ74bRkaGWKbeEIcUIVOU&callback=initMap"></script>
 	</body>
 </html>

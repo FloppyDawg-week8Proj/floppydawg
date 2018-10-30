@@ -10,22 +10,25 @@
 <body>
 	<header>
 		<div class="logo coverBg">
-			<a href="#"><img src="images/LogoPlaceholder.png" alt="logo" ></a>
+			<a href="index.php"><img src="images/LogoPlaceholder.png" alt="logo" ></a>
 		</div><!--logo-->
 		<div class="headerNav">
 			<nav>
 				<ul class="mainNav">
-				  <li><a href="#">Home</a></li>
+				  <li><a href="index.php">Home</a></li>
 				  <li>
-				    <a href="#">Products</a>
+				    <a href="index.php?action=products">Products</a>
 				    <ul class="dropdown">
 				    	<li>
-				      		<a href="#">Product Categories</a>
+				      		<a href="index.php?action=products&categoryID=1">Beds</a>
+						</li>
+			      		<li>
+				      		<a href="index.php?action=products&categoryID=2">Acessories</a>
 						</li>
 				    </ul><!--drop down content-->
 				  </li><!--dropdown-->
-				  <li><a href="#">About</a></li>
-				  <li><a href="#">Contact</a></li>
+				  <li><a href="index.php?action=about">About</a></li>
+				  <li><a href="index.php?action=contact">Contact</a></li>
 				</ul>
 			</nav><!--Navigation-->
 		</div>
