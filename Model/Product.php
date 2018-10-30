@@ -31,7 +31,6 @@ Class Product
 			".$arrNewProduct['nStars'].",
 			".$arrNewProduct['nSizeID'].",
 			".$arrNewProduct['bFeatures'].")";
-//		$sql = "SELECT * FROM products WHERE id=$produc,tID";    SHWETAAAAAAAAAAAAAAAA!!!!! INSERT the right sql HERE!!!!!	
 		return DB::getRecord()->runSQL("insertNew", $sql);
 	}
 		static function edit($arrEditProduct){
@@ -50,7 +49,6 @@ Class Product
 					'nSizeID'='".$arrEditProduct["nSizeID"]."',
 					'bFeatures='".$arrEditProduct["bFeatures"].",
 				WHERE products.id = ".$arrEditProduct['id']."";
-//		$sql = "SELECT * FROM products WHERE id=$produc,tID";    SHWETAAAAAAAAAAAAAAAA!!!!! INSERT the right sql HERE!!!!!	
 		return DB::getRecord()->runSQL("edit", $sql);
 	}
 	static function delete($productID){
