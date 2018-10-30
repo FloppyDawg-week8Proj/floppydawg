@@ -1,5 +1,9 @@
 /*COLORS AND FONTS USED
 color: #ff5a1f*/ /*orange/*;
+=======
+ /*COLORS AND FONTS USED
+color: #ff5a1f /*orange/*;
+>>>>>>> e74771bd1df65b14f466225daeef149769b1c69b
 color: #41c1c4 /*cyan/*;
 color : #363636; //dark grey
 color : #c1b8b5; // light grey
@@ -776,4 +780,147 @@ footer hr {
 	color: #363636;/*dark grey*/
 }
 
+/**********END OF FOOTER*************/
+
+/****************MEDIA QUERIES**********************/
+
+/*-------MOBILE---------*/
+@media only screen and (max-width: 825px)
+{
+	/*-----Header-----*/
+	.logo a img
+	{
+		max-width: 20%;
+	}
+
+	.rightNav .socialNav a,
+	.rightNav .cartNav a
+	{
+
+		display: block;
+		width: 50%;
+		height: 100%;
+		padding: 5px;
+	}
+	/*-----product card----*/
+	.productBox {
+	float: left;
+	text-align: center;
+	padding: 10px;
+	width: 75%;
+	}
+	/*-----footer----*/
+	footer .topFooter a {
+	font-size: 18px;
+	}
+	.payment a {
+	font-size: 18px;
+	}
+	.copyRight{
+	font-size: 18px;
+	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 625px)
+{
+	/*-----Header-----*/
+	.logo a img
+	{
+		max-width: 10%;
+	}
+	.rightNav .socialNav a,
+	.rightNav .cartNav a
+	{
+		font-size: 15px;
+		display: block;
+		width: 50%;
+		height: 100%;
+		padding: 1px;
+	}
+	/*-----product card----*/
+	.productBox 
+	{
+		float: left;
+		text-align: center;
+		padding: 10px;
+		width: 50%;
+	}
+	/*-----footer----*/
+	.copyRight {
+	font-size: 15px;
+	}
+
+	footer .topFooter a {
+	font-size: 15px;
+	}
+	.payment a {
+	font-size: 15px;
+	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 425px)
+{
+	
+	/*-----Header-----*/
+	.logo a img
+	{
+		max-width: 5%;
+	}
+	nav .mainNav ul
+	{
+		text-align: center;
+	}
+	nav .mainNav a
+	{
+		font-size: 15px;
+		margin: 10px 0;
+		display: block;
+	}
+	.rightNav .socialNav a,
+	.rightNav .cartNav a
+	{
+		font-size: 12px;
+		display: inline block;
+		width: 49%;
+		height: 100%;
+		padding: 5px;
+	}
+	/*-----product card----*/
+	.productBox 
+	{
+		float: left;
+		text-align: center;
+		padding: 10px;
+		width: 100%;
+	}
+	/*-----footer----*/
+	.copyRight  {
+	font-size: 12px;
+	}
+
+	footer .topFooter a {
+	font-size: 12px;
+	}
+	.payment a {
+	font-size: 12px;
+	}
+	/*filter and category*/
+	.products-view-sideNav h3 {
+	font-size: 15px;
+	}
+
+}
+
+
+
 /**********END OF FOOTER************
+

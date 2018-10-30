@@ -1,5 +1,5 @@
 		<div class="products-view-sideNav">
-			<h3>Cantegories and filters</h3>
+			<h3>Categories and filters</h3>
 			<ul>				
 				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Categories</a>
 					<ul class="dropList">
