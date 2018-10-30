@@ -1,137 +1,105 @@
 <style>
-.formContainer
-{
-	position: relative;
-	display: inline-block;
-	margin-left: 25%;
-	margin-top: 5%;
-}
-.formContainer h1
-{
-	text-align: center;
-	margin-bottom: 10px;
-}
-.formHouse
-{
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0; 
-	background-color: #c1b8b5;/*light grey*/
-	float: left;
-	width: 50%;
-	height: 550px;
-	padding: 20px;
-}
-/****************************/
-.shippingInfo h2
-{
-	margin-bottom: 10px;
-}
-.billingInfo h2
-{
-	margin-bottom: 10px;
-}
-.shippingInfo > * {
-	position: relative;
-}
 
-.shippingInfo form {
-	text-align: left;
-	padding: 20px;
-	color: #363636;
-	align-self: center;
-	width: 350px;
-	margin-bottom: 10px;
-}
-
-.shippingInfo input {
-	width: 100%;
-	display: block;
-}
-
-.shippingInfo input[type=text] {
-	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	margin: 8px 0;
-	border: 1px solid #cccccc;
+*{
 	box-sizing: border-box;
 }
-
-.shippingInfo label {
-	font-size: 18px;
-	font-family: 'Roboto Slab', serif;
-	margin-top: 20px;
-	text-align: left;
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
+.editBillingForm
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
 }
 
-.shippingInfo .btn-submit {
-	margin: 20px 0;
-	width: 100px;
+.editBillingColumn
+{
+	flex: 50%;
+	background-color: lightgrey;
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
 }
+
+.editBillingForm
+{
+	flex: 75%;
+}
+
+.editBillingColumn, .editBillingForm
+{
+	padding: 0 16px;
+}
+
+.editBillingForm [type=text]
+{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.editBillingForm label
+{
+  margin-bottom: 10px;
+  display: block;
+
+}
+<<<<<<< HEAD
 .billingInfo 
+=======
+.formContainer
+>>>>>>> billingView
 {
-	border-right: thick solid #363636;
-}
-
-/*******************/
-.billingInfo h2
-{
-	margin-bottom: 10px;
-}
-.billingInfo > * {
-	position: relative;
-}
-
-.billingInfo form {
-	text-align: left;
-	padding: 20px;
-	color: #363636;
-	align-self: center;
-	width: 350px;
-	margin-bottom: 10px;
-}
-
-.billingInfo input[type=checkbox] {
-	display: inline-block;
-}
-
-.billingInfo input[type=text] {
-	padding: 10px;
-	width:100%;
-	font-family: 'Montserrat', sans-serif;
-	margin: 8px 0;
-	border: 1px solid #cccccc;
-	box-sizing: border-box;
-}
-
-.billingInfo label {
-	font-size: 18px;
-	display: block;
-	font-family: 'Roboto Slab', serif;
-	margin-top: 20px;
-	text-align: left;
-}
-
-.billingInfo .btn-submit {
-	margin: 20px 0;
-	width: 100px;
-}
-.checkbox
-{
-	display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	margin-left: 25%;
+	margin-top: 2%;
 }
 </style>
 
+<div class="editBillingForm">
+	<div class="formContainer">
+		<h1 class="pageTitle">Billing and Shipping Info</h1>
+		<form class="editBillingForm" form method="post" onsubmit="return validate()">
+			<div class="editBillingForm">
+				<div class="editBillingColumn">
+					<h3>Billing Info</h3>
+
+					<input type="checkbox" name="sameAsShipping">Same as shipping Info </br>
+
+					<label class="required" for="firstName">First Name</label>
+					<input type="text" name="firstName" id="firstName" placeholder="ex.Jane">
+
+					<label class="required" for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" placeholder="ex.doe">
+					
+					<label class="required" for="streetAdress">Street Address:</label>
+					<input type="text" name="streetAdress" id="streetAdress" placeholder="ex.nelson street">
+
+					<label class="required" for="zipCode">Zip Code:</label>
+					<input type="text" name="zipCode" id="zipCode" placeholder="x5x5x5">
+				</div>
+					<div class="editBillingColumn"><br>
+					<h3>Shipping Info</h3>
+
+					<label class="required" for="firstName">First Name</label>
+					<input type="text" name="firstName" id="firstName" placeholder="ex.Jane">
+
+					<label class="required" for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" placeholder="ex.doe">
+					
+					<label class="required" for="streetAdress">Street Address:</label>
+					<input type="text" name="streetAdress" id="streetAdress" placeholder="ex.nelson street">
+
+					<label class="required" for="zipCode">Zip Code:</label>
+					<input type="text" name="zipCode" id="zipCode" placeholder="x5x5x5">
+
+					<label class="required" for="email">Email</label>
+					<input type="text" name="email" id="email" placeholder="ex. abc@abc.com">
+
+<<<<<<< HEAD
 <div class="formContainer">
 	<h1 class="pageTitle">Billing and Shipping Address</h1>
 	<div class="formHolder">
@@ -172,3 +140,12 @@
 		</div><!--formHouse-->
 	</div><!--formHolder-->
 </div><!--formContainer-->
+=======
+					<input type="submit" name="strEdit" value="Next" class="btn btn-primary" value="Update"><br>
+					</div>
+				</div><!--editBillingColumn--->
+			</div><!--editBillingForm-->
+		</form>
+	</div><!--formContainer-->
+</div>
+>>>>>>> billingView
