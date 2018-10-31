@@ -14,8 +14,8 @@ Class CheckoutController extends MainController
 		include("Views/publiclayout-view.php");
 	}
 	public function saveOrder(){
-		$arrData = Purchase::saveOrder();
 		
+		$arrData = Purchase::saveOrder();
 	}
 	
 }

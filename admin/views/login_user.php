@@ -3,14 +3,14 @@ include("../../../../functions/dbqueries.php");
 
 $arrMyUser = runSelectSQL(
 	"SELECT * FROM users 
-	WHERE strUserName='".$_POST["strUserName"]."' AND strPassword='".$_POST["strPassword"]."'")[0];
+	WHERE strUserName='".$_POST["strUserName"]."'")[0];
 
-if (isset($arrMyUser))
+if (password_verify($_POST["strPassword"], $arrMyUser['strPassword'] ))
 {
 	session_start();
 	$_SESSION["loggedUserId"]=$arrMyUser["id"];
 	
-	header("location: dashboard-view.php");
+	header("location: ../index.php?page=dashboard");
 } else if(!isset($arrMyUser)) {
 	header("location: adminLogin-view.php?error=true");
 }
