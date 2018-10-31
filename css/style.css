@@ -20,6 +20,7 @@ color : #28beee; //light blue
 	text-decoration: none;
 	color: #363636 /*dark grey*/;
 	border: none;
+	font-family: 'Roboto Slab', serif;
 	outline: none;
 	transition: all 0.2 ease;
 }
@@ -34,6 +35,15 @@ body {
 	width: 100%;
 	padding: 104px 0;
 	display: inline-block;
+}
+
+h2,h3,h1
+{
+	font-family: 'Roboto Slab', serif;
+}
+p
+{
+	font-family: 'Montserrat', sans-serif;
 }
 
 .container {

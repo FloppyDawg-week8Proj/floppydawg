@@ -48,11 +48,7 @@
   display: block;
 
 }
-<<<<<<< HEAD
-.billingInfo 
-=======
 .formContainer
->>>>>>> billingView
 {
 	margin-left: 25%;
 	margin-top: 2%;
@@ -99,48 +95,6 @@
 					<label class="required" for="email">Email</label>
 					<input type="text" name="email" id="email" placeholder="ex. abc@abc.com">
 
-<<<<<<< HEAD
-<div class="formContainer">
-	<h1 class="pageTitle">Billing and Shipping Address</h1>
-	<div class="formHolder">
-		<div class="formHouse">
-			<div class="billingInfo">
-				<h2>Billing Info</h2>
-				<form class="billingInfoForm">
-					<input type="checkbox" name="billingInfo">Same as Shipping Info
-					<label class="requiredLabel">First Name</label>
-					<input type="text" name="strFirstName" id="strFirstName" class="requiredField" value="">
-					<label class="requiredLabel">Last Name</label>
-					<input type="text" name="strLastName" id="strEmail"class="requiredField" value="">
-					<label class="requiredLabel">Street Address</label>
-					<input type="text" name="strStreetAddress" id="strStreetAddress"class="requiredField">
-					<label class="requiredLabel">Zip Code</label>
-					<input type="text" name="strZipCode" id="strZipCode"class="requiredField">
-					
-				</form>
-			</div><!---password-->
-		</div><!--formHouse-->
-	<div class="formHouse">
-			<div class="shippingInfo">
-				<h2>Shipping Info</h2>
-				<form class="shippingInfoForm">
-					<label class="requiredLabel">First Name</label>
-					<input type="text" name="strFirstName" id="strFirstName" class="requiredField" value="">
-					<label class="requiredLabel">Last Name</label>
-					<input type="text" name="strLastName" id="strEmail"class="requiredField" value="">
-					<label class="requiredLabel">Street Address</label>
-					<input type="text" name="strStreetAddress" id="strStreetAddress"class="requiredField">
-					<label class="requiredLabel">Zip Code</label>
-					<input type="text" name="strZipCode" id="strZipCode"class="requiredField">
-					<label class="requiredLabel">Email</label>
-					<input type="text" name="strEmail" id="strEmail"class="requiredField">
-					<input type="submit" name="strNext" value="Next" class="btn btn-primary" value="">
-				</form>
-			</div><!---shippingInfo-->
-		</div><!--formHouse-->
-	</div><!--formHolder-->
-</div><!--formContainer-->
-=======
 					<input type="submit" name="strEdit" value="Next" class="btn btn-primary" value="Update"><br>
 					</div>
 				</div><!--editBillingColumn--->
@@ -148,4 +102,4 @@
 		</form>
 	</div><!--formContainer-->
 </div>
->>>>>>> billingView
+

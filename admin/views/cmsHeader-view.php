@@ -6,9 +6,8 @@
 	<ul>
 		<li><a href="">Products</a></li>
 		<li><a href="">Featured Products</a></li>
-		<li><a href="">Pages</a></li>
-		<li><a href="">Filters</a></li>
-		<li><a href="">Admin Settings</a></li>
+		<li><a href="">Members</a></li>
+		<li><a href="">Users</a></li>
 		<li><a href="">Log out</a></li>
 	</ul>
 </nav>
