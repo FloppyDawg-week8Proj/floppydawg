@@ -239,80 +239,78 @@ color : #28beee; //light blue
 /*-- End of Products --*/
 
 /*--Add Products--*/
-.addProductContainer
-	{
-		margin: 20px auto;
-		width: 300px;
-		padding: 30px 25px;
-		background: #fff;
-		border: 2px solid #ff5a1f;/*orange*/
-	}
-	.addAproductForm label
-	{
-		display: block;
-		margin: 10px;
-		color: #ff5a1f; 
-	}
-	.addAproductForm input[type=text], input[type=textarea] ,select
-	{
-		margin: 5px;
-		padding: 5px;
-		border: 1px solid #363636;
-	}
-	.addAproductForm input[type=file]
-	{
-	margin-bottom: 20px;
-	}
-	.addAproductForm h2
-	{
-	color: #ff5a1f;
-	}
-	.addAproductForm img
-	{
-		max-width: 50px;
-	}
-	
-	.addAproductForm input[type=submit]
-	{
-		background-color: #ff5a1f;
-		color: #fff;
-		border: none;
-		padding: 10px;
-	}
-	.addAproductForm input[type=submit]:hover
-	{
-		background-color: #fff;
-		color: #ff5a1f;
-		border: 1px solid #ff5a1f;
-		transition: all ease 0.7s;
-	}
-	.addAproductForm input[type=number]
-	{
-		margin: 5px;
-		padding: 5px;
-		border: 1px solid #363636;
-	}
+.addProductContainer {
+	margin: 20px auto;
+	width: 300px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 2px solid #ff5a1f;/*orange*/
+}
 
-	.productsTable .addBtn a
-	{
-		margin-left: 10%;
-	}
-	.addProductBtn 
-	{
-		background-color:#ff5a1f;
-		color: #fff;  
-		padding: 10px;
-		text-align: center;
-	}
-	.addProductBtn:hover
-	{
-		background-color:#fff;
-		color: #ff5a1f;  
-		border: 1px solid #ff5a1f;
-		padding: 10px;
-		transition: all ease 1s;
-		text-align: center;
-	}
+.addAproductForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addAproductForm input[type=text], input[type=textarea] ,select {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addAproductForm input[type=file] {
+	margin-bottom: 20px;
+}
+
+.addAproductForm h2 {
+	color: #ff5a1f;
+}
+
+.addAproductForm img {
+	max-width: 50px;
+}
+
+.addAproductForm input[type=submit] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addAproductForm input[type=submit]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
+
+.addAproductForm input[type=number] {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.productsTable .addBtn a {
+	margin-left: 10%;
+}
+
+.addProductBtn {
+	background-color:#ff5a1f;
+	color: #fff;  
+	padding: 10px;
+	text-align: center;
+}
+
+.addProductBtn:hover {
+	background-color:#fff;
+	color: #ff5a1f;  
+	border: 1px solid #ff5a1f;
+	padding: 10px;
+	transition: all ease 1s;
+	text-align: center;
+}
+
 /*--End of Add Products--*/
 
 /*--Users--*/
@@ -402,8 +400,6 @@ color : #28beee; //light blue
 } 
 /*--End Of Users--*/
 
-<<<<<<< HEAD
-=======
 /*-- Members --*/
 #members {
 	width:auto;
@@ -486,6 +482,49 @@ color : #28beee; //light blue
 #membersTable .editBtn:hover, #membersTable .deleteBtn:hover {
 	opacity:0.7;
 } 
-
 /*-- End of Members ---*
->>>>>>> 1e51e2ef0197d5ecb308ba0527efbe6b9c20d33e
+
+/*-- Add a Member AND Edit a Member --*/
+.addMemberContainer {
+	margin: 20px auto;
+	width: 300px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 2px solid #ff5a1f;/*orange*/
+}
+
+.addMemberForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addMemberForm input[type="text"]{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addMemberForm h2 {
+	color: #ff5a1f;
+}
+
+.addMemberForm img {
+	max-width: 50px;
+}
+
+.addMemberForm input[type="submit"] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addMemberForm input[type="submit"]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
+
+/*-- End of Add a Member AND Edit a Member --*/
