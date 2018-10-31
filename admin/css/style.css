@@ -28,6 +28,7 @@ color : #28beee; //light blue
 	max-width:100%;
 	box-shadow:0 0 2px 0 #ff5a1f/*orange*/;
 	margin-top:100px;
+	margin-bottom:50px;
 	padding:50px 30px;
 }
 
@@ -75,6 +76,16 @@ color : #28beee; //light blue
 	opacity:0.7;
 }
 
+.error {
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	background:red;
+	padding: 30px;
+	width:300px;
+	max-width:100%;
+	margin:auto;
+}
 /*-- End of Login Form --*/
 
 
