@@ -35,7 +35,7 @@
 							<div class="item-details-row item-quantity" >
 								<label>Quantity: </label>
 								<div class="item-quantity-decrementincrement"><span class="fas fa-minus"></span></div>
-								<input name="nQuantity" type="text" value="1">
+								<input name="nQuantity" type="text" value="<?=$arrData['nQuantity']?>">
 								<div class="item-quantity-increment"><span class="fas fa-plus"></span></div>
 							</div>
 						</div>
@@ -52,8 +52,8 @@
 						<div class="btn btn-primary">
 							<a href="index.php?action=products&id=<?=$arrData['id']?>">View Details</a>
 						</div>
-						<div class="btn btn-grey">
-							<a href="#" data-target="index.php?controller=cart&action=delete&item=<?=(isset($arrData['itemKey']))?$arrData['itemKey']:'';?>">Delete</a>
+						<div id="deleteItem" class="btn btn-grey">
+							<a href="index.php?controller=cart&action=delete&item=<?=(isset($arrData['itemKey']))?$arrData['itemKey']:'';?>">Delete</a>
 						</div>
 					</div>
 				</div>

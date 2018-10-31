@@ -16,6 +16,6 @@
 	<?php }else { ?>
 		<h3>No products in the cart</h3>	
 		<div class="btn btn-primary">
-			<a href="#">Continue Shopping</a>
+			<a href="index.php?action=products">Continue Shopping</a>
 		</div>
 	<?php } ?>

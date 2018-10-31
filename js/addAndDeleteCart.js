@@ -14,17 +14,23 @@ $(function(){
 				'nColorID': $('#strColor').val()
 			},
 			success: function(result){
-				let nItems = parseInt($('#cartItems').text())+1;
-				console.log($('#productName').data('productID'));
+				let nItems = parseInt($('.cartNav span').text())+1;
 //				$('#cartItems').css('opacity', 1);
-//				$('#cartItems').text(nItems);
-				$('.page-title').html(result);
+				$('.cartNav span').text(nItems);
 			},
 			error: function(){
 				console.log('error');
 			}
 			
 		});
+//		$('#addToCart .fas').css({'transform': 'scale(2) translateX(10px) translatey(20px)',	'opacity': 1});
 		return false;
 	})
+//	$('#deleteItem').click(function(){
+//		$.ajax({
+//			url: $(this).data('target'),
+//		});
+//		$(this).remove();
+//		return false;
+//	})
 });

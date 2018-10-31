@@ -6,8 +6,8 @@ Class Cart
 		$_SESSION['cartProducts'] = (isset($_SESSION['cartProducts'])?$_SESSION['cartProducts']:[]);
 		array_push($_SESSION['cartProducts'], $arrProduct);
 	}
-	static function delete($itemID){
-		array_splice($_SESSION['cartProducts'], $itemID, 1);
+	static function delete(){
+		array_splice($_SESSION['cartProducts'], $_GET['item'], 1);
 	}
 	static function getItems(){
 		if(!empty($_SESSION['cartProducts'])){

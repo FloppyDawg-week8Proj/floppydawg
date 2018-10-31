@@ -41,8 +41,7 @@
 
 
 			<div class="cartNav">
-				<a href="index.php?controller=member&action=dashboard">Login <span class="fas fa-user"></span></a>
-				<a href="index.php?controller=cart&action=showitems">Cart <sapn class="fas fa-shopping-cart"></sapn></a>
+				<a href="index.php?controller=cart&action=showitems">Cart <span class="fas fa-shopping-cart"></span> (<?=isset($_SESSION['cartProducts'])?count($_SESSION['cartProducts']):0;?>)</a>
 			</div><!--cartNav-->
 		</div><!--rightNav-->
 	</header>
