@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Slab:300,400" rel="stylesheet">
 </head>
 <body>

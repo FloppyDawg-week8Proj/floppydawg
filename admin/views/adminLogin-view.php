@@ -8,7 +8,7 @@
 	<form method="post" action="">
 		<input type="text" name="strUsername" placeholder="Enter username">
 
-		<input type="password" name="strPassword" placeholder="Enter at least six characters">
+		<input type="password" name="strPassword" placeholder="Enter at least five characters">
 
 		<input type="submit" value="Log in">
 	</form>

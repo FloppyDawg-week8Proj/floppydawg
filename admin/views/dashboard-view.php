@@ -14,7 +14,7 @@ include("cmsHeader-view.php");
 	</a>
 </span>
 
-<span>
+<!-- <span>
 	<a href=""><img src="../images/iconPages" alt="iconPages" class="iconPages">
 	<p>Pages</p>
 	</a>
@@ -24,7 +24,7 @@ include("cmsHeader-view.php");
 	<a href=""><img src="../images/iconFilter" alt="iconFilter" class="iconFilter">
 	<p>Filters</p>
 	</a>
-</span>
+</span> -->
 </div><!--dashboardOptions-->
 </section>
 
