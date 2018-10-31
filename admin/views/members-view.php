@@ -8,7 +8,7 @@ $arrMembers = runSelectSQL("SELECT * FROM members");
 <h2>Members</h2>
 
 <span>
-	<a href="">
+	<a href="addMember-view.php">
 		<img src="../images/iconAdd.png" alt="iconAdd" class="iconAdd">
 		<p class="addMember">Add a member</p>
 	</a>
@@ -21,6 +21,7 @@ $arrMembers = runSelectSQL("SELECT * FROM members");
 		<th>Street Address</th>
 		<th>Zip Code</th>
 		<th>Email</th>
+		<th>Password</th>
 		<th>Edit</th>
 		<th>Delete</th>
 	</tr>
@@ -31,8 +32,9 @@ $arrMembers = runSelectSQL("SELECT * FROM members");
 		<td><?=$member['strStreetAddress']?></td>
 		<td><?=$member['strZipCode']?></td>
 		<td><?=$member['strEmail']?></td>
-		<td><a href="" class="editBtn">Edit</a></td>
-		<td><a href="delete-member.php?id=<?=$member['id']?>" onclick="return confirm('Are you sure?');" class="deleteBtn">Delete</a></td>
+		<td><?=$member['strPassword']?></td>
+		<td><a href="editMember-view.php?id=<?=$member['id']?>" class="editBtn">Edit</a></td>
+		<td><a href="delete_member.php?id=<?=$member['id']?>" onclick="return confirm('Are you sure?');" class="deleteBtn">Delete</a></td>
 	</tr>
 <?php } ?>
 </table><!--membersTable-->

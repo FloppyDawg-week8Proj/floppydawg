@@ -458,4 +458,49 @@ color : #28beee; //light blue
 	opacity:0.7;
 } 
 
-/*-- End of Members ---*
+/*-- End of Members --*
+
+/*-- Add a Member AND Edit a Member --*/
+.addMemberContainer {
+	margin: 20px auto;
+	width: 300px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 2px solid #ff5a1f;/*orange*/
+}
+
+.addMemberForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addMemberForm input[type="text"]{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addMemberForm h2 {
+	color: #ff5a1f;
+}
+
+.addMemberForm img {
+	max-width: 50px;
+}
+
+.addMemberForm input[type="submit"] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addMemberForm input[type="submit"]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
+
+/*-- End of Add a Member --*/
