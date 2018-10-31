@@ -4,7 +4,16 @@ include("../../../../functions/dbqueries.php");
 $arrMembers = runSelectSQL("SELECT * FROM members");
 ?>
 
-<section>
+<section id="members">
+<h2>Members</h2>
+
+<span>
+	<a href="">
+		<img src="../images/iconAdd.png" alt="iconAdd" class="iconAdd">
+		<p class="addMember">Add a member</p>
+	</a>
+</span>
+
 <table id="membersTable">
 	<tr>
 		<th>First Name</th>
@@ -23,11 +32,11 @@ $arrMembers = runSelectSQL("SELECT * FROM members");
 		<td><?=$member['strZipCode']?></td>
 		<td><?=$member['strEmail']?></td>
 		<td><a href="" class="editBtn">Edit</a></td>
-		<td><a href="" class="deleteBtn">Delete</a></td>
+		<td><a href="delete-member.php?id=<?=$member['id']?>" onclick="return confirm('Are you sure?');" class="deleteBtn">Delete</a></td>
 	</tr>
 <?php } ?>
-</table>
-</section><!--membersTable-->
+</table><!--membersTable-->
+</section><!--members-->
 
 <?php
 include("cmsFooter-view.php");
