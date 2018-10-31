@@ -129,6 +129,7 @@ color : #28beee; //light blue
 }
 
 #dashboard h2 {
+	font-family:'Roboto Slab';
 	font-size:30px;
 	margin-bottom:15px;
 }
@@ -179,6 +180,55 @@ color : #28beee; //light blue
 	margin-left:5px;
 }
 
-
-
 /*-- End of Dashboard --*/
+
+
+/*-- Products --*/
+#productsTable{
+	width:900px;
+	text-align:left;
+	margin:auto;
+	margin-top:40px;
+	border-collapse: collapse;
+}
+
+#productsTable th {
+	font-size:16px;
+	font-family:roboto slab;
+	font-weight:normal;
+	color:#fff;
+	background: #363636 /*dark grey*/;
+	padding:10px;
+}
+
+#productsTable td {
+	font-size:14px;
+	border-bottom:1px solid #c1b8b5 /*light grey*/;
+	text-align:left;
+	width:25%;
+	padding-bottom:20px;
+	padding:10px;
+}
+
+#productsTable img {
+	width:100px;
+}
+
+#productsTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .editBtn:hover, #productsTable .deleteBtn:hover {
+	opacity:0.7;
+} 
+/*-- End of Products --*/
