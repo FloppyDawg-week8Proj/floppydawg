@@ -2,7 +2,6 @@
 include('../../../functions/dbqueries.php');
 
 session_start();
-
 if (!isset($_SESSION["loggedUserId"])){
 	include('views/adminLogin.php');
 } else {

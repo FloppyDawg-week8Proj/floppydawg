@@ -2,7 +2,7 @@
 include("../../../../functions/dbqueries.php");
 
 $error = ($_POST["strFullName"] && $_POST["strUserName"] && $_POST["strPassword"])?false:true;
-
+$hashpass = password_hash($_POST['strPassword'], PASSWORD_DEFAULT);
 
 $sql = "INSERT INTO users (
 		strFullName, 
@@ -13,7 +13,7 @@ $sql = "INSERT INTO users (
 	VALUES (
 		'".$_POST["strFullName"]."', 
 		'".$_POST["strUserName"]."',
-		'".$_POST["strPassword"]."'
+		'".$hashpass."'
 		
 	)";
 	runInsertSQL($sql);

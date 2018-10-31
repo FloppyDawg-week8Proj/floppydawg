@@ -15,7 +15,7 @@
 		<li><a href="?page=searchFilter">Filters</a></li>
 		<li><a href="?page=members">Members</a></li>
 		<li><a href="?page=users">Users</a></li>
-		<li><a href="logout.php">Log out</a></li>
+		<li><a href="views/logout.php">Log out</a></li>
 	</ul>
 </nav>
 </header><!--cmsSideNav-->

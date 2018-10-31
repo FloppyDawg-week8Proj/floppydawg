@@ -1,6 +1,6 @@
 <?php
 include("../../../../functions/dbqueries.php");
-
+$hashpass = password_hash($_POST['strPassword'], PASSWORD_DEFAULT);
 runSQL("
 		UPDATE 
 			members
@@ -10,7 +10,7 @@ runSQL("
 			strStreetAddress = '".$_POST['strStreetAddress']."',
 			strZipCode = '".$_POST['strZipCode']."',
 			strEmail = '".$_POST['strEmail']."',
-			strPassword = '".$_POST['strPassword']."'
+			strPassword = '".$hashpass."'
 			WHERE id='".$_GET["id"]."'");
 
 		header("location: ../index.php?page=members");

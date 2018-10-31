@@ -1,6 +1,6 @@
 <?php
 include("../../../../functions/dbqueries.php");
-
+$hashpass = password_hash($_POST['strPassword'], PASSWORD_DEFAULT);
 $sql = "INSERT INTO members (
 		strFirstName,
 		strLastName,
@@ -16,7 +16,7 @@ $sql = "INSERT INTO members (
 		'".$_POST["strStreetAddress"]."',
 		'".$_POST["strZipCode"]."',
 		'".$_POST["strEmail"]."',
-		'".$_POST["strPassword"]."'
+		'".$hashpass."'
 		)";
 
 runInsertSQL($sql);
