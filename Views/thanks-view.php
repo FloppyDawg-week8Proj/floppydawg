@@ -1,33 +1,3 @@
-<style>
-	.thanksBoxContainer
-	{
-		border: 1px solid #363636;
-		width: 410px;
-		padding: 20px;
-		margin: 10px;
-	}
-	.thanksBoxContainer h2{
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	.thanksBoxContainer p
-	{
-		line-height: 30px;
-		margin-bottom: 20px;
-	}
-	.thanksBoxContainer a /*delete later*/
-	{
-		border: 1px solid #363636;
-		background-color: #363636;
-		color: #fff;
-		margin-right: 20px;
-	}
-	.fa-download
-	{
-		color: #fff;
-	}
-</style>
-
 <div class="thanksBoxContainer">
 	<h2>Thank You!</h2>
 	<p>
