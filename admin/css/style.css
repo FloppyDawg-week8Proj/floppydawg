@@ -22,8 +22,17 @@ color : #28beee; //light blue
 }
 
 /*-- Admin Login --*/
-#loginForm {
-	width:250px;
+#loginFormContainer {
+	width:300px;
+	margin:auto;
+	max-width:100%;
+	box-shadow:0 0 2px 0 #ff5a1f/*orange*/;
+	margin-top:100px;
+	padding:50px 30px;
+}
+
+.loginForm {
+	width:100%;
 	margin:auto;
 	max-width:100%;
 }
@@ -32,32 +41,25 @@ color : #28beee; //light blue
 	width:75%;
 	margin:auto;
 	display:block;
-	margin-bottom:50px;
+	margin-bottom:40px;
 }
 
-#loginForm label {
-	display:block;
-	font-family: 'Montserrat', sans-serif;
-	font-size:14px;
-	margin-bottom:10px;
-}
-
-#loginForm input[type="text"], #loginForm input[type="password"] {
+.loginForm input[type="text"],.loginForm input[type="password"] {
 	border:1px solid #c1b8b5; /*light grey*/;
 	padding:10px;
 	width:100%;
 }
 
-#loginForm input[type="text"] {
+.loginForm input[type="text"] {
 	margin-bottom:20px;
 }
 
-#loginForm ::placeholder {
+.loginForm ::placeholder {
 	font-family: 'Montserrat', sans-serif;
 	font-size:12px;
 }
 
-#loginForm input[type="submit"] {
+.loginForm input[type="submit"] {
 	background:#ff5a1f /*orange/*/;
 	width:100%;
 	font-size:14px;
@@ -69,7 +71,7 @@ color : #28beee; //light blue
 	text-transform: uppercase;
 }
 
-#loginForm input[type="submit"]:hover {
+.loginForm input[type="submit"]:hover {
 	opacity:0.7;
 }
 
@@ -127,6 +129,7 @@ color : #28beee; //light blue
 }
 
 #dashboard h2 {
+	font-family:'Roboto Slab';
 	font-size:30px;
 	margin-bottom:15px;
 }
@@ -177,6 +180,55 @@ color : #28beee; //light blue
 	margin-left:5px;
 }
 
-
-
 /*-- End of Dashboard --*/
+
+
+/*-- Products --*/
+#productsTable{
+	width:900px;
+	text-align:left;
+	margin:auto;
+	margin-top:40px;
+	border-collapse: collapse;
+}
+
+#productsTable th {
+	font-size:16px;
+	font-family:roboto slab;
+	font-weight:normal;
+	color:#fff;
+	background: #363636 /*dark grey*/;
+	padding:10px;
+}
+
+#productsTable td {
+	font-size:14px;
+	border-bottom:1px solid #c1b8b5 /*light grey*/;
+	text-align:left;
+	width:25%;
+	padding-bottom:20px;
+	padding:10px;
+}
+
+#productsTable img {
+	width:100px;
+}
+
+#productsTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .editBtn:hover, #productsTable .deleteBtn:hover {
+	opacity:0.7;
+} 
+/*-- End of Products --*/

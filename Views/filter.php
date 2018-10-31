@@ -5,22 +5,22 @@ $sort = (isset($_GET["strSortBy"]))?" ORDER BY ".$_GET["strSortBy"] : "";
 
 if (isset($_GET["strKeyword"]))
 {	
-	$test  = "register
+	$test = "members
 
 	LEFT JOIN purchase
 
-	ON register.id = purchase.nRegisterID";
+	ON members.id = purchase.nMemberID";
 	
-	$sql = "SELECT strFirstName, strLastName, strEmail, nOrderNumber, nOrderDate
+	$sql = "SELECT strFirstName, strLastName, strEmail, nOrdersStatusID, date
 					FROM ".$test."
-					WHERE strFirstName LIKE '%".$_GET['strKeyword']."%' OR strLastName LIKE '%".$_GET['strKeyword']."%' OR strEmail LIKE '%".$_GET['strKeyword']."%' OR nOrderNumber LIKE '%".$_GET['strKeyword']."%' OR nOrderDate LIKE '%".$_GET['strKeyword']."%' $sort";
+					WHERE strFirstName LIKE '%".$_GET['strKeyword']."%' OR strLastName LIKE '%".$_GET['strKeyword']."%' OR strEmail LIKE '%".$_GET['strKeyword']."%' OR nOrdersStatusID LIKE '%".$_GET['strKeyword']."%' OR date LIKE '%".$_GET['strKeyword']."%' $sort";
 }
 else {
-	$sql = "SELECT * FROM register
+	$sql = "SELECT * FROM members
 
 	LEFT JOIN purchase
 
-	ON register.id = purchase.nRegisterID";
+	ON members.id = purchase.nMemberID";
 }
 
 $arrResults = runSelectSQL($sql);
@@ -28,17 +28,17 @@ $arrResults = runSelectSQL($sql);
 if ($arrResults){
 	runSelectSQL(
 	"SELECT
-	register.strFirstName,
-	register.strLastName,
-	register.strEmail,
-	purchase.nOrderNumber,
-	purchase.nOrderDate
+	members.strFirstName,
+	members.strLastName,
+	members.strEmail,
+	purchase.nOrdersStatusID,
+	purchase.date
 
-	FROM register
+	FROM members
 
 	LEFT JOIN purchase
 
-	ON register.id = purchase.nRegisterID"
+	ON members.id = purchase.nMemberID"
 	);
 
 	foreach($arrResults as $result) {
@@ -47,8 +47,8 @@ if ($arrResults){
 		<td><?=$result['strFirstName']?></td>
 		<td><?=$result['strLastName']?></td>
 		<td><?=$result['strEmail']?></td>
-		<td><?=$result['nOrderNumber']?></td>
-		<td><?=$result['nOrderDate']?></td>
+		<td><?=$result['nOrdersStatusID']?></td>
+		<td><?=$result['date']?></td>
 	</tr>
 	<?php
 	}

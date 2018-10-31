@@ -6,6 +6,8 @@ include("Model/Products.php");
 include("Model/Cart.php");
 include("Model/Purchase.php");
 include("Controller/MainController.php");
+include("Controller/CartController.php");
+include("Controller/CheckoutController.php");
 session_start();
 
 $controller = (isset($_GET["controller"]))?$_GET["controller"]:"main";
