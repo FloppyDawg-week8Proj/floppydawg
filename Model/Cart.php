@@ -8,8 +8,12 @@ Class Cart
 	static function delete($itemID){
 		array_splice($_SESSION['cartProducts'], $itemID, 1);
 	}
-	static function getItems($arrItems){
-		return $_SESSION['cartProducts'];
+	static function getItems(){
+		if(!empty($_SESSION['cartProducts'])){
+			return $_SESSION['cartProducts'];
+		} else{
+			return false;
+		}
 	}
 }
 ?>

@@ -72,7 +72,7 @@
 					<div class="paymentRow">
 						<div class="paymentColumn">
 							<label class="required" for="expDate">Exp. Date:</label>
-							<input type="date" name="expDate" id="expDate"">
+							<input type="date" name="expDate" id="expDate">
 						</div><!--paymentColumn--->
 						<div class="paymentColumn">
 							<label class="required" for="cvv">CVV</label>

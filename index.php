@@ -5,6 +5,7 @@ include("Model/Product.php");
 include("Model/Products.php");
 include("Model/Cart.php");
 include("Model/Purchase.php");
+include("Controller/CartController.php");
 include("Controller/MainController.php");
 session_start();
 
