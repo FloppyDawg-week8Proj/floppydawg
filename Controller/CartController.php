@@ -1,5 +1,5 @@
 <?php
-Class CartController
+Class CartController extends MainController
 {
 	public function showitems()
 	{
@@ -20,15 +20,6 @@ Class CartController
 		
 		include("Views/publiclayout-view.php");
 	}
-	public function loadView($viewName ,$arrData="")
-	{
-		ob_start();
-		include("Views/".$viewName."-view.php");
-		$viewContent = ob_get_contents();
-		ob_clean();
-
-		return $viewContent;
-	}
 	public function delete($viewName ,$arrData="")
 	{
 		ob_start();
@@ -38,6 +29,5 @@ Class CartController
 
 		return $viewContent;
 	}
-
 }
 ?>
