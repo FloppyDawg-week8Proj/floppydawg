@@ -1,10 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION["loggedUserId"])){
-	header("location: adminLogin-view.php");
-}
-include("../../../../functions/dbqueries.php");
-include("cmsHeader-view.php");
+
 
 $arrMyUser = runSelectSQL(
 	"SELECT * FROM users

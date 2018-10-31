@@ -1,5 +1,4 @@
 <?php
-include("../../../../functions/dbqueries.php");
 
 $_GET["error"] = (isset($_GET["error"]))?$_GET["error"]:"";
 
@@ -16,7 +15,7 @@ if ($_GET["error"])
 <html>
 <head>
 	<title>Floppy Dawg Login</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <section id="loginFormContainer">
@@ -25,7 +24,7 @@ if ($_GET["error"])
 		<img src="http://www.floppydawg.com/images/floppydog_logo_circle.png" alt="LogoPlaceholder">
 	</div><!--logoHolder-->
 
-	<form method="post" action="login_user.php">
+	<form method="post" action="views/login_user.php">
 		<input type="text" name="strUserName" placeholder="Enter username">
 
 		<input type="password" name="strPassword" placeholder="Enter at least five characters">

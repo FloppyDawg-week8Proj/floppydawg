@@ -5,7 +5,7 @@ $arrMyUser = runSelectSQL(
 	"SELECT * FROM users 
 	WHERE strUserName='".$_POST["strUserName"]."'")[0];
 
-if (password_verify($_POST["strPassword"], $arrMyUser['strPassword'] ))
+if (password_verify ( $_POST["strPassword"] , $arrMyUser['strPassword'] ))
 {
 	session_start();
 	$_SESSION["loggedUserId"]=$arrMyUser["id"];
