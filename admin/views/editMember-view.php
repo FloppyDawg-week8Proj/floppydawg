@@ -1,10 +1,9 @@
 <?php 
 include("cmsHeader-view.php");
-include("../../../../functions/dbqueries.php");
 $arrMembers = runSelectSQL("SELECT * FROM members WHERE id=".$_GET["id"]);
 ?>
 <div class="addMemberContainer">
-	<form method="post" action="update_member.php" class="addMemberForm" enctype="multipart/form-data">
+	<form method="post" action="views/update_member.php" class="addMemberForm" enctype="multipart/form-data">
 		<h2>Edit Member</h2>
 		<label class="required">First Name</label>
 		<input type="text" name="strFirstName" class="required" value="<?=$arrMembers[0]['strFirstName']?>"/>

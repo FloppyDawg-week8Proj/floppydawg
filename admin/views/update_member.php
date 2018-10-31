@@ -13,5 +13,5 @@ runSQL("
 			strPassword = '".$_POST['strPassword']."'
 			WHERE id='".$_GET["id"]."'");
 
-		header("location: members-view.php");
+		header("location: ../index.php?page=members");
 ?>
