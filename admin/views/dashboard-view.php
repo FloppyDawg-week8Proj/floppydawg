@@ -1,5 +1,14 @@
 <?php
+session_start();
+if (!isset($_SESSION["loggedUserId"])){
+	header("location: adminLogin-view.php");
+}
+include("../../../../functions/dbqueries.php");
 include("cmsHeader-view.php");
+
+$arrMyUser = runSelectSQL(
+	"SELECT * FROM users
+	WHERE id='".$_SESSION["loggedUserId"]."'")[0];
 ?>
 
 <section id="dashboard">
@@ -20,7 +29,7 @@ include("cmsHeader-view.php");
 	</a>
 </span>
 </div><!--dashboardOptions-->
-</section>
+</section><!--dashboard-->
 
 <?php
 include("cmsFooter-view.php");
