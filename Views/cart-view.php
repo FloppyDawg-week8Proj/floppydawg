@@ -10,7 +10,7 @@
 			<a href="#">Continue Shopping</a>
 		</div>
 		<div class="btn btn-grey">
-			<a href="#">Checkout</a>
+			<a href="index.php?controller=checkout&action=billing">Checkout</a>
 		</div>
 	</form>
 	<?php }else { ?>

@@ -1,50 +1,29 @@
-function validate()
-{
-	bSubmit = true;
-	arrReqFields = document.getElementsByClassName("required");
-	for (var i=0;i<arrReqFields.length;i++)
-	{
-		var el = arrReqFields[i];
-        var requiredField = el.nextElementSibling;
-		switch(el.tagName.toLowerCase())
-		{
-			case "label":
-                
-                if (requiredField.tagName.toLowerCase() == "input"){
-                    var warningBox = requiredField.nextElementSibling;
-                    if(warningBox.tagName.toLowerCase()=="div"){
-                        checkValue(requiredField.value, requiredField);
-                    }                    
-                }
-                if(requiredField.tagName.toLowerCase()=="div"){
-                    var arrFields = requiredField.getElementsByTagName("input");
-                    oneChecked = false;
-                    for(var a=0; a<arrFields.length; a++)
-                    {
-                        var checkBox = arrFields[a];
-                        if (checkBox.checked)
-                        {
-                            oneChecked = true;
-                        }
-                    }
-                    checkValue(oneChecked, requiredField);
-                }
-                break;
-			
-            default:
-				checkValue(requiredField.value, requiredField);
+$(function(){
+	$('form').submit(function() {
+		let missing = 0;
+		$('.required').each(function(){
+			const field = $(this).next();
+			if(field.val()){
+				field.css('background', '#fff');
+			} else {
+				field.css('background', 'rgb( 255, 0, 0 , 0.3)');
+				missing = missing +1;
+			}
+			console.log(missing);
+		});
+		if(missing===0){
+			event.preventDefault;
+			return true;
+		} else {
+			return false;
 		}
-	}
-	return false;
-}
-
-
-function checkValue(fieldValue, thisField)
-{
-	if(!fieldValue) {
-        thisField.classList.add("error");
-		bSubmit = false;		
-	} else {
-		thisField.classList.remove("error");
-	}
-}
+	});
+	$('#autoFill').change(function(){
+		if($(this).prop("checked")){
+		   $('#shippingfirstName').val($('#billingfirstName').val());
+		   $('#shippinglastname').val($('#billinglastname').val());
+		   $('#shippingstreetAdress').val($('#billingstreetAdress').val());
+		   $('#shippingzipCode').val($('#billingzipCode').val());
+		}			 
+	});
+});

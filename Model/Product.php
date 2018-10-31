@@ -3,7 +3,7 @@ Class Product
 {
 	static function getProduct($productID)
 	{
-		$sql = "SELECT products.*, categories.strName as categoryName FROM (products LEFT JOIN categories ON categories.id=products.nCategory) WHERE products.id=$productID";
+		$sql = "SELECT products.*, categories.strName as categoryName, photos.strFile FROM (products LEFT JOIN categories ON categories.id=products.nCategory LEFT JOIN photos ON photos.nProductID = products.id) WHERE products.id=$productID";
 		return DB::getRecord()->runSQL("getSingleData", $sql);
 	}
 	static function saveNew($arrNewProduct){

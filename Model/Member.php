@@ -1,9 +1,9 @@
 <?php
-Class Purchase
+Class Member
 {
 	static function saveNewMember($arrMemberInfo)
 	{
-		$sql = ;//insert the SQL to SAVE NEW MEMBER here uses $arrMemberInfo[''] instead $_POST['']
+		//insert the SQL to SAVE NEW MEMBER here uses $arrMemberInfo[''] instead $_POST['']
 		DB::getRecord()->runSQL("insertNew", $sql);			
 	}
 	static function checkPassword(){

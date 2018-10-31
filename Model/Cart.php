@@ -3,6 +3,7 @@ Class Cart
 {
 	static function insert($arrProduct)
 	{
+		$_SESSION['cartProducts'] = (isset($_SESSION['cartProducts'])?$_SESSION['cartProducts']:[]);
 		array_push($_SESSION['cartProducts'], $arrProduct);
 	}
 	static function delete($itemID){

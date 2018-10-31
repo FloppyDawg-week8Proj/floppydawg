@@ -1,67 +1,14 @@
-<style>
-
-*{
-	box-sizing: border-box;
-}
-
-.paymentRow
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -16px;
-}
-
-.paymentColumn
-{
-	flex: 50%;
-	background-color: lightgrey;
-	padding: 5px 20px 15px 20px;
-	border-radius: 3px;
-}
-
-.paymentInfoForm
-{
-	flex: 75%;
-}
-
-.paymentColumn, .paymentInfoForm
-{
-	padding: 0 16px;
-}
-
-.paymentInfoForm [type=text]
-{
-	width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.paymentInfoForm label
-{
-  margin-bottom: 10px;
-  display: block;
-
-}
-.formContainer
-{
-	margin-left: 25%;
-	margin-top: 2%;
-}
-</style>
-
 <div class="paymentRow">
 	<div class="formContainer">
 		<h1 class="pageTitle">Payment and Review</h1>
-		<form class="paymentInfoForm" form method="post" onsubmit="return validate()">
+		<form class="paymentInfoForm" method="post" action="index.php?controller=checkout&action=saveOrder">
 			<div class="paymentRow">
 				<div class="paymentColumn">
-					<h3>Payment Info</h3>
-
-					<input type="radio" name="credit">Credit
-					<input type="radio" name="debit">Debit
-					<input type="radio" name="payPal">PayPal<br>
+					
+					<label class="required">Payment method:</label>
+					<input type="radio" name="paymentMethod">Credit
+					<input type="radio" name="paymentMethod">Debit
+					<input type="radio" name="paymentMethod">PayPal<br>
 
 					<label class="required" for="cardNumber">Card Number</label>
 					<input type="text" name="cardNumber" id="cardNumber" placeholder="555-555-555-555">
@@ -72,42 +19,43 @@
 					<div class="paymentRow">
 						<div class="paymentColumn">
 							<label class="required" for="expDate">Exp. Date:</label>
-							<input type="date" name="expDate" id="expDate">
+							<input type="month" id="expDate" name="expDate"  min="2018-11" value="2018-11" />
 						</div><!--paymentColumn--->
 						<div class="paymentColumn">
 							<label class="required" for="cvv">CVV</label>
 							<input type="text" name="cvv" id="cvv">
 						</div><!--paymentColumn--->
-						<input type="submit" name="strEdit" value="Complete Order" class="btn btn-primary" value="">
 					</div><!--paymentRow-->
-					</div>
-					<div class="paymentColumn">
-						<h2>Shipping to:</h2>
-						<label>Full Name</label>
-						<p>Tyler Smith</p>
-						<label>Address</label>
-						<p>1654, Comox st. Vancouver, X5X6X7</p>
+					<input id="completeOrder" type="submit" value="Complete Order" class="btn btn-primary">
+				</div>
+				<div class="paymentColumn">
+					<h2>Shipping to:</h2>
+					<label>Full Name</label>
+					<p>Tyler Smith</p>
+					<label>Address</label>
+					<p>1654, Comox st. Vancouver, X5X6X7</p>
 
-						<h2>Billing to:</h2>
-						<label>Full Name</label>
-						<p>Tyler Smith</p>
-						<label>Address</label>
-						<p>1654, Comox st. Vancouver, X5X6X7</p>
-						<label>e-mail</label>
-						<p>email@email.com</p>
-						<label>Phone</label>
-						<p>555-555-555</p>
+					<h2>Billing to:</h2>
+					<label>Full Name</label>
+					<p>Tyler Smith</p>
+					<label>Address</label>
+					<p>1654, Comox st. Vancouver, X5X6X7</p>
+					<label>e-mail</label>
+					<p>email@email.com</p>
+					<label>Phone</label>
+					<p>555-555-555</p>
 
-						<h2>Summary:</h2>
-						<label>Product Name----Qt-------Sub Total</label>
-						<p>Fluffy Bed----------X1----------100.00</p>
-						
-						<h2>TOTAL : 100$</h2>
+					<h2>Summary:</h2>
+					<label>Product Name----Qt-------Sub Total</label>
+					<?php foreach($_SESSION['cartProducts'] as $product){ ?>
+						<p><?=$product['strName']?>----------X<?=$product['nQuantity']?>----------<?=$product['nUnityPrice']?></p>
+					<?php } ?>
 
-						<input type="submit" name="strEdit" value="Edit" class="btn btn-primary" value="">
-					</div>
-				</div><!--paymentColumn--->
-			</div><!--paymentRow-->
+					<h2>TOTAL : $<?=Purchase::getTotalPrice();?></h2>
+
+					<a href="index.php?controller=checkout&action=billing" class="btn btn-primary">Edit</a>
+				</div>
+			</div><!--paymentColumn--->
 		</form>
 	</div><!--formContainer-->
 </div>

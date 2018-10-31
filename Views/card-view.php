@@ -4,7 +4,7 @@
 		<div class="productBox">
 			<div class="placeHolder">
 				<div class="holderImage coverBg">
-					<img src="assets/placeholder.jpg">
+					<img src="assets/<?=$product['strFile']?>">
 				</div><!--holderImage coverBg-->
 				<div class="productName">
 					<h3><?=$product['strName']?></h3>

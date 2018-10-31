@@ -3,10 +3,11 @@
 			<ul>				
 				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Categories</a>
 					<ul class="dropList">
-						<li><a href="#">Dog Beds</a></li>
-						<li><a href="#">Accessories</a></li>
+						<li><a href="index.php?action=products&category=1">Dog Beds</a></li>
+						<li><a href="index.php?action=products&category=2">Accessories</a></li>
 					</ul>
 				</li>
+<!--
 				<li class="filterClass">
 					<span class="fas fa-angle-right"></span><a href="#">Size</a>
 					<ul class="dropList">
@@ -22,6 +23,7 @@
 						<li><a href="#">No</a></li>
 					</ul>
 				</li>
+-->
 			</ul> 
 		</div><!--categoryNav-->
 		<div class="products-view-content">

@@ -3,7 +3,6 @@ Class Purchase
 {
 	static function saveOrder()
 	{
-		$nTotalPrice = self::getTotalPrice();
 		$sql = "INSERT INTO purchase(
 			'nMemberID',
 			'nTotalPrice',
@@ -11,7 +10,7 @@ Class Purchase
 			'date',
 		VALUES ('
 			".$_SESSION['nMemberID'].",
-			".$nTotalPrice.",
+			".$_SESSION['nSubTotal'].",
 			".$_SESSION['nOrdersStatusID'].",
 			".$_SESSION['date'].")";
 		$nOrderID = DB::getRecord()->runSQL("insertNew", $sql);
@@ -31,7 +30,7 @@ Class Purchase
 			'nPurchaseID')
 		VALUES ('
 			".$cartItem['strName'].",
-			".$cartItem['nPrice'].",
+			".$cartItem['nUnityPrice'].",
 			".$cartItem['nCategory'].",
 			".$cartItem['nPhotoID'].",
 			".$cartItem['nSizeID'].",
@@ -43,12 +42,12 @@ Class Purchase
 	}
 	static function getItems($arrItems){
 		return $_SESSION['cartProducts'];
-	}	
+	}
 	static function getTotalPrice(){
 		$arrPrices = [];
 		if(!empty($_SESSION['cartProducts'])){
 			foreach($_SESSION['cartProducts'] as $product){
-				array_push($arrPrices, $product['nPrece']);
+				array_push($arrPrices, $product['nSubTotal']);
 			}
 			$totalPrice = array_sum($arrPrices);
 		}else{

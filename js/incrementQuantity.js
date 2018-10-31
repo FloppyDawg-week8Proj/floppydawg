@@ -1,0 +1,10 @@
+$(function(){
+	$('.item-quantity-increment').click(function(){
+		$('#quantity').val(parseInt($('#quantity').val())+1);
+	});
+	$('.item-quantity-decrement').click(function(){
+		if($('#quantity').val()>1){
+			$('#quantity').val(parseInt($('#quantity').val())-1);
+		}
+	});
+});

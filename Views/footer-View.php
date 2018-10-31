@@ -23,6 +23,10 @@
 		<script src="js/showDropList.js"></script>
 		<script src="js/initMap.js"></script>
 		<script src="js/form_validation.js"></script>
+		<script src="js/modalShow.js"></script>
+		<script src="js/productRate.js"></script>
+		<script src="js/incrementQuantity.js"></script>
+		<script src="js/addAndDeleteCart.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMaFf1MASfiqfZ74bRkaGWKbeEIcUIVOU&callback=initMap"></script>
 	</body>
 </html>

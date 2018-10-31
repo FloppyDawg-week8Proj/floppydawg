@@ -12,7 +12,7 @@
 						<div class="item-details">
 							<div class="item-details-row item-price">
 								<label>Unity:</label>
-								<p>$<?=$arrData['nPrice']?></p>
+								<p>$<?=$arrData['nUnityPrice']?></p>
 							</div>
 							<div class="item-details-row item-colorandsize">
 								<div class="item-color">
@@ -46,7 +46,7 @@
 						<p class="cart-subtotal-label">Subtotal:</p>
 					</div>
 					<div class="cart-itemsubtotal-row ">
-						<p class="cart-subtotal-price">$100.00</p>
+						<p class="cart-subtotal-price">$<?=array_product(array($arrData['nQuantity'],$arrData['nUnityPrice']))?></p>
 					</div>
 					<div class="cart-itemsubtotal-row cart-itemsubtotal-btn">
 						<div class="btn btn-primary">

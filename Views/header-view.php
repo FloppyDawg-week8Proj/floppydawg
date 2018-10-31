@@ -34,14 +34,15 @@
 		</div>
 
 		<div class="rightNav">
-			<div class="socialNav">
-				<a href="#"><img src="images/fb.png" alt="facebook" class="socialIcon"></a>
-				<a href="#"><img src="images/insta.png" alt="instagram" class="socialIcon"></a>
-			</div><!--socialNav-->
+			<div id="socialMedia"> <!-- here we will have the icons for social medias -->			
+			    <span id="facebookIcon" class="socialSprite"><a href="#">Facebook</a></span>
+			    <span id="instagramIcon" class="socialSprite"><a href="#">Instagram</a></span>
+			</div><!--- closing div for social icons -->
+
 
 			<div class="cartNav">
-				<a href="index.php?controller=member&action=dashboard">Login <img src="images/user.png" alt="user" class="user"></a>
-				<a href="index.php?controller=cart&action=showitems">Cart <img src="images/cart.png" alt="cart" class="cart"></a>
+				<a href="index.php?controller=member&action=dashboard">Login <span class="fas fa-user"></span></a>
+				<a href="index.php?controller=cart&action=showitems">Cart <sapn class="fas fa-shopping-cart"></sapn></a>
 			</div><!--cartNav-->
 		</div><!--rightNav-->
 	</header>
