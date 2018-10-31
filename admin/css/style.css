@@ -28,6 +28,7 @@ color : #28beee; //light blue
 	max-width:100%;
 	box-shadow:0 0 2px 0 #ff5a1f/*orange*/;
 	margin-top:100px;
+	margin-bottom:50px;
 	padding:50px 30px;
 }
 
@@ -75,6 +76,16 @@ color : #28beee; //light blue
 	opacity:0.7;
 }
 
+.error {
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	background:red;
+	padding: 30px;
+	width:300px;
+	max-width:100%;
+	margin:auto;
+}
 /*-- End of Login Form --*/
 
 
@@ -201,6 +212,11 @@ color : #28beee; //light blue
 	padding:10px;
 }
 
+.addAproductForm
+{
+	margin-top: 20px;
+	margin-left: 15%;
+}
 #productsTable td {
 	font-size:14px;
 	border-bottom:1px solid #c1b8b5 /*light grey*/;
@@ -232,3 +248,315 @@ color : #28beee; //light blue
 	opacity:0.7;
 } 
 /*-- End of Products --*/
+
+/*--Add Products--*/
+.addProductContainer {
+	margin: 20px auto;
+	width: 300px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 2px solid #ff5a1f;/*orange*/
+}
+
+.addAproductForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addAproductForm input[type=text], input[type=textarea] ,select {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addAproductForm input[type=file] {
+	margin-bottom: 20px;
+}
+
+.addAproductForm h2 {
+	color: #ff5a1f;
+}
+
+.addAproductForm img {
+	max-width: 50px;
+}
+
+.addAproductForm input[type=submit] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addAproductForm input[type=submit]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
+
+.addAproductForm input[type=number] {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.productsTable .addBtn a {
+	margin-left: 10%;
+}
+
+.addProductBtn {
+	background-color:#ff5a1f;
+	color: #fff;  
+	padding: 10px;
+	text-align: center;
+}
+
+.addProductBtn:hover {
+	background-color:#fff;
+	color: #ff5a1f;  
+	border: 1px solid #ff5a1f;
+	padding: 10px;
+	transition: all ease 1s;
+	text-align: center;
+}
+
+/*--End of Add Products--*/
+/*--login--*/
+#loginForm
+{
+
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20%;}
+#loginForm img
+{
+	max-width: 200px;
+}
+#loginForm h1
+{
+	margin-bottom: 10px;
+}
+
+#loginForm input
+{
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #363636;
+}
+/*--Users--*/
+.userView
+{
+	margin: 20px auto;
+	width: 300px;
+	margin-top: 100px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 1px solid #ff5a1f;
+}
+.userView h1
+{
+	margin-bottom: 20px;
+}
+.userView input[type=text], input[type=password]
+{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+.userView .addUser
+{
+	margin-top: 10px;
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+.userView .addUser:hover
+{
+	background-color: #fff;
+		color: #ff5a1f;
+		border: 1px solid #ff5a1f;
+		transition: all ease 0.7s;
+}
+
+/*--users table--*/
+
+#usersTable{
+	width:900px;
+	text-align:left;
+	margin:auto;
+	margin-top:40px;
+	border-collapse: collapse;
+}
+
+#usersTable th {
+	font-size:16px;
+	font-family:roboto slab;
+	font-weight:normal;
+	color:#fff;
+	background: #363636 /*dark grey*/;
+	padding:10px;
+}
+
+#usersTable td {
+	font-size:14px;
+	border-bottom:1px solid #c1b8b5 /*light grey*/;
+	text-align:left;
+	width:25%;
+	padding-bottom:20px;
+	padding:10px;
+}
+
+#usersTable img {
+	width:100px;
+}
+
+#usersTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .editBtn:hover, #usersTable .deleteBtn:hover {
+	opacity:0.7;
+} 
+/*--End Of Users--*/
+
+/*-- Members --*/
+#members {
+	width:auto;
+	margin-left:220px;
+	position: relative;
+    overflow: auto;
+    margin-top:50px;
+}
+
+#members h2 {
+	font-family:'Roboto Slab';
+	font-size:30px;
+	margin-bottom:15px;
+}
+
+#members .iconAdd {
+	width:20px;
+	display:inline-block;
+	position:relative;
+	top:5px;
+}
+
+#members p.addMember {
+	font-size:14px;
+	display:inline-block;
+}
+
+#members span {
+	transition:.5s ease;
+}
+
+#members span:hover {
+	opacity:0.7;
+	margin-left:5px;
+}
+
+#membersTable{
+	width:900px;
+	text-align:left;
+	margin-top:40px;
+	border-collapse: collapse;
+}
+
+#membersTable th {
+	font-size:16px;
+	font-family:roboto slab;
+	font-weight:normal;
+	color:#fff;
+	background: #363636 /*dark grey*/;
+	padding:10px;
+}
+
+#membersTable td {
+	font-size:14px;
+	border-bottom:1px solid #c1b8b5 /*light grey*/;
+	text-align:left;
+	width:25%;
+	padding-bottom:20px;
+	padding:10px;
+}
+
+#membersTable img {
+	width:100px;
+}
+
+#membersTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#membersTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#membersTable .editBtn:hover, #membersTable .deleteBtn:hover {
+	opacity:0.7;
+} 
+/*-- End of Members ---*
+
+/*-- Add a Member AND Edit a Member --*/
+.addMemberContainer {
+	margin: 20px auto;
+	width: 300px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 2px solid #ff5a1f;/*orange*/
+}
+
+.addMemberForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addMemberForm input[type="text"]{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addMemberForm h2 {
+	color: #ff5a1f;
+}
+
+.addMemberForm img {
+	max-width: 50px;
+}
+
+.addMemberForm input[type="submit"] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addMemberForm input[type="submit"]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
+
+/*-- End of Add a Member AND Edit a Member --*/

@@ -1,62 +1,6 @@
 <?php include("cmsHeader-view.php");?>
-<style>
-	.addProductContainer
-	{
-		margin: 20px auto;
-		width: 300px;
-		padding: 30px 25px;
-		background: #fff;
-		border: 2px solid #ff5a1f;/*orange*/
-	}
-	.addAproductForm label
-	{
-		display: block;
-		margin: 10px;
-		color: #ff5a1f; 
-	}
-	.addAproductForm input[type=text], input[type=textarea] ,select
-	{
-		margin: 5px;
-		padding: 5px;
-		border: 1px solid #363636;
-	}
-	.addAproductForm input[type=file]
-	{
-	margin-bottom: 20px;
-	}
-	.addAproductForm h2
-	{
-	color: #ff5a1f;
-	}
-	.addAproductForm img
-	{
-		max-width: 50px;
-	}
-	.addAproductForm input[type=submit]
-	{
-		background-color: #ff5a1f;
-		color: #fff;
-		border: none;
-		padding: 10px;
-	}
-	.addAproductForm input[type=submit]:hover
-	{
-		background-color: #fff;
-		color: #ff5a1f;
-		border: 1px solid #ff5a1f;
-		transition: all ease 0.7s;
-	}
-	.addAproductForm input[type=number]
-	{
-		margin: 5px;
-		padding: 5px;
-		border: 1px solid #363636;
-	}
-
-
-</style>
 <div class="addProductContainer">
-	<form method="post" action="save_page.php" class="addAproductForm"enctype="multipart/form-data">
+	<form method="post" action="views/save_page.php" class="addAproductForm" enctype="multipart/form-data">
 		<h2>Add A Product</h2>
 		<label class="required">Name of the Product</label>
 		<input type="text" name="strName" class="required" value=""/>
@@ -66,7 +10,7 @@
 
 		<label class="required">Category</label>
 		<select name="nCategory" id="">
-					<option value="0">Accessories</option>
+					<option value="2">Accessories</option>
 					<option value="1">Beds</option>
 		</select>
 
