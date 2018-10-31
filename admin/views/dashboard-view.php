@@ -23,6 +23,11 @@ $arrMyUser = runSelectSQL(
 	<p>Users</p>
 	</a>
 </span>
+<span>
+	<a href="?page=searchFilter"><img src="images/iconFilter" alt="iconFilter" class="iconFilter">
+	<p>Filters</p>
+	</a>
+</span>
 </div><!--dashboardOptions-->
 </section><!--dashboard-->
 

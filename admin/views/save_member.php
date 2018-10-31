@@ -20,5 +20,5 @@ $sql = "INSERT INTO members (
 		)";
 
 runInsertSQL($sql);
-header("location:members-view.php");
+header("location: ../index.php?page=members");
 ?>

@@ -336,7 +336,9 @@ header > * {
 /******NAVIGATION******/
 
 /*********END OF HEADER***********/
+/*products details*/
 
+<<<<<<< HEAD
 /*********THANKS BOX***********/
 
 .thanksBoxContainer {
@@ -364,6 +366,422 @@ header > * {
 
 /*********END OF THANKS BOX***********/
 
+=======
+.productDetailContainer{
+	display: inline-block;
+}
+.productDetailContainer>*
+{
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+.productContentContainer .btn{
+	margin-top: 40px;
+}
+.productContentContainer h2,h3,p,ol
+{
+margin-bottom: 15px;
+}
+.productContentContainer, .imagesContainer
+{
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	overflow: auto;
+	padding: 20px;
+}
+.detailsHolder{
+	height: auto;
+}
+.mainImage img
+{
+	width: 100%;
+}
+.imageViews .productPictures{
+	width: 25%;
+	height: 100px;
+	float: left;
+	padding: 5px;
+}
+.imageViews .productPictures .productPicture-wraper{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.imageViews img
+{
+	max-width: 97px;
+	float: left;
+}
+.fa-star, .fa-star-half-alt
+{
+	color: #363636;
+}
+.fa-circle
+{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.productDescription p
+{
+	width: 500px;
+	margin-top: 10px;
+}
+.product-details-row{
+	width: 100%;
+	display: block;
+	overflow: auto;
+}
+.product-details-row>*{
+	float: left;
+}
+.product-details-row.product-quantity input{
+	width: 30px;
+	text-align: center;
+}
+.product-details-row.product-quantity .fas{
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px;
+	background: #28beee;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.product-details-row.product-quantity .fas:hover{
+	background: #228daf;
+}
+	.product-details-row select{
+		padding: 4px;
+	}
+/*end of product details*/
+
+/*register view*/
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
+.editRegisterForm
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.editRegisterColumn
+{
+	flex: 50%;
+	background-color: lightgrey;
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
+}
+
+.editRegisterForm
+{
+	flex: 75%;
+}
+
+.editRegisterColumn, .editRegisterForm
+{
+	padding: 0 16px;
+}
+
+.editRegisterForm [type=text]
+{
+	width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.editRegisterForm label
+{
+  margin-bottom: 10px;
+  display: block;
+
+}
+.formContainer
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+/*end of register view*/
+/*user dashboard view*/
+.dashBoardContainer
+{
+	position: relative;
+	display: inline;
+}
+.dashBoard
+{
+	margin-top: 5%;
+	text-align: center;
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+.purchaseHistory
+{
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+	background-color: #363636;/*dark grey*/ 
+	padding: 50px;
+}
+.editProfile
+{
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+	background-color: #363636;/*light grey*/ 
+	padding: 50px;
+}
+.editProfile h2
+{
+	color: #fff;
+	font-size: 30px;
+}
+.purchaseHistory h2
+{
+	color: #fff;
+	font-size: 30px;
+}
+.fa-history,.fa-user
+{
+	color: #fff;
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+.dashBoard:hover
+{
+	opacity: 0.7;
+	transition: all ease 0.7s;
+}
+.dashBoardContainer a
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.dashBoardContainer h1
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*end of user dashboard view*/
+/*thanks view*/
+	.thanksBoxContainer
+	{
+		border: 1px solid #363636;
+		width: 410px;
+		padding: 20px;
+		margin: 10px;
+	}
+	.thanksBoxContainer h2{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.thanksBoxContainer p
+	{
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	.thanksBoxContainer a /*delete later*/
+	{
+		border: 1px solid #363636;
+		background-color: #363636;
+		color: #fff;
+		margin-right: 20px;
+	}
+	.fa-download
+	{
+		color: #fff;
+	}
+/*end of thanks view*/
+
+/*payment view*/
+.paymentRow
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.paymentColumn
+{
+	flex: 50%;
+	background-color: lightgrey;
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
+}
+
+.paymentInfoForm
+{
+	flex: 75%;
+}
+
+.paymentColumn, .paymentInfoForm
+{
+	padding: 0 16px;
+}
+
+.paymentInfoForm [type=text]
+{
+	width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.paymentInfoForm label
+{
+  margin-bottom: 10px;
+  display: block;
+
+}
+.formContainer
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+/*end of payment view*/
+
+
+/**add to cart**/
+	.addToCartContainer
+	{
+		border: 1px solid #363636;
+		width: 410px;
+		padding: 20px;
+		margin: 10px;
+	}
+	.addToCartContainer h2{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.thanksOkButton
+	{
+		margin-left: 40%;
+		margin-top: 20px;
+	}
+	.thanksOkButton a /*delete later*/
+	{
+		border: 1px solid #363636;
+		background-color: #363636;
+		color: #fff;
+		text-align: center;
+	}
+	/**end of add to cart**/
+
+/**billing view**/
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
+.editBillingForm
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.editBillingColumn
+{
+	flex: 50%;
+	background-color: lightgrey;
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
+}
+
+.editBillingForm
+{
+	flex: 75%;
+}
+
+.editBillingColumn, .editBillingForm
+{
+	padding: 0 16px;
+}
+
+.editBillingForm [type=text]
+{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.editBillingForm label
+{
+  margin-bottom: 10px;
+  display: block;
+
+}
+.formContainer
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+/**end of billing view**/
+
+/*edit profile*/
+.error{
+	padding: 8px;
+	background-color: tomato;
+	color: #363636;
+}
+.editProfileRow
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.editProfileColumn
+{
+	flex: 50%;
+	background-color: lightgrey;
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
+}
+
+.editProfileForm
+{
+	flex: 75%;
+}
+
+.editProfileColumn, .editProfileForm
+{
+	padding: 0 16px;
+}
+
+.editProfileForm [type=text]
+{
+	width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.editProfileForm label
+{
+  margin-bottom: 10px;
+  display: block;
+
+}
+.formContainer
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+
+/*end of edit profile*/
+>>>>>>> b9c59a53a5f64ed5d58aa997ecb31580e8cda033
 /**********ABOUT PAGE***********/
 
 .aboutContainer > * {

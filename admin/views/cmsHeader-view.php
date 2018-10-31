@@ -12,7 +12,7 @@
 <nav>
 	<ul>
 		<li><a href="?page=products">Products</a></li>
-		<li><a href="?page=">Featured Products</a></li>
+		<li><a href="?page=searchFilter">Filters</a></li>
 		<li><a href="?page=members">Members</a></li>
 		<li><a href="?page=users">Users</a></li>
 		<li><a href="logout.php">Log out</a></li>

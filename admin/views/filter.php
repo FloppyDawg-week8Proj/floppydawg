@@ -1,5 +1,5 @@
 <?php
-include_once("dbqueries.php");
+include_once("../../../../functions/dbqueries.php");
 
 $sort = (isset($_GET["strSortBy"]))?" ORDER BY ".$_GET["strSortBy"] : "";
 

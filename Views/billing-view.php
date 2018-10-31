@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <style>
 	* {
 		box-sizing: border-box;
@@ -51,6 +52,8 @@
 	}
 </style>
 
+=======
+>>>>>>> b9c59a53a5f64ed5d58aa997ecb31580e8cda033
 <div class="editBillingForm">
 	<div class="formContainer">
 		<h1 class="pageTitle">Billing and Shipping Info</h1>

@@ -1,6 +1,6 @@
 <?php include("cmsHeader-view.php");?>
 <div class="addMemberContainer">
-	<form method="post" action="save_member.php" class="addMemberForm" enctype="multipart/form-data">
+	<form method="post" action="views/save_member.php" class="addMemberForm" enctype="multipart/form-data">
 		<h2>Add A Member</h2>
 		<label class="required">First Name</label>
 		<input type="text" name="strFirstName" class="required" value=""/>
