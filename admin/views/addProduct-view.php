@@ -1,6 +1,6 @@
 <?php include("cmsHeader-view.php");?>
 <div class="addProductContainer">
-	<form method="post" action="save_page.php" class="addAproductForm"enctype="multipart/form-data">
+	<form method="post" action="views/save_page.php" class="addAproductForm" enctype="multipart/form-data">
 		<h2>Add A Product</h2>
 		<label class="required">Name of the Product</label>
 		<input type="text" name="strName" class="required" value=""/>
@@ -10,7 +10,7 @@
 
 		<label class="required">Category</label>
 		<select name="nCategory" id="">
-					<option value="0">Accessories</option>
+					<option value="2">Accessories</option>
 					<option value="1">Beds</option>
 		</select>
 

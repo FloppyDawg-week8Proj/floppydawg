@@ -23,6 +23,7 @@ include("cmsHeader-view.php");
 		<input type="password" name="strPassword" id="strPassword"><br><br>
 		<a href="#" id="doAjax" class="addUser">ADD USER</a>
 	</form>
+	`
 </div><!--users-->
 <?php
 include("cmsFooter-view.php");
