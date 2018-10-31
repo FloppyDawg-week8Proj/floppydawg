@@ -1,6 +1,4 @@
 <?php
-include("cmsHeader-view.php");
-include("../../../../functions/dbqueries.php");
 $arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, photos.strFile FROM categories LEFT JOIN products ON categories.id = nCategory LEFT JOIN photos ON photos.nProductID = products.id
 ");
 ?>
@@ -27,9 +25,6 @@ $arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, 
 		<td><img width=200 src="../assets/<?=$products['strFile']?>"></td>
 		<td><a href="?page=editProducts&id=<?=$products['id'];?>" class="editBtn">Edit</a></td>
 		<td><a href="?page=deleteProduct&id=<?=$products['id'];?>" class="deleteBtn">Delete</a></td>
-		<td><img src="../../assets/<?=$products['strFile']?>"" alt="productImg"  width="200"></td>
-		<td><a href="" class="editBtn">Edit</a></td>
-		<td><a href="" class="deleteBtn">Delete</a></td>
 
 	</tr>
 <?php } ?>

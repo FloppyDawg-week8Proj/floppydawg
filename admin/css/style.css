@@ -314,7 +314,28 @@ color : #28beee; //light blue
 		text-align: center;
 	}
 /*--End of Add Products--*/
+/*--login--*/
+#loginForm
+{
 
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 20%;}
+#loginForm img
+{
+	max-width: 200px;
+}
+#loginForm h1
+{
+	margin-bottom: 10px;
+}
+
+#loginForm input
+{
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #363636;
+}
 /*--Users--*/
 .userView
 {

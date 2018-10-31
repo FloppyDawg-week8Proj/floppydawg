@@ -9,20 +9,14 @@ include("cmsHeader-view.php");
 
 <div class="dashboardOptions">
 <span>
-	<a href=""><img src="../images/iconBox" alt="iconBox" class="iconBox">
+	<a href="?page=products"><img src="images/iconBox" alt="iconBox" class="iconBox">
 	<p class="productsOption">Products</p>
 	</a>
 </span>
 
 <span>
-	<a href=""><img src="../images/iconPages" alt="iconPages" class="iconPages">
-	<p>Pages</p>
-	</a>
-</span>
-
-<span>
-	<a href=""><img src="../images/iconFilter" alt="iconFilter" class="iconFilter">
-	<p>Filters</p>
+	<a href="?page=users"><img src="images/iconPages" alt="iconPages" class="iconPages">
+	<p>Users</p>
 	</a>
 </span>
 </div><!--dashboardOptions-->
