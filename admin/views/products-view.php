@@ -18,7 +18,7 @@ $arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, 
 	<tr>
 		<td><?=$products['strName']?></td>
 		<td><?=$products['category']?></td>
-		<td><img width="200" src="../../assets/<?=$products['strFile']?>"" alt="productImg"  width="200"></td>
+		<td><img src="../../assets/<?=$products['strFile']?>"" alt="productImg"  width="200"></td>
 		<td><a href="" class="editBtn">Edit</a></td>
 		<td><a href="" class="deleteBtn">Delete</a></td>
 	</tr>
