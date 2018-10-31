@@ -10,6 +10,5 @@ runSQL("
 		strPassword = '".$_POST["strPassword"]."'
 		WHERE id=".$_POST["id"]);
 
-// die;
 header("location: ../index.php?page=users");
 ?>

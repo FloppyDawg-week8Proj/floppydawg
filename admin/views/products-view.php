@@ -5,6 +5,7 @@ $arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, 
 ");
 ?>
 
+
 <section>
 <table id="productsTable">
 	<tr>
@@ -14,15 +15,25 @@ $arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, 
 		<th>Edit</th>
 		<th>Delete</th>
 	</tr>
+	<tr>
+		<td>
+			<a href="?page=addProduct" class="addProductBtn">Add a Product</a>
+		</td>
+	</tr>
 <?php foreach($arrProducts as $products) { ?>	
 	<tr>
 		<td><?=$products['strName']?></td>
 		<td><?=$products['category']?></td>
+		<td><img width=200 src="../assets/<?=$products['strFile']?>"></td>
+		<td><a href="?page=editProducts&id=<?=$products['id'];?>" class="editBtn">Edit</a></td>
+		<td><a href="?page=deleteProduct&id=<?=$products['id'];?>" class="deleteBtn">Delete</a></td>
 		<td><img src="../../assets/<?=$products['strFile']?>"" alt="productImg"  width="200"></td>
 		<td><a href="" class="editBtn">Edit</a></td>
 		<td><a href="" class="deleteBtn">Delete</a></td>
+
 	</tr>
 <?php } ?>
+
 </table>
 </section><!--productsTable-->
 

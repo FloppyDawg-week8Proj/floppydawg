@@ -4,7 +4,7 @@ $arrUsers = runSelectSQL("SELECT * FROM users WHERE id=".$_GET["id"]);
 
 	<form method="POST"action="views/updateUser-view.php" class="userView">
 		<input type="hidden" name="id" value="<?=$arrUsers[0]['id']?>">
-		<h1>Add A User</h1>
+		<h1>Edit User</h1>
 		<label>Full Name:</label>
 		<input type="text" name="strFullName" id="strFullName" value="<?=$arrUsers[0]['strFullName']?>">
 

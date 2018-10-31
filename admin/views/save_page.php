@@ -34,9 +34,8 @@ VALUES (
 	'".$_FILES['strImage']["name"]."',
 	".$productId."
 )";
+$a = saveImgOnServer($_FILES['strImage']["name"],$_FILES["strImage"]["tmp_name"]);
 runInsertSQL($sql);
 
-saveImgOnServer($_FILES['strImage']["name"],$_FILES["strImage"]["tmp_name"]);
-
-// header("location: gallery.php");
+header("location: ../index.php?page=products");
 ?>

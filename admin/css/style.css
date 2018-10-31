@@ -201,6 +201,11 @@ color : #28beee; //light blue
 	padding:10px;
 }
 
+.addAproductForm
+{
+	margin-top: 20px;
+	margin-left: 15%;
+}
 #productsTable td {
 	font-size:14px;
 	border-bottom:1px solid #c1b8b5 /*light grey*/;
@@ -266,6 +271,7 @@ color : #28beee; //light blue
 	{
 		max-width: 50px;
 	}
+	
 	.addAproductForm input[type=submit]
 	{
 		background-color: #ff5a1f;
@@ -285,6 +291,27 @@ color : #28beee; //light blue
 		margin: 5px;
 		padding: 5px;
 		border: 1px solid #363636;
+	}
+
+	.productsTable .addBtn a
+	{
+		margin-left: 10%;
+	}
+	.addProductBtn 
+	{
+		background-color:#ff5a1f;
+		color: #fff;  
+		padding: 10px;
+		text-align: center;
+	}
+	.addProductBtn:hover
+	{
+		background-color:#fff;
+		color: #ff5a1f;  
+		border: 1px solid #ff5a1f;
+		padding: 10px;
+		transition: all ease 1s;
+		text-align: center;
 	}
 /*--End of Add Products--*/
 
@@ -375,6 +402,8 @@ color : #28beee; //light blue
 } 
 /*--End Of Users--*/
 
+<<<<<<< HEAD
+=======
 /*-- Members --*/
 #members {
 	width:auto;
@@ -459,3 +488,4 @@ color : #28beee; //light blue
 } 
 
 /*-- End of Members ---*
+>>>>>>> 1e51e2ef0197d5ecb308ba0527efbe6b9c20d33e
