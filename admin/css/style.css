@@ -232,3 +232,145 @@ color : #28beee; //light blue
 	opacity:0.7;
 } 
 /*-- End of Products --*/
+
+/*--Add Products--*/
+.addProductContainer
+	{
+		margin: 20px auto;
+		width: 300px;
+		padding: 30px 25px;
+		background: #fff;
+		border: 2px solid #ff5a1f;/*orange*/
+	}
+	.addAproductForm label
+	{
+		display: block;
+		margin: 10px;
+		color: #ff5a1f; 
+	}
+	.addAproductForm input[type=text], input[type=textarea] ,select
+	{
+		margin: 5px;
+		padding: 5px;
+		border: 1px solid #363636;
+	}
+	.addAproductForm input[type=file]
+	{
+	margin-bottom: 20px;
+	}
+	.addAproductForm h2
+	{
+	color: #ff5a1f;
+	}
+	.addAproductForm img
+	{
+		max-width: 50px;
+	}
+	.addAproductForm input[type=submit]
+	{
+		background-color: #ff5a1f;
+		color: #fff;
+		border: none;
+		padding: 10px;
+	}
+	.addAproductForm input[type=submit]:hover
+	{
+		background-color: #fff;
+		color: #ff5a1f;
+		border: 1px solid #ff5a1f;
+		transition: all ease 0.7s;
+	}
+	.addAproductForm input[type=number]
+	{
+		margin: 5px;
+		padding: 5px;
+		border: 1px solid #363636;
+	}
+/*--End of Add Products--*/
+
+/*--Users--*/
+.userView
+{
+	margin: 20px auto;
+	width: 300px;
+	margin-top: 100px;
+	padding: 30px 25px;
+	background: #fff;
+	border: 1px solid #ff5a1f;
+}
+.userView h1
+{
+	margin-bottom: 20px;
+}
+.userView input[type=text], input[type=password]
+{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+.userView .addUser
+{
+	margin-top: 10px;
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+.userView .addUser:hover
+{
+	background-color: #fff;
+		color: #ff5a1f;
+		border: 1px solid #ff5a1f;
+		transition: all ease 0.7s;
+}
+
+/*--users table--*/
+
+#usersTable{
+	width:900px;
+	text-align:left;
+	margin:auto;
+	margin-top:40px;
+	border-collapse: collapse;
+}
+
+#usersTable th {
+	font-size:16px;
+	font-family:roboto slab;
+	font-weight:normal;
+	color:#fff;
+	background: #363636 /*dark grey*/;
+	padding:10px;
+}
+
+#usersTable td {
+	font-size:14px;
+	border-bottom:1px solid #c1b8b5 /*light grey*/;
+	text-align:left;
+	width:25%;
+	padding-bottom:20px;
+	padding:10px;
+}
+
+#usersTable img {
+	width:100px;
+}
+
+#usersTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .editBtn:hover, #usersTable .deleteBtn:hover {
+	opacity:0.7;
+} 
+/*--End Of Users--*/

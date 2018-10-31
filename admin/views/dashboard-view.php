@@ -1,6 +1,7 @@
 <?php
 include("cmsHeader-view.php");
 ?>
+
 <section id="dashboard">
 <h2>Dashboard</h2>
 
@@ -26,3 +27,7 @@ include("cmsHeader-view.php");
 </span>
 </div><!--dashboardOptions-->
 </section>
+
+<?php
+include("cmsFooter-view.php");
+?>
