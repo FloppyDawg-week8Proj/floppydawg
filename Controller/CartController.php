@@ -30,8 +30,8 @@ Class CartController extends MainController
 	}
 	public function delete()
 	{
-		
 		Cart::delete();
+		$this -> showitems();
 	}
 }
 ?>

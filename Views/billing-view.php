@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <style>
 	* {
@@ -52,6 +53,8 @@
 	}
 </style>
 
+=======
+>>>>>>> 1b4ee0d35ced58da45590b4e41afba2fcd2ed53a
 <div class="editBillingForm">
 	<div class="formContainer">
 		<h1 class="pageTitle">Billing and Shipping Info</h1>
@@ -81,18 +84,18 @@
 					<h3>Shipping Info</h3>
 
 					<label class="required" for="firstName">First Name</label>
-					<input type="text" name="firstName" id="shippingfirstName" placeholder="ex. Jane">
+					<input type="text" name="shippingfirstName" id="shippingfirstName" placeholder="ex. Jane">
 
 					<label class="required" for="lastname">Last Name</label>
-					<input type="text" name="lastname" id="shippinglastname" placeholder="ex. Doe">
+					<input type="text" name="shippinglastname" id="shippinglastname" placeholder="ex. Doe">
 
 					<label class="required" for="streetAdress">Street Address:</label>
-					<input type="text" name="streetAdress" id="shippingstreetAdress" placeholder="ex. Nelson Street">
+					<input type="text" name="shippingstreetAdress" id="shippingstreetAdress" placeholder="ex. Nelson Street">
 
 					<label class="required" for="zipCode">Zip Code:</label>
-					<input type="text" name="zipCode" id="shippingzipCode" placeholder="ex. X5X 5X5">
+					<input type="text" name="shippingzipCode" id="shippingzipCode" placeholder="ex. X5X 5X5">
 
-					<input type="submit" name="strEdit" value="Next" class="btn btn-primary" value="Update"><br/>
+					<input type="submit" class="btn btn-primary"><br/>
 				</div><!--editBillingColumn--->
 			</div><!--editBillingForm-->
 		</form>
