@@ -1,5 +1,4 @@
 <?php
-include("cmsHeader-view.php");
 $arrMembers = runSelectSQL("SELECT * FROM members");
 ?>
 
@@ -13,32 +12,30 @@ $arrMembers = runSelectSQL("SELECT * FROM members");
 	</a>
 </span>
 
-<table id="membersTable">
-	<tr>
-		<th>First Name</th>
-		<th>Last Name</th>
-		<th>Street Address</th>
-		<th>Zip Code</th>
-		<th>Email</th>
-		<th>Password</th>
-		<th>Edit</th>
-		<th>Delete</th>
-	</tr>
-<?php foreach($arrMembers as $member) { ?>	
+<table id="membersTable" class="table">
+	<thead>	
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Street Address</th>
+			<th>Zip Code</th>
+			<th>Email</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php foreach($arrMembers as $member) { ?>	
 	<tr>
 		<td><?=$member['strFirstName']?></td>
 		<td><?=$member['strLastName']?></td>
 		<td><?=$member['strStreetAddress']?></td>
 		<td><?=$member['strZipCode']?></td>
 		<td><?=$member['strEmail']?></td>
-		<td><?=$member['strPassword']?></td>
 		<td><a href="?page=editMember&id=<?=$member['id'];?>" class="editBtn">Edit</a></td>
 		<td><a href="views/delete_member.php?id=<?=$member['id'];?>" onclick="return confirm('Are you sure?');" class="deleteBtn">Delete</a></td>
 	</tr>
 <?php } ?>
+	</tbody>
 </table><!--membersTable-->
 </section><!--members-->
-
-<?php
-include("cmsFooter-view.php");
-?>
