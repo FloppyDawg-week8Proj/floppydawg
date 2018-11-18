@@ -1,9 +1,5 @@
-<?php
-include("cmsHeader-view.php");
-?>
-
 <div id="users">
-
+	<h2>Users</h2>
 	<div id="userBox">
 
 		<?php
@@ -25,9 +21,6 @@ include("cmsHeader-view.php");
 	</form>
 	`
 </div><!--users-->
-<?php
-include("cmsFooter-view.php");
-?>
 <script>
 	$(function(){
 
