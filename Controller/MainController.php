@@ -9,7 +9,7 @@ Class MainController
 		$content .= $this->loadView("welcomeText");
 		
 
-		$content .= "<h2 class='page-title'>Feature Products</h2>";		
+		$content .= "<h2 class='page-title'>Featured Products</h2>";		
 		$arrData = Products::getFeatured();
 		$content .= $this->loadView("card",$arrData);
 		
