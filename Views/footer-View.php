@@ -1,3 +1,4 @@
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<footer>
 			<div class="footer container">
 				<div class="copyRight">
@@ -5,7 +6,7 @@
 					<p>Terms & Conditions | Return Policy</p>
 				</div><!--copyRight-->
 				<div class="socialMedia">
-					<p>FOLLOW US</p>
+					<p>Follow us</p>
 					<a href="#"><span class="fab fa-facebook-f"></span></a>
 					<a href="#"><span class="fab fa-instagram"></span></a>
 				</div><!--socialMedia-->
