@@ -1,8 +1,8 @@
 <div class="contactView">
+	<h1>Contact Us</h1>
 	<div class="contactClass">
 		<div class="addressView">
 			<div class="addressDetails">
-				<h1>Contact Us</h1>
 				<h2>Address</h2>
 				<p>123/4A,Vancouver, Denman, P0S 7AL</p>
 				<h2>Mail:</h2>
@@ -18,11 +18,11 @@
 		<div class="formDetails">
 			<form method="post" onsubmit="return validate()">
 				<label class="required">Enter Name</label>
-				<input type="text" name="strName" id="strName" placeholder="ex. Jane Doe" class="required" value="" >
+				<input type="text" name="strName" id="strName" placeholder="ex. Jane Doe" class="required" value="" required>
 				<label class="required">Enter Email</label>
-				<input type="text" name="strEmail" id="strEmail" placeholder="ex. abc@gmail.com" class="required" value="" >
+				<input type="text" name="strEmail" id="strEmail" placeholder="ex. abc@gmail.com" class="required" value="" required>
 				<label class="required">Enter Message</label>
-				<input type="text" name="strMessage" id="strMessage" placeholder="Any Specific requirements.." class="required" >
+				<input type="textarea" name="strMessage" id="strMessage" placeholder="Any Specific requirements.." class="required" required>
 				<input type="submit" name="submit" value="Submit" class="btn btn-submit">
 			</form>
 		</div>
