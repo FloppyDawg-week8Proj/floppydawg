@@ -65,7 +65,7 @@ $arrData['advantages'] = runSelectSQL($sql);
 		</div>
 
 		<label>Description</label>
-		<input type="textarea" name="strDescription" class="required" value=""/>
+		<textarea name="strDescription" class="required" value=""></textarea>
 		
 		<label>Upload Photo</label>
 		<input id="myFile" type="file" name="strImage[]" multiple>

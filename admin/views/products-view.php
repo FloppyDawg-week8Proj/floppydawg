@@ -1,6 +1,5 @@
 <?php
-$arrProducts = runSelectSQL("SELECT categories.strName as category, products.*, photos.strFile FROM categories LEFT JOIN products ON categories.id = nCategory LEFT JOIN photos ON photos.nProductID = products.id WHERE bMainPhoto=1
-");
+$arrProducts = runSelectSQL("SELECT products.*, categories.strName as category, photos.strFile FROM categories LEFT JOIN products ON categories.id = nCategory LEFT JOIN photos ON photos.nProductID = products.id WHERE bMainPhoto=1");
 ?>
 <div id="products">
 	<h2>Products</h2>
