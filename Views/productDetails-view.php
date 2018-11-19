@@ -3,63 +3,38 @@
 		<div class="imagesContainer">
 			<div class="imageHolderContainer">
 				<div class="mainImage coverBg">
-					<img src="assets/<?=$arrData['strFile']?>" alt="placeholder">
+					<img src="assets/<?=$arrData['product']['strFile']?>" alt="placeholder">
 				</div><!---mainImage-->
-<!--
 				<div class="imageViews">
-					<div class="productPictures">
+				<?php foreach($arrData['product']['photos'] as $photoIndex => $photo){ ?>
+					<div class="productPictures" data-imageindex="<?=$photoIndex?>">
 						<span class="coverBg productPicture-wraper">
-							<img src="assets/placeholder.jpg" alt="placeholder">
+							<img src="assets/<?=$photo?>" alt="$arrData['product']['strName']">
 						</span>
 					</div>
-					<div class="productPictures">
-						<span class="coverBg productPicture-wraper">
-							<img src="assets/placeholder.jpg" alt="placeholder">
-						</span>
-					</div>
-					<div class="productPictures">
-						<span class="coverBg productPicture-wraper">
-							<img src="assets/placeholder.jpg" alt="placeholder">
-						</span>
-					</div>
-					<div class="productPictures">
-						<span class="coverBg productPicture-wraper">
-							<img src="assets/placeholder.jpg" alt="placeholder">
-						</span>
-					</div>
-					
-				</div>imageViews-
--->
+				<?php } ?>
+				</div><!--imageViews--->
 			</div><!--imageHolderContainer-->
 		</div><!--imagesContainer-->
 		<div class="productContentContainer">		
-			<h2 id="productName" data-productid="<?=$arrData['id']?>"><?=$arrData['strName']?></h2>
-			<p><span class="starRate" data-rate="<?=$arrData['nStars']?>"><span id="fill"><img src="images/starMask.png" alt="star range"></span></span> Reviews(<a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/product-reviews/B0777TBXSP/ref=acr_dpproductdetail_text?ie=UTF8&showViewpoints=1"><?=$arrData['nReviews']?></a>)
+			<h2 id="productName" data-productid="<?=$arrData['product']['id']?>"><?=$arrData['product']['strName']?></h2>
+			<p><span class="starRate" data-rate="<?=$arrData['product']['nStars']?>"><span id="fill"><img src="images/starMask.png" alt="star range"></span></span> Reviews(<a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/product-reviews/B0777TBXSP/ref=acr_dpproductdetail_text?ie=UTF8&showViewpoints=1"><?=$arrData['product']['nReviews']?></a>)
 			</p>
-			<h3 id="nPrice"><?=$arrData['nPrice']?></h3>
+			<h3 id="nPrice"><?=$arrData['product']['nPrice']?></h3>
 			<h3>Advantages: </h3>
-			<ol>
-				<li><sapn class="fas fa-check"></sapn> Washable</li>
-				<li><sapn class="fas fa-check"></sapn> Waterproof</li>
-				<li><sapn class="fas fa-check"></sapn> Portable</li>
-				<li><sapn class="fas fa-check"></sapn> Light</li>
-			</ol>
-			<div class="product-details-row product-color">
-				<h3>Color: </h3>
-				<select name="" id="strColor">
-					<option value="blue">Blue</option>
-					<option value="red">Red</option>
-					<option value="brown">Brown</option>
-				</select>
-			</div>
+			<ul>
+				<?php
+					foreach($arrData['product']['advantages'] as $advantage){
+				?>
+					<li><span class="fas fa-paw"></span><?=$arrData['advantagesCaption'][$advantage]?></li>
+				<?php } ?>
+			</ul>
 			<div class="product-details-row product-size">
 				<h3>Size:</h3>
-				<select id="nSizeID" name="nSizeID" id="">
-					<option>Small</option>
-					<option>Medium</option>
-					<option>Large</option>
-				</select>
+				<p><?=$arrData['sizesCaption'][$arrData['product']['nSizeID']]?></p>
+				<a href="#" data-modaltarget="size">Size Chart</a>
 			</div>
+			
 			<div class="product-details-row product-quantity" >
 				<label>Quantity: </label>
 				<div class="item-quantity-decrement"><span class="fas fa-minus"></span></div>
@@ -72,7 +47,7 @@
 		<div class="productDescription">
 			<h2>Description :</h2>
 			<p>
-				<?=$arrData['strDescription']?>
+				<?=$arrData['product']['strDescription']?>
 			</p>
 		</div><!---productDescription-->
 	</div><!--productContentContainer-->
