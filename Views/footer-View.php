@@ -1,5 +1,5 @@
 		<footer>
-			<div class="footer">
+			<div class="footer container">
 				<div class="copyRight">
 					<p>&copy; 2018 Floppy Dawg</p>
 					<p>Terms & Conditions | Return Policy</p>
