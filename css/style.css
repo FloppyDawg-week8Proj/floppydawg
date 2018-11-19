@@ -216,7 +216,6 @@ header .container > * {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	left: 
 	max-height: 200px;
 }
 
@@ -594,33 +593,33 @@ margin-bottom: 15px;
 
 /*end of user dashboard view*/
 /*thanks view*/
-	.thanksBoxContainer
-	{
-		border: 1px solid #363636;
-		width: 410px;
-		padding: 20px;
-		margin: 10px;
-	}
-	.thanksBoxContainer h2{
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	.thanksBoxContainer p
-	{
-		line-height: 30px;
-		margin-bottom: 20px;
-	}
-	.thanksBoxContainer a /*delete later*/
-	{
-		border: 1px solid #363636;
-		background-color: #363636;
-		color: #fff;
-		margin-right: 20px;
-	}
-	.fa-download
-	{
-		color: #fff;
-	}
+.thanksBoxContainer
+{
+	border: 1px solid #363636;
+	width: 410px;
+	padding: 20px;
+	margin: 10px;
+}
+.thanksBoxContainer h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.thanksBoxContainer p
+{
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.thanksBoxContainer a /*delete later*/
+{
+	border: 1px solid #363636;
+	background-color: #363636;
+	color: #fff;
+	margin-right: 20px;
+}
+.fa-download
+{
+	color: #fff;
+}
 /*end of thanks view*/
 
 /*payment view*/
@@ -673,30 +672,30 @@ margin-bottom: 15px;
 
 
 /**add to cart**/
-	.addToCartContainer
-	{
-		border: 1px solid #363636;
-		width: 410px;
-		padding: 20px;
-		margin: 10px;
-	}
-	.addToCartContainer h2{
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	.thanksOkButton
-	{
-		margin-left: 40%;
-		margin-top: 20px;
-	}
-	.thanksOkButton a /*delete later*/
-	{
-		border: 1px solid #363636;
-		background-color: #363636;
-		color: #fff;
-		text-align: center;
-	}
-	/**end of add to cart**/
+.addToCartContainer
+{
+	border: 1px solid #363636;
+	width: 410px;
+	padding: 20px;
+	margin: 10px;
+}
+.addToCartContainer h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.thanksOkButton
+{
+	margin-left: 40%;
+	margin-top: 20px;
+}
+.thanksOkButton a /*delete later*/
+{
+	border: 1px solid #363636;
+	background-color: #363636;
+	color: #fff;
+	text-align: center;
+}
+/**end of add to cart**/
 
 /**billing view**/
 .error{
@@ -1543,55 +1542,45 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 20px;
-	background-color: #ff5a1f;
-	/*light grey*/
+	padding: 15px;
+	background-color: #ffffff;
+	border-top: 1px solid #ff5a1f;
 	text-align: center;
 	color: #fff;
 	z-index: 9;
 }
-
-footer a {
-	color: #fff;
+footer .footer
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	font-size: 15px;
 }
-
-footer .topFooter a {
-	text-align: center;
-	font-family: 'Roboto Slab', serif;
-	padding: 30px;
-	margin-bottom: 20px;
+.copyRight
+{
+	text-align: left;
+	width: 300px;
+	margin-top: 5px;
 }
-
-.topFooter a:hover {
-	opacity: 0.7;
+.copyRight p
+{
+	font-weight: bold;
 }
-
-footer hr {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.socialMedia
+{
+	text-align: right;
 }
-
-.copyRight {
-	float: left;
+.socialMedia p
+{
+	color: #ff5a1f;
+	font-weight: bold;
 }
-
-.payment {
-	float: right;
+.socialMedia span
+{
+	font-size: 25px;
+	margin-right: 20px;
+	margin-top: 5px;
 }
-
-.payment a {
-	padding: 20px;
-	font-family: 'Roboto Slab', serif;
-}
-
-.payment a:hover {
-	opacity: 0.7;
-}
-
-.copyRight {
-	font-family: 'Roboto Slab', serif;
-}
-
 /**********END OF FOOTER*************/
 
 /****************MEDIA QUERIES**********************/
