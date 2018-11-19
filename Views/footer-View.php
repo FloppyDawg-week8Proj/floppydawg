@@ -1,22 +1,17 @@
 		<footer>
-			<div class="topFooter">
-				<a href="#">Terms and Conditions</a>
-				<a href="#">Return Policy</a>
-			</div><!--topFooter-->
-
-			<hr>
-
-			<div class="bottomFooter">
+			<div class="footer container">
 				<div class="copyRight">
-					&copy; Floppy Dawg
+					<p>&copy; 2018 Floppy Dawg</p>
+					<p>Terms & Conditions | Return Policy</p>
 				</div><!--copyRight-->
-				<div class="payment">
-					<a href="#">Paypal</a>
-					<a href="#">Visa</a>
-					<a href="#">MasterCard</a>
-				</div>
-			</div><!--bottomFooter-->
+				<div class="socialMedia">
+					<p>FOLLOW US</p>
+					<a href="#"><span class="fab fa-facebook-f"></span></a>
+					<a href="#"><span class="fab fa-instagram"></span></a>
+				</div><!--socialMedia-->
+			</div><!--footer-->
 		</footer>
+
 		<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 		<script src="js/makeCoverBg.js"></script>
 		<script src="js/heroSlider.js"></script>

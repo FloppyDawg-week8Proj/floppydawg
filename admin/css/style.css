@@ -34,6 +34,17 @@ color : #28beee; //light blue
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+input[type="submit"] {
+	background:#ff5a1f /*orange/*/;
+	width:100%;
+	font-size:14px;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	margin-top:20px;
+	transition:.3s ease;
+	text-transform: uppercase;
+}
 /*-- Admin Login --*/
 #loginFormContainer {
 	width:300px;
@@ -58,22 +69,19 @@ color : #28beee; //light blue
 	margin-bottom:40px;
 }
 
-.loginForm input[type="text"],.loginForm input[type="password"] {
+input[type="text"],input[type="password"]{
 	border:1px solid #c1b8b5; /*light grey*/;
 	padding:10px;
 	width:100%;
-}
-
-.loginForm input[type="text"] {
 	margin-bottom:20px;
 }
 
-.loginForm ::placeholder {
+.loginForm::placeholder {
 	font-family: 'Montserrat', sans-serif;
 	font-size:12px;
 }
 
-.loginForm input[type="submit"] {
+input[type="submit"] {
 	background:#ff5a1f /*orange/*/;
 	width:100%;
 	font-size:14px;
