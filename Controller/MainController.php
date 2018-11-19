@@ -30,11 +30,14 @@ Class MainController
 			$content = $this->loadView("products", $productContent);
 		}
 		else if(!empty($productID)){
-			$arrData = Product::getProduct($productID);
+			$arrData['sizesCaption'] = Sizes::getAllSizes();
+			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
+			$arrData['product'] = Product::getProduct($productID);
+			$arrData['product']['advantages'] = Product::getAdvantages($productID);
 			$prodDetails = $this->loadView("productDetails",$arrData);
 			
 			$prodDetails .= "<h2 class='page-title'>Feature Products</h2>";			
-			$arrData = Products::getFeatured();
+			$arrData['products'] = Products::getProductsInfo('features');
 			$prodDetails .= $this->loadView("card",$arrData);
 			
 			$content = $this->loadView("products", $prodDetails);	

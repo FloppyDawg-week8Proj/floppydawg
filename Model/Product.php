@@ -3,8 +3,24 @@ Class Product
 {
 	static function getProduct($productID)
 	{
-		$sql = "SELECT products.*, categories.strName as categoryName, photos.strFile FROM (products LEFT JOIN categories ON categories.id=products.nCategory LEFT JOIN photos ON photos.nProductID = products.id) WHERE products.id=$productID";
-		return DB::getRecord()->runSQL("getSingleData", $sql);
+		
+		$sql = "SELECT products.*, photos.strFile FROM products LEFT JOIN photos ON photos.nProductID=products.id WHERE products.id=$productID AND photos.bMainPhoto=1";
+		$productDetails = DB::getRecord()->runSQL("getSingleData", $sql);
+		
+		$sql = "SELECT 
+					photos.strFile,
+					photos.bMainPhoto
+				FROM 
+					photos
+				WHERE photos.nProductID=".$_GET["id"];
+		$results = DB::getRecord()->runSQL("getAllData", $sql);
+
+		$productDetails['photos'] = [];
+		foreach($results as $result){
+			array_push($productDetails['photos'], $result['strFile']);
+		}
+		
+		return $productDetails;
 	}
 	static function saveNew($arrNewProduct){
 		$sql = "INSERT INTO products(
@@ -33,10 +49,10 @@ Class Product
 			".$arrNewProduct['bFeatures'].")";
 		return DB::getRecord()->runSQL("insertNew", $sql);
 	}
-	static function getAdvantages($id){
+	static function getAdvantages($productID){
 		$advantages = Advantages::getAllAdvantages();
 		
-		$sql = "SELECT product_advantages.nAdvantageID FROM product_advantages WHERE product_advantages.nProductID=".$id;
+		$sql = "SELECT product_advantages.nAdvantageID FROM product_advantages WHERE product_advantages.nProductID=".$productID;
 		$arrResults = DB::getRecord()->runSQL("getAllData", $sql);
 		$arrAdvantages = [];
 		foreach($arrResults as $result){
