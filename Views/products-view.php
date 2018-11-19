@@ -1,7 +1,7 @@
 		<div class="products-view-sideNav">
 			<h3>Categories and filters</h3>
 			<ul>				
-				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#">Categories</a>
+				<li class="filterClass"><span class="fas fa-angle-right"></span><a href="#"> Categories</a>
 					<ul class="dropList">
 						<li><a href="index.php?action=products&categoryID=1">Dog Beds</a></li>
 						<li><a href="index.php?action=products&categoryID=2">Accessories</a></li>
