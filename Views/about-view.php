@@ -1,8 +1,14 @@
-<?php include("header-view.php");?>
 <div class="aboutContainer">
 	<h2>About Us</h2>
-		<p><img src="https://hlfppt.org/wp-content/uploads/2017/04/placeholder.png" alt="placeholder">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-		Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-		</p>
+	<div class="aboutGrid">
+		<div class="aboutImg">
+			<img src="images/happyDog.png" alt="aboutDog">
+		</div><!--ABOUTIMG-->
+		<div class="aboutText">
+			<p>
+			Here at Floppy Dawg, we are all dog lovers. With our furry friends in mind, we’ve created the most comfortable and stylish dog beds and crate covers possible, each one designed with your pup in mind. Our products are guaranteed to be high quality at an affordable price. Because your best friend deserves the best!
+			</p>
+			<a href="index.php?action=products" class="btn btn-primary">View all our Products</a>
+		</div><!--ABOUTTEXT-->	
+	</div><!--aboutGrid-->
 </div><!--aboutContainer-->

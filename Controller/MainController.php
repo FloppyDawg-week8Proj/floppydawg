@@ -8,17 +8,15 @@ Class MainController
 		$content = $this->loadView("hero-slider");
 		$content .= $this->loadView("welcomeText");
 		
-
-		$content .= "<h2 class='page-title'>Feature Products</h2>";	
-		$arrData['products'] = Products::getProductsInfo('features');
-		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
+		$content .= "<h2 class='page-title'>Featured Products</h2>";		
+		$arrData = Products::getFeatured();
 		$content .= $this->loadView("card",$arrData);
 		
 		include("Views/publiclayout-view.php");
 	}
 
 	public function products()
-	{	
+	{
 		$categoryID = isset($_GET['categoryID'])?$_GET['categoryID']:'';
 		$productID = isset($_GET['id'])?$_GET['id']:'';
 		

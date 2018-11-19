@@ -5,7 +5,7 @@
 					<p>Terms & Conditions | Return Policy</p>
 				</div><!--copyRight-->
 				<div class="socialMedia">
-					<p>FOLLOW US</p>
+					<p>Follow us</p>
 					<a href="#"><span class="fab fa-facebook-f"></span></a>
 					<a href="#"><span class="fab fa-instagram"></span></a>
 				</div><!--socialMedia-->
