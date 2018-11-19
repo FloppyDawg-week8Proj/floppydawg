@@ -813,40 +813,45 @@ margin-bottom: 15px;
 
 /**********ABOUT PAGE***********/
 
-.aboutContainer > * {
-	display: inline-block;
-}
 
-.aboutContainer {
-	border: 1px solid #363636;
-	background-color: #c1b8b5;
-	height: 400px;
-	padding: 20px;
-	margin: 0 auto;
-	max-width: 800px;
-	margin-top: 10%;
+.aboutGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	margin-top: 20px;
+	width: 800px;
 }
-
-.aboutContainer img {
-	float: left;
-	max-width: 400px;
-	margin-right: 20px;
+.aboutImg img
+{
+	max-width: 300px;
+	margin-left: 60px;
 }
-
-.aboutContainer p {
-	float: right;
-	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
-	color: #363636;
-}
-
-.aboutContainer h2 {
-	font-family: 'Roboto Slab', serif;
+.aboutContainer h2
+{
 	text-align: center;
-	margin-bottom: 20px;
-	color: #363636;
+	margin-top: 40px;
+	font-size: 35px;
+	color: #ff5a1f;
 }
-
+.aboutText p
+{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.aboutBtn
+{
+	background-color: #ff5a1f;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: 20px;
+}
+.aboutBtn:hover
+{
+	border: 1px solid #ff5a1f;
+	color: #ff5a1f;
+	background-color: #fff;
+	transition: all ease 0.5s;
+}
 /************END OF ABOUT PAGE*********/
 
 .productDetailContainer {
@@ -1716,6 +1721,52 @@ footer .footer
 		width: 100%;
 		margin-bottom: 30%;
 	}
+	/*------aboutPage-----*/
+	.aboutGrid 
+	{
+	grid-template-columns: 1fr;
+	margin-top: 20px;
+	width: 400px;
+	grid-gap: 0px;
+	}
+	.aboutImg img
+	{
+	max-width: 200px;
+	margin-left: 80px;
+	}
+	.aboutContainer h2
+	{
+	margin-top: 40px;
+	font-size: 25px;
+	}
+	.aboutText p
+	{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	}
+	.aboutBtn
+	{
+		background-color: #ff5a1f;
+		color: #ffffff;
+		padding: 10px;
+		font-size: 15px;
+		margin-left: 100px;
+	}
+	.aboutBtn:hover
+	{
+		border: 1px solid #ff5a1f;
+		color: #ff5a1f;
+		background-color: #fff;
+		transition: all ease 0.5s;
+	}
+	footer
+	{
+		bottom: -50px;
+		grid-template-columns: 1fr;
+	}
+	
+
 }
 
 @media screen and (max-width: 425px) {
