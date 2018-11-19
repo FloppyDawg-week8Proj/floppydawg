@@ -33,7 +33,18 @@ Class Product
 			".$arrNewProduct['bFeatures'].")";
 		return DB::getRecord()->runSQL("insertNew", $sql);
 	}
-		static function edit($arrEditProduct){
+	static function getAdvantages($id){
+		$advantages = Advantages::getAllAdvantages();
+		
+		$sql = "SELECT product_advantages.nAdvantageID FROM product_advantages WHERE product_advantages.nProductID=".$id;
+		$arrResults = DB::getRecord()->runSQL("getAllData", $sql);
+		$arrAdvantages = [];
+		foreach($arrResults as $result){
+			array_push($arrAdvantages, $result['nAdvantageID']);
+		}
+		return $arrAdvantages;
+	}
+	static function edit($arrEditProduct){
 		$sql = "UPDATE
 					products
 				SET 

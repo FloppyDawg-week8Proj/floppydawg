@@ -9,8 +9,9 @@ Class MainController
 		$content .= $this->loadView("welcomeText");
 		
 
-		$content .= "<h2 class='page-title'>Feature Products</h2>";		
-		$arrData = Products::getFeatured();
+		$content .= "<h2 class='page-title'>Feature Products</h2>";	
+		$arrData['products'] = Products::getProductsInfo('features');
+		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 		$content .= $this->loadView("card",$arrData);
 		
 		include("Views/publiclayout-view.php");
@@ -18,16 +19,18 @@ Class MainController
 
 	public function products()
 	{	
-		$categoryID = isset($_GET['category'])?$_GET['category']:'';
+		$categoryID = isset($_GET['categoryID'])?$_GET['categoryID']:'';
 		$productID = isset($_GET['id'])?$_GET['id']:'';
 		
-		if(isset($_GET['category'])){
-			$arrData = Products::getProductsCategory($categoryID);
+		if(!empty($categoryID)){
+			$arrData['products'] = Products::getProductsInfo('category', $categoryID);
+			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 			$productContent = $this->loadView("card",$arrData);
-
+			
+			
 			$content = $this->loadView("products", $productContent);
 		}
-		else if(isset($_GET['id'])){
+		else if(!empty($productID)){
 			$arrData = Product::getProduct($productID);
 			$prodDetails = $this->loadView("productDetails",$arrData);
 			
@@ -37,8 +40,10 @@ Class MainController
 			
 			$content = $this->loadView("products", $prodDetails);	
 		}else{
-			$arrData = Products::getAllProducts();
+			$arrData['products'] = Products::getProductsInfo('all');
+			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 			$allProducts = $this->loadView("card",$arrData);
+			
 			
 			$content = $this->loadView("products", $allProducts);	
 		}

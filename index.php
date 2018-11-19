@@ -1,6 +1,7 @@
 <?php
 include("../../ecomm-connect/dbqueries.php");
 include("libs/DB.php");
+include("Model/Advantages.php");
 include("Model/Product.php");
 include("Model/Products.php");
 include("Model/Cart.php");
