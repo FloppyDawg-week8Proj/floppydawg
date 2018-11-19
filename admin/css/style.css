@@ -45,88 +45,6 @@ input[type="submit"] {
 	transition:.3s ease;
 	text-transform: uppercase;
 }
-input[type="text"],input[type="password"]{
-	border:1px solid #c1b8b5; /*light grey*/;
-	padding:10px;
-	width:100%;
-	margin-bottom:20px;
-}
-
-input[type="submit"]:hover {
-	opacity:0.7;
-}
-input[type=number] {
-	margin: 5px;
-	padding: 5px;
-	border: 1px solid #363636;
-}
-input[type=textarea] ,select {
-	margin: 5px;
-	padding: 5px;
-	border: 1px solid #363636;
-}
-
-input[type=file] {
-	margin-bottom: 20px;
-}
-label {
-	display: block;
-	margin: 10px;
-	color: #ff5a1f; 
-}
-.editBtn {
-	background:#009900 /*green*/;
-	color:#fff;
-	font-size:14px;
-	padding:5px 30px;
-}
-.deleteBtn {
-	background:red;
-	color:#fff;
-	font-size:14px;
-	padding:5px 30px;
-}
-.addBtn a {
-	margin-left: 10%;
-}
-.addBtn{
-	font-size:14px;
-	display:inline-block;
-}
-
-.editBtn:hover,.deleteBtn:hover {
-	opacity:0.7;
-} 
-h3 {
-	font-size:16px;
-	margin-bottom:50px;
-	font-weight:normal;
-}
-h2 {
-	font-family:'Roboto Slab';
-	font-size:30px;
-	margin-bottom:15px;
-}
-p{
-	font-size:14px;
-	color: #ff5a1f/*orange*/;
-	margin-bottom:15px;
-	display:inline-block;
-	margin-left:10px;
-}
-h1
-{
-	color: #ff5a1f;
-	margin-left: 20%;
-	margin-top: 30px;
-	margin-bottom:30px;
-}
-input
-{
-	text-align: center;
-	padding: 20px;
-	border: 1px solid #363636;
-}
 /*-- Admin Login --*/
 #loginFormContainer {
 	width:300px;
@@ -151,10 +69,32 @@ input
 	margin-bottom:40px;
 }
 
+input[type="text"],input[type="password"]{
+	border:1px solid #c1b8b5; /*light grey*/;
+	padding:10px;
+	width:100%;
+	margin-bottom:20px;
+}
 
 .loginForm::placeholder {
 	font-family: 'Montserrat', sans-serif;
 	font-size:12px;
+}
+
+input[type="submit"] {
+	background:#ff5a1f /*orange/*/;
+	width:100%;
+	font-size:14px;
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	margin-top:20px;
+	transition:.3s ease;
+	text-transform: uppercase;
+}
+
+.loginForm input[type="submit"]:hover {
+	opacity:0.7;
 }
 
 .error {
@@ -220,6 +160,17 @@ input
     margin-top:50px;
 }
 
+#dashboard h2 {
+	font-family:'Roboto Slab';
+	font-size:30px;
+	margin-bottom:15px;
+}
+
+#dashboard h3 {
+	font-size:16px;
+	margin-bottom:50px;
+	font-weight:normal;
+}
 
 #dashboard .dashboardOptions {
 	width:200px;
@@ -249,6 +200,14 @@ input
 	top:10px;
 }
 
+.dashboardOptions p{
+	font-size:14px;
+	color: #ff5a1f/*orange*/;
+	margin-bottom:15px;
+	display:inline-block;
+	margin-left:10px;
+}
+
 .dashboardOptions p.productsOption {
 	margin-left:5px;
 }
@@ -275,18 +234,53 @@ input
 	width:100px;
 }
 
+#productsTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#productsTable .editBtn:hover, #productsTable .deleteBtn:hover {
+	opacity:0.7;
+} 
 /*-- End of Products --*/
 
-/*--Edit Products--*/
-.editProductContainer,.addProductContainer
-{
+/*--Add Products--*/
+.addProductContainer {
 	margin: 20px auto;
 	width: 300px;
 	padding: 30px 25px;
 	background: #fff;
 	border: 2px solid #ff5a1f;/*orange*/
 }
-/*--Add Products--*/
+
+.addAproductForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addAproductForm input[type=text], input[type=textarea] ,select {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addAproductForm input[type=file] {
+	margin-bottom: 20px;
+}
+
+.addAproductForm h2 {
+	color: #ff5a1f;
+}
 
 .addAproductForm .starsHolder img {
 	max-width: 50px;
@@ -312,8 +306,25 @@ input
 	height: 100%;
 	z-index: 1;
 }
+.addAproductForm input[type=submit] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
 
+.addAproductForm input[type=submit]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
 
+.addAproductForm input[type=number] {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
 .addAproductForm .product-preview-holder{
 	margin-bottom: 20px;
 }
@@ -327,6 +338,9 @@ input
 .addAproductForm .product-pictures-preview{
 	height: 130px;
 	overflow: hidden;
+}
+.productsTable .addBtn a {
+	margin-left: 10%;
 }
 
 .addProductBtn {
@@ -348,6 +362,13 @@ input
 /*--End of Add Products--*/
 
 /*--Filter--*/
+#filterSearch h1
+{
+	color: #ff5a1f;
+	margin-left: 20%;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
 .searchField
 {
 	margin-left: 20%;
@@ -393,7 +414,17 @@ input
 {
 	max-width: 200px;
 }
+#loginForm h1
+{
+	margin-bottom: 10px;
+}
 
+#loginForm input
+{
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #363636;
+}
 /*--Users--*/
 .userView
 {
@@ -404,7 +435,16 @@ input
 	background: #fff;
 	border: 1px solid #ff5a1f;
 }
-
+.userView h1
+{
+	margin-bottom: 20px;
+}
+.userView input[type=text], input[type=password]
+{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
 .userView .addUser
 {
 	margin-top: 10px;
@@ -447,6 +487,23 @@ td {
 	padding:10px;
 }
 
+#usersTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#usersTable .editBtn:hover, #usersTable .deleteBtn:hover {
+	opacity:0.7;
+} 
 /*--End Of Users--*/
 
 /*-- Members --*/
@@ -455,11 +512,24 @@ td {
     margin-top:50px;
 }
 
+#products h2,
+#members h2,
+#users h2{
+	font-family:'Roboto Slab';
+	font-size:30px;
+	margin-bottom:15px;
+}
+
 img.iconAdd {
 	width:20px;
 	display:inline-block;
 	position:relative;
 	top:5px;
+}
+
+.addBtn{
+	font-size:14px;
+	display:inline-block;
 }
 
 .addNew{
@@ -500,6 +570,23 @@ img.iconAdd {
 	width:100px;
 }
 
+#membersTable .editBtn {
+	background:#009900 /*green*/;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#membersTable .deleteBtn {
+	background:red;
+	color:#fff;
+	font-size:14px;
+	padding:5px 30px;
+}
+
+#membersTable .editBtn:hover, #membersTable .deleteBtn:hover {
+	opacity:0.7;
+} 
 /*-- End of Members ---*
 
 /*-- Add a Member AND Edit a Member --*/
@@ -511,9 +598,38 @@ img.iconAdd {
 	border: 2px solid #ff5a1f;/*orange*/
 }
 
+.addMemberForm label {
+	display: block;
+	margin: 10px;
+	color: #ff5a1f; 
+}
+
+.addMemberForm input[type="text"]{
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #363636;
+}
+
+.addMemberForm h2 {
+	color: #ff5a1f;
+}
+
 .addMemberForm img {
 	max-width: 50px;
 }
 
+.addMemberForm input[type="submit"] {
+	background-color: #ff5a1f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+}
+
+.addMemberForm input[type="submit"]:hover {
+	background-color: #fff;
+	color: #ff5a1f;
+	border: 1px solid #ff5a1f;
+	transition: all ease 0.7s;
+}
 
 /*-- End of Add a Member AND Edit a Member --*/
