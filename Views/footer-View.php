@@ -1,4 +1,3 @@
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<footer>
 			<div class="footer container">
 				<div class="copyRight">
