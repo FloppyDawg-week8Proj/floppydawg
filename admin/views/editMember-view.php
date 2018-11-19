@@ -1,5 +1,4 @@
 <?php 
-include("cmsHeader-view.php");
 $arrMembers = runSelectSQL("SELECT * FROM members WHERE id=".$_GET["id"]);
 ?>
 <div class="addMemberContainer">
@@ -26,7 +25,3 @@ $arrMembers = runSelectSQL("SELECT * FROM members WHERE id=".$_GET["id"]);
 		<input type="submit" value="Save changes">
 	</form><!--editMemberForm-->
 </div><!--editMemberContainer-->
-
-<?php
-include("cmsFooter-view.php");
-?>

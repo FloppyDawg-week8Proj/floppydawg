@@ -1,4 +1,3 @@
-<?php include("cmsHeader-view.php");?>
 <div class="addMemberContainer">
 	<form method="post" action="views/save_member.php" class="addMemberForm" enctype="multipart/form-data">
 		<h2>Add A Member</h2>
@@ -23,7 +22,3 @@
 		<input type="submit" value="Add Member">
 	</form><!--addMemberForm-->
 </div><!--addMemberContainer-->
-
-<?php
-include("cmsFooter-view.php");
-?>
