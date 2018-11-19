@@ -18,8 +18,7 @@ color : #28beee; //light blue
 	box-sizing: border-box;
 	list-style-type: none;
 	text-decoration: none;
-	color: #363636/*dark grey*/
-	;
+	color: #363636/*dark grey*/;
 	border: none;
 	font-family: 'Roboto Slab', serif;
 	outline: none;
@@ -54,7 +53,6 @@ p {
 	width: 80%;
 	margin: auto;
 }
-
 
 .btn {
 	font-size: 15px;
@@ -175,9 +173,9 @@ header {
 	left: 0;
 	width: 100%;
 	height: 108px;
-	color: #ff5a1f;
-	z-index: 9;
 	background-color: #fff;
+	margin-top:20px;
+	margin-bottom: 20px;
 }
 
 header a{
@@ -198,6 +196,9 @@ header .container > * {
 }
 
 /*children inside first level*/
+.active {
+	color:#ff5a1f/*orange*/;
+}
 
 .logo {
 	width: 100px;
@@ -212,7 +213,6 @@ header .container > * {
 }
 
 .logo img {
-	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -317,6 +317,9 @@ header .container > * {
 	font-size: 12px;
 	color: #ff5a1f;
 }
+.userNav{
+	margin-left:30px;
+}
 .userNav a
 {
 	font-size: 12px;
@@ -343,17 +346,21 @@ header .container > * {
 	box-sizing: border-box;
 }
 
-.bottomLine
+.shippingBanner
 {
-	background-color: #ff5a1f;
-	box-shadow: 0 3px 20px -5px #ff5a1f;
+	background:#000;
+	width:100%;
+	margin-top:40px;
+	position: relative;
 }
-.bottomLine p
+
+.shippingBanner p
 {
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
 	padding: 10px;
+	text-transform: uppercase;
 }
 
 /******NAVIGATION******/
@@ -1501,8 +1508,7 @@ h3 {
 
 .filterTable table thead td {
 	padding: 5px;
-	background: #ff5a1f/*orange*/
-	;
+	background: #ff5a1f/*orange*/;
 	color: #fff;
 }
 
@@ -1563,10 +1569,7 @@ footer .footer
 	width: 300px;
 	margin-top: 5px;
 }
-.copyRight p
-{
-	font-weight: bold;
-}
+
 .socialMedia
 {
 	text-align: right;
@@ -1574,7 +1577,7 @@ footer .footer
 .socialMedia p
 {
 	color: #ff5a1f;
-	font-weight: bold;
+	text-transform: uppercase;
 }
 .socialMedia span
 {

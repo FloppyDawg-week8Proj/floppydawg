@@ -8,40 +8,43 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo coverBg">
-				<a href="index.php"><img src="images/floppyLogo.png" alt="logo" ></a>
-			</div><!--logo-->
-			<div class="headerNav">
-				<nav>
-						<ul class="mainNav">
-						  <li><a href="index.php">Home</a></li>
-						  <li><a href="index.php?action=products">Products</a>
-						    <ul class="dropdown">
-						    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
-								</li>
-					      		<li><a href="index.php?action=products&categoryID=2">Acessories</a>
-								</li>
-						    </ul><!--drop down content-->
-						  </li><!--dropdown-->
-						  <li><a href="index.php?action=about">About</a></li>
-						  <li><a href="index.php?action=contact">Contact</a></li>
-						</ul>
-				</nav><!--Navigation-->
-			</div>
+<header>
+<section class="container">
+	<div class="logo coverBg">
+		<a href="index.php">
+			<img src="images/floppyLogo.png" alt="logo" >
+		</a>
+	</div><!--logo-->
 
-			<div class="rightNav">
-				<div class="cartNav">
-					<a href="index.php?controller=cart&action=showitems"><span class="fas fa-shopping-cart"></span>Cart(<?=isset($_SESSION['cartProducts'])?count($_SESSION['cartProducts']):0;?>)</a>
-				</div><!--cartNav-->
-				<div class="userNav">
-					<a href=""><span class="fas fa-user"></span>Account</a>
-				</div><!--cartNav-->
-			</div><!--rightNav-->
-		</div>
-		<div class="bottomLine">
-			<p>FREE SHIPPING (NO MINIMUM)</p>
-		</div><!--bootomLine-->
-	</header>
+	<div class="headerNav">
+		<nav>
+		<ul class="mainNav">
+		  <li><a href="index.php" class="active">Home</a></li>
+		  <li><a href="index.php?action=products">Products</a>
+		    <ul class="dropdown">
+		    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
+				</li>
+	      		<li><a href="index.php?action=products&categoryID=2">Acessories</a>
+				</li>
+		    </ul><!--drop down content-->
+		  </li><!--dropdown-->
+		  <li><a href="index.php?action=about">About</a></li>
+		  <li><a href="index.php?action=contact">Contact</a></li>
+		</ul>
+		</nav><!--Navigation-->
+	</div><!--headerNav-->
 
+	<div class="rightNav">
+		<div class="cartNav">
+			<a href="index.php?controller=cart&action=showitems"><span class="fas fa-shopping-cart"></span>Cart(<?=isset($_SESSION['cartProducts'])?count($_SESSION['cartProducts']):0;?>)</a>
+		</div><!--cartNav-->
+		<div class="userNav">
+			<a href=""><span class="fas fa-user"></span>Account</a>
+		</div><!--cartNav-->
+	</div><!--rightNav-->
+</section><!--container-->
+</header>
+
+<div class="shippingBanner">
+	<p>Free shipping (No minimum)</p>
+</div><!--shippingBanner-->
