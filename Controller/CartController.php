@@ -7,9 +7,9 @@ Class CartController extends MainController
 		$arrData = Cart::getItems();		
 		$cartContent = '';
 		$arrData['cartitem'] = [];
-		if(!empty($arrData)){
+		if(!empty($arrData['cartProducts'])){
 			$i = 0;
-			foreach($_SESSION['cartProducts'] as $cardItem){
+			foreach($arrData['cartProducts'] as $cardItem){
 				$newItem = Product::getProduct($cardItem['id']);
 				$newItem['nQuantity'] = $cardItem['nQuantity'];
 				$newItem['itemKey'] = $i;
