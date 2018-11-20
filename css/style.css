@@ -56,7 +56,7 @@ p {
 }
 
 .btn {
-	font-weight:bold;
+	font-weight:600;
 	font-size: 12px;
 	font-family:'Montserrat', sans-serif;
 	transition: all ease 0.5s;
@@ -67,9 +67,14 @@ p {
 	text-transform: uppercase;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary:hover {
 	background-color: #ff5a1f /*orange*/;
 	color: #fff;
+}
+
+.btn-secondary {
+	border:1px solid #ff5a1f /*orange*/;
+	color: #ff5a1f /*orange*/;
 }
 
 .btn-primary:hover {
@@ -89,6 +94,126 @@ p {
 	text-align: center;
 	padding: 60px 0 30px;
 	font-size: 2rem;
+}
+
+.cart-title {
+	display: block;
+	padding: 60px 0 30px;
+	font-size: 2rem;
+	color:#000;
+	text-align:left;
+	font-weight: normal;
+	margin-top:80px;
+}
+
+#cartTable {
+	width:100%;
+	border-collapse: collapse;
+	margin-top:30px;
+	margin-bottom:100px;
+}
+
+#cartTable th {
+	font-size:18px;
+	text-align: left;
+	padding-bottom:10px;
+	border-bottom: 2px solid #000;
+	font-weight: normal;
+}
+
+#cartTable td {
+	width:15%;
+}
+
+#cartTable .item-preview img {
+	width:100px
+}
+
+#cartTable .iconRemove{
+	width:10px;
+	display:block;
+	margin:auto;
+}
+
+#cartTable a {
+	font-family:'Montserrat', sans-serif;
+	font-size:14px;
+	display:block;
+	text-align:center;
+}
+
+#cartTable td.item-name {
+	font-family:'Montserrat', sans-serif;
+	width:30%;
+	font-size:16px;
+}
+
+#cartTable .qty-box{
+	display:inline-block;
+	text-align: center;
+	width:40px;
+	padding:5px 10px;
+	margin:0 8px;
+	border:1px solid #c1b8b5 /*light grey*/;
+}
+
+#cartTable .item-quantity > * {
+	float: left;
+} 
+
+#cartTable .fas {
+	display: inline-block;
+	cursor: pointer;
+	font-size:20px;
+	padding-top:5px;
+	color:#000;
+}
+
+#cartTable .fas:hover {
+	color: #ff5a1f/*orange*/;
+}
+.cart-form {
+	margin-bottom:200px;
+}
+
+.cart-form .subtotal {
+	text-align:right;
+}
+
+.cart-form .subtotal p.subtotal-price{
+	font-size:20px;
+	font-weight:600;
+	margin-bottom:5px;
+}
+
+.cart-form .subtotal p.free-shipping {
+	font-size:18px;
+	text-transform: uppercase;
+}
+
+.cart-form .cart-bottom-btns {
+	float:right;
+	margin-top:50px;
+	position: relative;
+	width:100%;
+	height:50px;
+}
+.cart-form .cart-bottom-btns .checkout {
+	display:inline-block;
+	padding: 15px 70px;
+	position: absolute;
+	right:250px;
+
+}
+
+.cart-form .cart-bottom-btns .paypal {
+	display:inline-block;
+	width:230px;
+	margin:0;
+	position: absolute;
+	bottom:0;
+	top:0;
+	right:0;
 }
 
 .fa-check {
@@ -825,38 +950,31 @@ margin-bottom: 15px;
 /**end of add to cart**/
 
 /**billing view**/
-.error{
+.error {
 	padding: 8px;
 	background-color: tomato;
 	color: #363636;
 }
-.editBillingForm
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -16px;
+
+.editBillingForm .shipping-title {
+	color:#000;
+	font-size:30px;
+	text-align:left;
+	font-weight: normal;
+	margin-bottom:40px;
 }
 
-.editBillingColumn
-{
-	flex: 50%;
-	background-color: lightgrey;
-	padding: 5px 20px 15px 20px;
-	border-radius: 3px;
+.editBillingForm .billing-title {
+	margin-bottom:10px;
 }
 
-.editBillingForm
-{
-	flex: 75%;
+.editBillingForm {
+	margin-top:150px;
+	border:1px solid red;
+	text-align:left;
 }
 
-.editBillingColumn, .editBillingForm
-{
-	padding: 0 16px;
-}
-
-.editBillingForm [type=text]
-{
+.editBillingForm [type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -864,16 +982,10 @@ margin-bottom: 15px;
   border-radius: 3px;
 }
 
-.editBillingForm label
-{
+.editBillingForm label {
   margin-bottom: 10px;
   display: block;
 
-}
-.formContainer
-{
-	margin-left: 25%;
-	margin-top: 2%;
 }
 /**end of billing view**/
 
