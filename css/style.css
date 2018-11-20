@@ -286,6 +286,8 @@ p {
 /*login form*/
 .loginView
 {
+	margin-top: 100px;
+	margin-left: 300px;
 	width: 400px;
 	height: 500px;
 }

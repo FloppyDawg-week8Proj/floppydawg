@@ -90,6 +90,11 @@ Class MainController
 		$content = $this->loadView("memberDashboard");
 		include("Views/publiclayout-view.php");
 	}
+		public function memberLogin()
+	{	
+		$content = $this->loadView("memberLogin");
+		include("Views/publiclayout-view.php");
+	}
 	public function purchaseHistory()
 	{	
 		$content = $this->loadView("history");
