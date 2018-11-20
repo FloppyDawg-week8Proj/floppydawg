@@ -35,7 +35,6 @@
 						<input type="submit" name="strEdit" value="Update" class="btn btn-primary" value="Update"><br>
 					</div>
 				</div><!--editRegisterColumn--->
-			</div><!--editRegisterForm-->
 		</form>
 	</div><!--formContainer-->
 </div>

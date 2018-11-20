@@ -7,11 +7,11 @@
 		<label>Password</label>
 		<input type="password" name="strPassword">
 		
-		<a href=""><button type="submit" class="btn-primary btnCheckout">Proceed to checkout</button></a>
+		<a href=""><button type="submit" class="btn-primary btnCheckout">Login</button></a>
 
 		<div class="bottomForm">
 			<p>Not a Member?<br>
 			<a href="index.php?action=register">Register now</a> or <a href="#"> Checkout as a guest</a></p>
-		</div>		
+		</div>
 	</form>
 </div><!--loginView-->

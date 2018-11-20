@@ -57,5 +57,6 @@
 	</div><!--shippingHolder-->
 
 	<a href="#" class="btn btn-primary continue-to-payment" onclick="document.querySelector('#billingForm').submit();return false;">Continue to payment</a>
+
 </div><!--billingForm-->
 </section><!--shipping-billing-container-->

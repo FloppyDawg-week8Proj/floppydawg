@@ -50,7 +50,7 @@
 			</a>
 		</div><!--cartNav-->
 		<div class="userNav">
-			<a href="index.php?action=memberDashboard"><span class="fas fa-user"></span>Account</a>
+			<a id="login" href="index.php?controller=cart&action=memberLogin"><span class="fas fa-user"></span>Account</a>
 		</div><!--cartNav-->
 	</div><!--rightNav-->
 </section><!--container-->
