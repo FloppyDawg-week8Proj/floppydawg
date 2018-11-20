@@ -27,8 +27,8 @@
 		</div>
 		<nav>
 			<ul class="menu">
-			  <li><a href="index.php" class="active">Home</a></li>
-			  <li><a href="index.php?action=products">Products</a>
+			  <li><a href="index.php" class="<?=isset($_GET['action'])?'':'active';?>">Home</a></li>
+			  <li><a href="index.php?action=products" class="<?=(isset($_GET['action']) && $_GET['action']=='products')?'active':'';?>">Products</a>
 			    <ul class="dropdown">
 			    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
 					</li>
@@ -36,8 +36,8 @@
 					</li>
 			    </ul><!--drop down content-->
 			  </li><!--dropdown-->
-			  <li><a href="index.php?action=about">About</a></li>
-			  <li><a href="index.php?action=contact">Contact</a></li>
+			  <li><a href="index.php?action=about" class="<?=(isset($_GET['action']) && $_GET['action']=='about')?'active':'';?>">About</a></li>
+			  <li><a href="index.php?action=contact" class="<?=(isset($_GET['action']) && $_GET['action']=='contact')?'active':'';?>">Contact</a></li>
 			</ul>
 		</nav><!--Navigation-->
 	</div><!--headerNav-->
