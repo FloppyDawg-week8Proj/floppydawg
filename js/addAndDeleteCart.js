@@ -14,9 +14,9 @@ $(function(){
 				'nColorID': $('#strColor').val()
 			},
 			success: function(result){
-				let nItems = parseInt($('.cartNav span').text())+1;
-//				$('#cartItems').css('opacity', 1);
-				$('.cartNav span').text(nItems);
+				const quantity = $('.cartNav').find('#cart-product-quantity').text();
+				let nItems = parseInt(quantity)+1;
+				$('.cartNav').find('#cart-product-quantity').text(nItems);
 			},
 			error: function(){
 				console.log('error');
