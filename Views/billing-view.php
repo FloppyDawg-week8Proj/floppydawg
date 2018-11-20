@@ -56,7 +56,7 @@
 		<input type="text" name="shippingzipCode" id="shippingzipCode" placeholder="V5R 123">
 	</div><!--shippingHolder-->
 
-	<a href="" class="btn btn-primary continue-to-payment">Continue to payment</a>
+	<a href="index.php?action=payment" class="btn btn-primary continue-to-payment">Continue to payment</a>
 </div><!--billingForm-->
 </section><!--shipping-billing-container-->
 

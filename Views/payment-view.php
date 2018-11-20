@@ -36,7 +36,7 @@
 		</div><!--payment-holder-->
 	</form>
 
-	<a href="" class="btn btn-primary complete-order">Complete Order</a>
+	<a href="index.php?action=thankyou" class="btn btn-primary complete-order">Complete Order</a>
 </div><!--paymentForm-->
 </div><!--paymentContainer-->
 
