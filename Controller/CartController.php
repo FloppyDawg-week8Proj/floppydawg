@@ -5,7 +5,6 @@ Class CartController extends MainController
 	{
 		/// home page
 		$arrData['cartProducts'] = Cart::getItems();
-		$_SESSION['totalPrice'] = Purchase::getTotalPrice();
 		$cartContent = '';
 		$arrData['cartitem'] = [];
 		if(!empty($arrData['cartProducts'])){
