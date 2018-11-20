@@ -955,6 +955,15 @@ margin-bottom: 15px;
 	background-color: tomato;
 	color: #363636;
 }
+
+#shipping-billing-container {
+	width:900px;
+	border:1px solid red;
+	height:100%;
+	overflow:hidden;
+	position: relative;
+}
+
 .shippingForm {
 	margin-top:120px;
 	text-align:left;
@@ -991,7 +1000,13 @@ margin-bottom: 15px;
 	border: 1px solid #ccc;
 }
 
-.float{
+.floatStateZip{
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+.float {
 	width:50%;
 	float:left;
 	position: relative;
@@ -1015,7 +1030,7 @@ input.zipCode {
 	color:red;
 }
 
-.billingForm .billing-title {
+.billing-title {
 	color:#000;
 	font-size:30px;
 	text-align:left;
@@ -1023,17 +1038,17 @@ input.zipCode {
 	margin-bottom:10px;
 }
 
-.billingForm p {
+.shippingForm p {
 	display:inline-block;
 	font-size:16px;
 }
 
-.billingForm span {
+.shippingForm span {
 	display:block;
 	margin-bottom:30px;
 }
 
-.billingForm .continue-to-payment {
+.shippingForm .continue-to-payment {
 	margin-bottom:100px;
 }
 /**end of billing view**/
