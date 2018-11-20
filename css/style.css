@@ -950,38 +950,31 @@ margin-bottom: 15px;
 /**end of add to cart**/
 
 /**billing view**/
-.error{
+.error {
 	padding: 8px;
 	background-color: tomato;
 	color: #363636;
 }
-.editBillingForm
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -16px;
+
+.editBillingForm .shipping-title {
+	color:#000;
+	font-size:30px;
+	text-align:left;
+	font-weight: normal;
+	margin-bottom:40px;
 }
 
-.editBillingColumn
-{
-	flex: 50%;
-	background-color: lightgrey;
-	padding: 5px 20px 15px 20px;
-	border-radius: 3px;
+.editBillingForm .billing-title {
+	margin-bottom:10px;
 }
 
-.editBillingForm
-{
-	flex: 75%;
+.editBillingForm {
+	margin-top:150px;
+	border:1px solid red;
+	text-align:left;
 }
 
-.editBillingColumn, .editBillingForm
-{
-	padding: 0 16px;
-}
-
-.editBillingForm [type=text]
-{
+.editBillingForm [type=text] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -989,16 +982,10 @@ margin-bottom: 15px;
   border-radius: 3px;
 }
 
-.editBillingForm label
-{
+.editBillingForm label {
   margin-bottom: 10px;
   display: block;
 
-}
-.formContainer
-{
-	margin-left: 25%;
-	margin-top: 2%;
 }
 /**end of billing view**/
 
