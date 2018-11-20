@@ -1,5 +1,5 @@
 <div class="dashBoardContainer">
-	<h1 class="pageTitle">USER DASHBOARD</h1>
+	<h1 class="pageTitle">User Dashboard</h1>
 		<div class="dashBoard">
 			<a href="index.php?action=purchaseHistory">
 				<div class="purchaseHistory">
@@ -14,5 +14,5 @@
 				</div><!--editProfile-->
 			</a>
 		</div><!--dashBoard-->
-	<a href="index.php?action=products" class="btn btn-primary">VIEW PRODUCTS</a>
+	<a href="index.php?action=products" class="btn btn-primary">View Products</a>
 </div><!--dashBoardContainer-->

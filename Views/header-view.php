@@ -27,7 +27,7 @@
 		</div>
 		<nav>
 			<ul class="menu">
-			  <li><a href="index.php" class="active">Home</a></li>
+			  <li><a href="index.php">Home</a></li>
 			  <li><a href="index.php?action=products">Products</a>
 			    <ul class="dropdown">
 			    	<li><a href="index.php?action=products&categoryID=1">Beds</a>

@@ -22,7 +22,7 @@ Class CartController extends MainController
 		}
 		$content = $this->loadView("cart", $cartContent);
 
-		$content .= "<h2 class='page-title'>Feature Products</h2>";		
+		$content .= "<h2 class='page-title'>Featured Products</h2>";		
 		$arrData['products'] = Products::getProductsInfo('features');
 		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 		$cards = $this->loadView("card",$arrData);
