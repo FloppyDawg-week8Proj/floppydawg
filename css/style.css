@@ -1221,6 +1221,14 @@ ol {
 	text-align:left;
 }
 
+.heroPromo2 a, .heroPromo3 a {
+	background:#41c1c4 /*cyan*/;
+}
+
+.heroPromo2 a:hover, .heroPromo3 a:hover {
+	background: #ff5a1f/*orange*/;
+}
+
 .heroPromo4 p{
 	width:200px;
 }
