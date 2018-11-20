@@ -44,7 +44,10 @@
 
 	<div class="rightNav">
 		<div class="cartNav">
-			<a href="index.php?controller=cart&action=showitems"><span class="fas fa-shopping-cart"></span>Cart(<?=isset($_SESSION['cartProducts'])?count($_SESSION['cartProducts']):0;?>)</a>
+			<a href="index.php?controller=cart&action=showitems">
+				<span class="fas fa-shopping-cart"></span>
+				Cart(<span id="cart-product-quantity"><?=isset($_SESSION['cartProducts'])?count($_SESSION['cartProducts']):0;?></span>)
+			</a>
 		</div><!--cartNav-->
 		<div class="userNav">
 			<a href=""><span class="fas fa-user"></span>Account</a>
