@@ -1113,7 +1113,6 @@ input.zipCode {
 	position: absolute;
 	top:0;
 	right:0;
-	height:540px;
 }
 
 #order-summary h1 {
@@ -1149,7 +1148,9 @@ input.zipCode {
 p.free {
 	text-transform: uppercase;
 }
-
+.item-summary-holder{
+	overflow: auto;
+}
 #order-summary .subtotal-summary, #order-summary .item-summary {
 	width:50%;
 	float:left;

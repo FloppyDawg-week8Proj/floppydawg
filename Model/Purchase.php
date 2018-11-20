@@ -75,14 +75,14 @@ Class Purchase
 			'".$nOrderID."')";
 		DB::getRecord()->runSQL("insertNew", $sql);	
 	}
-	static function getItems($arrItems){
-		return $_SESSION['cartProducts'];
+	static function getItems(){
+		return $_SESSION;
 	}
 	static function getTotalPrice(){
 		$arrPrices = [];
 		if(!empty($_SESSION['cartProducts'])){
 			foreach($_SESSION['cartProducts'] as $product){
-				array_push($arrPrices, $product['nSubTotal']);
+				array_push($arrPrices, ((float)$product['nPrice']*(int)$product['nQuantity']));
 			}
 			$totalPrice = array_sum($arrPrices);
 		}else{

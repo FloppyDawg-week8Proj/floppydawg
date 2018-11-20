@@ -4,13 +4,15 @@ Class CartController extends MainController
 	public function showitems()
 	{
 		/// home page
-		$arrData['cartProducts'] = Cart::getItems();		
+		$arrData['cartProducts'] = Cart::getItems();
+		$_SESSION['totalPrice'] = Purchase::getTotalPrice();
 		$cartContent = '';
 		$arrData['cartitem'] = [];
 		if(!empty($arrData['cartProducts'])){
 			$i = 0;
 			foreach($arrData['cartProducts'] as $cardItem){
-				$newItem = Product::getProduct($cardItem['id']);
+				$newItem = Product::getProductToCart($cardItem['id']);
+				$_SESSION['cartProducts'][$i] = array_merge($_SESSION['cartProducts'][$i], $newItem);
 				$newItem['nQuantity'] = $cardItem['nQuantity'];
 				$newItem['itemKey'] = $i;
 				array_push($arrData['cartitem'], $newItem);

@@ -1,6 +1,13 @@
 <?php
 Class Product
 {
+	static function getProductToCart($productID)
+	{
+		$sql = "SELECT products.id, products.strName, products.nPrice, photos.strFile FROM products LEFT JOIN photos ON photos.nProductID=products.id WHERE products.id=$productID AND photos.bMainPhoto=1";
+		$productDetails = DB::getRecord()->runSQL("getSingleData", $sql);
+		
+		return $productDetails;
+	}
 	static function getProduct($productID)
 	{
 		

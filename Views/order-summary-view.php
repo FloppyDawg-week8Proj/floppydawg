@@ -1,26 +1,18 @@
 <section id="order-summary">
 	<h1>Order Summary</h1>
+	<?php foreach($arrData['productsSummary'] as $product){ ?>
+	<div class="item-summary-holder">
+		<div class="item-summary">
+			<img src="assets/<?=$product['strFile']?>" class="item-preview">
+		</div><!--item-summary-->
 
-	<div class="item-summary">
-	<img src="assets/8.jpg" class="item-preview">
-	</div><!--item-summary-->
-
-	<div class="item-summary">
-	<p class="item-name">Floppy Dawg Dog Crate Cover with Matching Dog Bed</p>
-	<p class="item-price">$32.95</p>
-	<p class="item-qty">Qty: 1</p>
-	</div><!--item-summary-->
-
-	<div class="item-summary">
-	<img src="assets/1.jpg" class="item-preview">
-	</div><!--item-summary-->
-
-	<div class="item-summary">
-	<p class="item-name">Floppy Dawg Crate Cover</p>
-	<p class="item-price">$28.95</p>
-	<p class="item-qty">Qty: 2</p>
-	</div><!--item-summary-->
-
+		<div class="item-summary">
+			<p class="item-name"><?=$product['strName']?></p>
+			<p class="item-price"><?=$product['nPrice']?></p>
+			<p class="item-qty">Qty: <?=$product['nQuantity']?></p>
+		</div><!--item-summary-->
+	</div>
+	<?php } ?>
 	<div class="bottom-border">
 	<img src="images/iconDottedLines.png" alt="iconDottedLines">
 	</div><!--subtotal-summary-->

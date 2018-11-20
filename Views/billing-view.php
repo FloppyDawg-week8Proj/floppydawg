@@ -1,35 +1,35 @@
 <section id="shipping-billing-container">
 <div class="shippingForm float">
 <h1 class="shipping-title">Shipping Information</h1>
-	<form method="post" action="index.php?controller=checkout&action=payment">
+	<form method="post" action="index.php?controller=checkout&action=payment" id="billingForm">
 		<div class="shipping-holder">
 			<label class="required" for="firstName">First Name</label>
-			<input class="billingField" type="text" name="firstName" id="billingfirstName" placeholder="Tyler">
+			<input class="billingField" type="text" name="billingfirstName" id="billingfirstName" placeholder="Tyler">
 
 			<label class="required" for="lastname">Last Name</label>
-			<input class="billingField" type="text" name="lastname" id="billinglastname" placeholder="Smith">
+			<input class="billingField" type="text" name="billinglastname" id="billinglastname" placeholder="Smith">
 
 			<label class="required" for="streetAddress">Street Address</label>
-			<input class="billingField" type="text" name="streetAdress" id="billingstreetAdress" placeholder="1234 Granville St">
+			<input class="billingField" type="text" name="billingstreetAdress" id="billingstreetAdress" placeholder="1234 Granville St">
 
 			<label class="required" for="city">City</label>
-			<input class="billingField" type="text" name="city" id="billingCity" placeholder="Vancouver">
+			<input class="billingField" type="text" name="billingCity" id="billingCity" placeholder="Vancouver">
 
 			<label class="required" for="country">Country</label>
-			<input class="billingField" type="text" name="country" id="billingCountry" placeholder="Canada">
+			<input class="billingField" type="text" name="billingCountry" id="billingCountry" placeholder="Canada">
 			
 			<div class="floatStateZip">
 				<label class="required" for="state">State/Province</label>
-				<input class="billingField stateZip" type="text" name="stateProvince" id="billingStateProvince" placeholder="BC">
+				<input class="billingField stateZip" type="text" name="billingStateProvince" id="billingStateProvince" placeholder="BC">
 			</div><!--floatStateZip-->
 			
 			<div class="floatStateZip">
 				<label class="required zipCode" for="zipCode">Zip Code:</label>
-				<input class="billingField stateZip zipCode" type="text" name="zipCode" id="billingzipCode" placeholder="V5R 123">
+				<input class="billingField stateZip zipCode" type="text" name="billingzipCode" id="billingzipCode" placeholder="V5R 123">
 			</div><!--floatStateZip-->
 
 			<label class="required" for="email">Email Address</label>
-			<input class="billingField" type="text" name="email" id="billingemail" placeholder="tylersmith@gmail.com">
+			<input class="billingField" type="text" name="billingemail" id="billingemail" placeholder="tylersmith@gmail.com">
 		</div><!--shipping-holder-->
 	</form>
 
@@ -56,8 +56,6 @@
 		<input type="text" name="shippingzipCode" id="shippingzipCode" placeholder="V5R 123">
 	</div><!--shippingHolder-->
 
-	<a href="" class="btn btn-primary continue-to-payment">Continue to payment</a>
+	<a href="#" class="btn btn-primary continue-to-payment" onclick="document.querySelector('#billingForm').submit();return false;">Continue to payment</a>
 </div><!--billingForm-->
 </section><!--shipping-billing-container-->
-
-<?php include("order-summary-view.php") ?>
