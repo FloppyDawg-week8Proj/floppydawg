@@ -1011,12 +1011,6 @@ detailsHolder-row{
 	color: #363636;
 }
 
-/*#shipping-billing-container {
-	width:900px;
-	height:100%;
-	position: relative;
-}*/
-
 .shippingForm {
 	margin-top:120px;
 	text-align:left;
@@ -1058,12 +1052,6 @@ detailsHolder-row{
 	float:left;
 	position: relative;
 }
-
-/*.float {
-	width:50%;
-	float:left;
-	position: relative;
-}*/
 
 label.zipCode {
 	padding-left:35px;
@@ -2034,18 +2022,161 @@ ol {
 
 /**********PAYMENT VIEW*************/
 
-.paymentContainer
-{
+.paymentContainer {
 	margin-top: 150px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+	width:400px;
+	height:100%;
+	max-width:100%;
 }
-.orderSummary
-{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+
+.review-summary {
+	width:500px;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.shipping-billing-details {
+	float:left;
+	width:50%;
+	position: relative;
+}
+
+.shipping-billing-details h3 {
+	font-size:18px;
+	font-weight:600;
+}
+
+.shipping-billing-details p{
+	margin:0;
+	margin-bottom:3px;
+}
+
+.paymentForm {
+	margin-top:50px;
+	text-align:left;
+}
+
+.paymentForm .payment-title {
+	color:#000;
+	font-size:30px;
+	text-align:left;
+	font-weight: normal;
+	margin-bottom:20px;
+}
+
+.paymentForm .payment-options {
+	position: relative;
+	margin-left:-10px;
+	margin-bottom:20px;
+}
+
+.payment-holder {
+	display:block;
+	margin-bottom:20px;
+	width:400px;
+	max-width: 100%;
+	padding:30px;
+	box-shadow: 0px 0px 3px #c1b8b5 /*light grey*/;
+	height:320px;
+}
+
+.payment-holder input.expiryCVV{
+	width:80%;
+}
+
+.payment-holder input {
+	display:block;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #c1b8b5 /*light grey*/;
+}
+
+.floatExpiryCVV{
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+label.CVV {
+	padding-left:35px;
+}
+
+input.CVV {
+	float:right;
+}
+
+.payment-holder label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment-holder label:before {
+	content:'*';
+	color:red;
+}
+
+.paymentForm p {
+	display:inline-block;
+	font-size:16px;
+}
+
+.paymentForm .complete-order {
+	margin-bottom:50px;
+}
+
+@media only screen and (max-width:1000px) {
+	#order-summary {
+		position: relative;
+		margin-bottom:50px;
+	}
+
+	.paymentContainer {
+		margin:auto;
+		margin-top:100px;
+	}
+
+	#order-summary {
+		margin:auto;
+		margin-bottom:50px;
+	}
+}
+
+@media only screen and (max-width:600px){
+	.paymentContainer, .order-summary {
+		width:80%;
+	}
+
+	#order-summary p{
+		font-family: 'Montserrat', sans-serif;
+		font-size:12px;
+	}
+
+	#order-summary img.item-preview{
+		width:75px;
+	}
+
+	.payment-holder {
+		height:400px;
+	}
+
+	.floatExpiryCVV{
+		width:100%;
+	}
+
+	.payment-holder input.expiryCVV{
+		width:100%;
+	}
+
+	input.CVV {
+		float:none;
+	}
+
+	label.CVV {
+		padding-left:0px;
+	}
 }
 
 /**********END OF PAYMENT VIEW*************/
