@@ -2,7 +2,7 @@
 	<h2>About Us</h2>
 	<div class="aboutGrid">
 		<div class="aboutImg">
-			<img src="images/happyDog.png" alt="aboutDog">
+			<img src="images/happydog.png" alt="aboutDog">
 		</div><!--ABOUTIMG-->
 		<div class="aboutText">
 			<p>
