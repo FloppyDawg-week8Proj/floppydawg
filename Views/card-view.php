@@ -2,7 +2,7 @@
 <div class="cardView">
 	<?php
 	foreach($arrData['products'] as $product){?>
-		<div class="productBox">
+		<div class="productBox sliderElement">
 			<div class="placeHolder">
 				<div class="holderImage coverBg">
 					<img src="assets/<?=$product['strFile']?>">
