@@ -260,7 +260,7 @@ p {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	display: none;
+	display: block;
 }
 
 .modal-container:before {
@@ -273,13 +273,72 @@ p {
 	background: #000;
 	opacity: 0.6;
 }
+.modal-holder>*
+{
+	transform: translateX(-50%) translateY(-50%);
+}
 
 .coverBg img {
 	height: 100%;
 	width: 100%;
 }
 
-/********HEADER*********/
+
+/*login form*/
+.loginView
+{
+	width: 400px;
+	height: 500px;
+}
+.loginView h2
+{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.loginView form
+{
+	display: inline-block;
+	background-color: #fff;
+	padding: 20px;
+}
+.loginView input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.bottomForm
+{
+	margin-top: 2%;
+}
+.bottomForm a
+{
+	color: #ff5a1f;
+}
+.bottomForm a:hover
+{
+	opacity: 0.7;
+}
+.loginForm form button
+{
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.loginView .btnCheckout
+{
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+
+/*end of login form*/
+
+/*-----HEADER------*/
 
 header {
 	position: fixed;
@@ -753,22 +812,38 @@ detailsHolder-row{
 .editRegisterForm
 {
 	display: flex;
+	flex: 75%;
 	flex-wrap: wrap;
 	margin: 0 -16px;
 }
-
+.editRegister
+{
+	margin-top: 100px;
+	margin-right: 200px;
+}
+.editRegister h1
+{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.editRegister h3
+{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
 .editRegisterColumn
 {
 	flex: 50%;
-	background-color: lightgrey;
 	padding: 5px 20px 15px 20px;
 	border-radius: 3px;
 }
-
-.editRegisterForm
+.editRegisterColumn .btn
 {
-	flex: 75%;
+	margin-top: 20px;
 }
+
 
 .editRegisterColumn, .editRegisterForm
 {
@@ -777,7 +852,7 @@ detailsHolder-row{
 
 .editRegisterForm [type=text]
 {
-	width: 100%;
+  width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -790,26 +865,33 @@ detailsHolder-row{
   display: block;
 
 }
-.formContainer
-{
-	margin-left: 25%;
-	margin-top: 2%;
-}
+
 /*end of register view*/
 /*user dashboard view*/
 .dashBoardContainer
 {
 	position: relative;
 	display: inline;
+	margin: 0 auto;
 }
 .dashBoard
 {
-	margin-top: 5%;
-	text-align: center;
-	float: left;
-	width: 50%;
-	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	margin-top: 50px;
 }
+.purchaseHistory .fa-history
+{
+	font-size: 40px;
+}
+.editProfile .fa-edit
+{
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
 .purchaseHistory
 {
 	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
@@ -839,7 +921,12 @@ detailsHolder-row{
 	margin-bottom: 20px;
 }
 
-.dashBoard:hover
+.purchaseHistory:hover
+{
+	opacity: 0.7;
+	transition: all ease 0.7s;
+}
+.editProfile:hover
 {
 	opacity: 0.7;
 	transition: all ease 0.7s;
@@ -968,7 +1055,20 @@ detailsHolder-row{
 	color: #363636;
 }
 
-.editBillingForm .shipping-title {
+#shipping-billing-container {
+	width:900px;
+	border:1px solid red;
+	height:100%;
+	overflow:hidden;
+	position: relative;
+}
+
+.shippingForm {
+	margin-top:120px;
+	text-align:left;
+}
+
+.shippingForm .shipping-title {
 	color:#000;
 	font-size:30px;
 	text-align:left;
@@ -976,28 +1076,79 @@ detailsHolder-row{
 	margin-bottom:40px;
 }
 
-.editBillingForm .billing-title {
+.shipping-holder {
+	display:block;
+	margin-bottom:50px;
+	width:400px;
+	max-width: 100%;
+	padding:30px;
+	box-shadow: 0px 0px 3px #c1b8b5 /*light grey*/;
+}
+
+.shipping-holder input.stateZip{
+	width:80%;
+}
+
+.shipping-holder input {
+	display:block;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.floatStateZip{
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+.float {
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+label.zipCode {
+	padding-left:35px;
+}
+
+input.zipCode {
+	float:right;
+}
+
+.shipping-holder label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.shipping-holder label:before {
+	content:'*';
+	color:red;
+}
+
+.billing-title {
+	color:#000;
+	font-size:30px;
+	text-align:left;
+	font-weight: normal;
 	margin-bottom:10px;
 }
 
-.editBillingForm {
-	margin-top:150px;
-	border:1px solid red;
-	text-align:left;
+.shippingForm p {
+	display:inline-block;
+	font-size:16px;
 }
 
-.editBillingForm [type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+.shippingForm span {
+	display:block;
+	margin-bottom:30px;
 }
 
-.editBillingForm label {
-  margin-bottom: 10px;
-  display: block;
-
+.shippingForm .continue-to-payment {
+	margin-bottom:100px;
 }
 /**end of billing view**/
 
@@ -1017,7 +1168,6 @@ detailsHolder-row{
 .editProfileColumn
 {
 	flex: 50%;
-	background-color: lightgrey;
 	padding: 5px 20px 15px 20px;
 	border-radius: 3px;
 }
@@ -1026,7 +1176,17 @@ detailsHolder-row{
 {
 	flex: 75%;
 }
-
+.editProfileFormRow h1
+{
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+.editProfileFormRow
+{
+	margin-top: 100px;
+	margin-right: 100px;
+}
 .editProfileColumn, .editProfileForm
 {
 	padding: 0 16px;
@@ -1034,7 +1194,7 @@ detailsHolder-row{
 
 .editProfileForm [type=text]
 {
-	width: 100%;
+  width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -1047,10 +1207,19 @@ detailsHolder-row{
   display: block;
 
 }
+.editProfileForm h3
+{
+	font-size: 20px;
+	text-align: center;
+}
+.editProfileFormRow [type=checkbox]
+{
+	margin-bottom: 10px;
+}
 .formContainer
 {
 	margin-left: 25%;
-	margin-top: 2%;
+	margin-top: 100%;
 }
 
 /*end of edit profile*/
@@ -1962,6 +2131,16 @@ footer .footer
 		padding: 10px;
 		width: 50%;
 	}
+	.purchaseHistory .fa-history
+	{
+		font-size: 20px;
+	}
+	.editProfile .fa-edit
+	{
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
 	/*-----footer----*/
 	footer .topFooter a {
 		font-size: 18px;
@@ -2022,6 +2201,11 @@ footer .footer
 	{
 		display: none;
 	}
+	.editRegister
+	{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
 }
 
 
@@ -2044,6 +2228,10 @@ footer .footer
 		grid-template-columns: 1fr 1fr;
 		padding: 30px 40px 0 20px;
 		width: 15%;
+	}
+	.dashboard
+	{
+		grid-template-columns: 1fr;
 	}
 	.headerNav nav
 	{		
@@ -2132,7 +2320,7 @@ footer .footer
 	}
 
 	.formDetails form {
-		width: 360px;
+		width: 100%;
 		margin-left: 20px;
 	}
 
@@ -2164,6 +2352,11 @@ footer .footer
 	#map {
 		width: 100%;
 		margin-bottom: 20%;
+	}
+	.editRegister
+	{
+		margin-top: 100px;
+		margin-bottom: 100px;
 	}
 	/*------aboutPage-----*/
 	.aboutGrid {
@@ -2211,7 +2404,26 @@ footer .footer
 	margin-right: 10px;
 	margin-top: 5px;
 }
-
+.dashboard .fa-history
+{
+	font-size: 20px;
+}
+.editProfile .fa-edit
+{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.editProfile h2
+{
+	color: #fff;
+	font-size: 20px;
+}
+.purchaseHistory h2
+{
+	color: #fff;
+	font-size: 20px;
+}
 }
 
 @media screen and (max-width: 425px) {
@@ -2226,6 +2438,37 @@ footer .footer
 		left: 0;
 		width: 100%;
 	}
+	.editRegister
+	{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.purchaseHistory .fa-history
+{
+	font-size: 20px;
+}
+.dashboard
+	{
+		width: 100%;
+		grid-template-columns: 1fr;
+		margin-right: 10px;
+	}
+.editProfile .fa-edit
+{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.editProfile h2
+{
+	color: #fff;
+	font-size: 20px;
+}
+.purchaseHistory h2
+{
+	color: #fff;
+	font-size: 20px;
+}
 	.rightNav {
 	position: relative;
 	display: grid;
@@ -2338,7 +2581,7 @@ footer .footer
 		font-size: 15px;
 	}
 	.formDetails form {
-		width: 300px;
+		width: 100%;
 	}
 	.formDetails {
 		width: 100%;

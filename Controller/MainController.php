@@ -64,13 +64,32 @@ Class MainController
 		$content = $this->loadView("about");
 		include("Views/publiclayout-view.php");
 	}
+	public function register()
+	{
+		$content = $this->loadView("register");
+		include("Views/publiclayout-view.php");
+	}
 
 	public function contact()
 	{	
 		$content = $this->loadView("contact");
 		include("Views/publiclayout-view.php");
 	}
-
+	public function memberDashboard()
+	{	
+		$content = $this->loadView("memberDashboard");
+		include("Views/publiclayout-view.php");
+	}
+	public function purchaseHistory()
+	{	
+		$content = $this->loadView("history");
+		include("Views/publiclayout-view.php");
+	}
+	public function editProfile()
+	{	
+		$content = $this->loadView("editProfile");
+		include("Views/publiclayout-view.php");
+	}
 	public function cart()
 	{
 		
@@ -87,9 +106,11 @@ Class MainController
 
 		return $viewContent;
 	}
+	
 	public function test(){
 		
-		
+		$arrData = $this->loadView("memberLogin");
+		$content = $this->loadView("modalHolder",$arrData);
 		include("Views/publiclayout-view.php");
 	}
 }

@@ -1,20 +1,18 @@
 <div class="dashBoardContainer">
 	<h1 class="pageTitle">USER DASHBOARD</h1>
 		<div class="dashBoard">
-			<a href="#">
+			<a href="index.php?action=purchaseHistory">
 				<div class="purchaseHistory">
-					<i class="fas fa-history"></i>
+					<span class="fas fa-history"></span>
 					<h2>Purchase History</h2>
 				</div><!--purchaseHistory-->
 			</a>
-		</div><!--dashBoard-->
-		<div class="dashBoard">
-			<a href="#">
+			<a href="index.php?action=editProfile">
 				<div class="editProfile">
-					<i class="fas fa-user"></i>
+					<span class="fas fa-edit"></span>
 					<h2>Edit Profile</h2>
 				</div><!--editProfile-->
 			</a>
 		</div><!--dashBoard-->
-	<a href="#" class="btn btn-primary">VIEW PRODUCTS</a>
+	<a href="index.php?action=products" class="btn btn-primary">VIEW PRODUCTS</a>
 </div><!--dashBoardContainer-->

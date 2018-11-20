@@ -57,6 +57,6 @@
 			</div>	
 		</div>
 		<div class="btn btn-primary">
-			<a href="#">See more products</a>
+			<a href="index.php?action=products">See more products</a>
 		</div>
 </section>

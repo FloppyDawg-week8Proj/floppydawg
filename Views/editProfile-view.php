@@ -1,4 +1,4 @@
-<div class="editProfileRow">
+<div class="editProfileFormRow">
 	<div class="formContainer">
 		<h1 class="pageTitle">Edit Profile</h1>
 		<form class="editProfileForm" form method="post" onsubmit="return validate()">
@@ -23,7 +23,7 @@
 				</div>
 					<div class="editProfileColumn"><br>
 					<h3>Password</h3>
-					<input type="checkbox" name="changePassword">Change Password
+					<input type="checkbox" name="changePassword"> Change Password
 
 					<label class="required" for="actualpassword">Actual Password</label>
 					<input type="text" name="actualpassword" id="actualpassword" placeholder="*******">

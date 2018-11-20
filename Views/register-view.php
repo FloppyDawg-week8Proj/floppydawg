@@ -1,4 +1,4 @@
-<div class="editRegisterForm">
+<div class="editRegister">
 	<div class="formContainer">
 		<h1 class="pageTitle">User Info</h1>
 		<form class="editRegisterForm" form method="post" onsubmit="return validate()">
