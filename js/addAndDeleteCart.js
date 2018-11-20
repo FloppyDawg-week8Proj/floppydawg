@@ -13,6 +13,7 @@ $(function(){
 				let nItems = parseInt(quantity)+1;
 				$('.cartNav').find('#cart-product-quantity').text(nItems);
 				$('body').append(result);
+				$('.modal-container').css('display', 'block').animate({opacity: 1});
 			},
 			error: function(){
 				console.log('error');

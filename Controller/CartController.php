@@ -4,7 +4,7 @@ Class CartController extends MainController
 	public function showitems()
 	{
 		/// home page
-		$arrData = Cart::getItems();		
+		$arrData['cartProducts'] = Cart::getItems();		
 		$cartContent = '';
 		$arrData['cartitem'] = [];
 		if(!empty($arrData['cartProducts'])){
