@@ -38,5 +38,3 @@
 	<a href="index.php?action=thankyou" class="btn btn-primary complete-order">Complete Order</a>
 </div><!--paymentForm-->
 </div><!--paymentContainer-->
-
-<?php include("order-summary-view.php") ?>

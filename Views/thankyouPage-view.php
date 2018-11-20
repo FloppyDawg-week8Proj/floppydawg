@@ -5,5 +5,5 @@
 		<p>We will send your confirmation to the email address provided.</p>
 		<img src="assets/thankYouDog.png" alt="thankyou dog">
 	</div><!--thankyouView-->
-	<?php include("order-summary-view.php") ?>
+	<?=$arrData?>
 </div><!--thankyouContainer-->

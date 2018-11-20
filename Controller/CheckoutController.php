@@ -21,6 +21,9 @@ Class CheckoutController extends MainController
 		$_SESSION['billings']['strEmail'] = $_POST['billingemail'];
 		$content = $this->loadView("payment");
 		
+		$arrData['productsSummary'] = Purchase::getItems()['cartProducts'];
+		$content .= $this->loadView("order-summary", $arrData);
+		
 		$modal = $this-> loadView("thanks");
 		$content .= $this->loadView("modalHolder", $modal);
 		include("Views/publiclayout-view.php");

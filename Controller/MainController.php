@@ -82,7 +82,9 @@ Class MainController
 	}
 	public function thankyou()
 	{	
-		$content = $this->loadView("thankyouPage");
+		$arrData['productsSummary'] = Purchase::getItems()['cartProducts'];
+		$summary = $this->loadView("order-summary", $arrData);
+		$content = $this->loadView("thankyouPage", $summary);
 		include("Views/publiclayout-view.php");
 	}
 	public function memberDashboard()
