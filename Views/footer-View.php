@@ -23,6 +23,7 @@
 		<script src="js/incrementQuantity.js"></script>
 		<script src="js/addAndDeleteCart.js"></script>
 		<script src="js/stripslider.js"></script>
+		<script src="js/responsive.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMaFf1MASfiqfZ74bRkaGWKbeEIcUIVOU&callback=initMap"></script>
 	</body>
 </html>
