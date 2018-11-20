@@ -1043,7 +1043,20 @@ margin-bottom: 15px;
 	color: #363636;
 }
 
-.editBillingForm .shipping-title {
+#shipping-billing-container {
+	width:900px;
+	border:1px solid red;
+	height:100%;
+	overflow:hidden;
+	position: relative;
+}
+
+.shippingForm {
+	margin-top:120px;
+	text-align:left;
+}
+
+.shippingForm .shipping-title {
 	color:#000;
 	font-size:30px;
 	text-align:left;
@@ -1051,28 +1064,79 @@ margin-bottom: 15px;
 	margin-bottom:40px;
 }
 
-.editBillingForm .billing-title {
+.shipping-holder {
+	display:block;
+	margin-bottom:50px;
+	width:400px;
+	max-width: 100%;
+	padding:30px;
+	box-shadow: 0px 0px 3px #c1b8b5 /*light grey*/;
+}
+
+.shipping-holder input.stateZip{
+	width:80%;
+}
+
+.shipping-holder input {
+	display:block;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.floatStateZip{
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+.float {
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+label.zipCode {
+	padding-left:35px;
+}
+
+input.zipCode {
+	float:right;
+}
+
+.shipping-holder label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.shipping-holder label:before {
+	content:'*';
+	color:red;
+}
+
+.billing-title {
+	color:#000;
+	font-size:30px;
+	text-align:left;
+	font-weight: normal;
 	margin-bottom:10px;
 }
 
-.editBillingForm {
-	margin-top:150px;
-	border:1px solid red;
-	text-align:left;
+.shippingForm p {
+	display:inline-block;
+	font-size:16px;
 }
 
-.editBillingForm [type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+.shippingForm span {
+	display:block;
+	margin-bottom:30px;
 }
 
-.editBillingForm label {
-  margin-bottom: 10px;
-  display: block;
-
+.shippingForm .continue-to-payment {
+	margin-bottom:100px;
 }
 /**end of billing view**/
 
