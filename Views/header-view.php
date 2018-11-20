@@ -17,20 +17,28 @@
 	</div><!--logo-->
 
 	<div class="headerNav">
+		<div id="nav-icon2">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
 		<nav>
-		<ul class="mainNav">
-		  <li><a href="index.php" class="active">Home</a></li>
-		  <li><a href="index.php?action=products">Products</a>
-		    <ul class="dropdown">
-		    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
-				</li>
-	      		<li><a href="index.php?action=products&categoryID=2">Acessories</a>
-				</li>
-		    </ul><!--drop down content-->
-		  </li><!--dropdown-->
-		  <li><a href="index.php?action=about">About</a></li>
-		  <li><a href="index.php?action=contact">Contact</a></li>
-		</ul>
+			<ul class="menu">
+			  <li><a href="index.php" class="active">Home</a></li>
+			  <li><a href="index.php?action=products">Products</a>
+			    <ul class="dropdown">
+			    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
+					</li>
+		      		<li><a href="index.php?action=products&categoryID=2">Acessories</a>
+					</li>
+			    </ul><!--drop down content-->
+			  </li><!--dropdown-->
+			  <li><a href="index.php?action=about">About</a></li>
+			  <li><a href="index.php?action=contact">Contact</a></li>
+			</ul>
 		</nav><!--Navigation-->
 	</div><!--headerNav-->
 
