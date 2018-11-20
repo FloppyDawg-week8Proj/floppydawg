@@ -9,15 +9,15 @@
 		left: 0;
 		transition: all 0.5s ease;
 	}
-	.stripslider .cardView{
+	.stripslider > :first-child{
 		display: flex;
 		left: 0;
 		align-items: stretch;
 	}
-	.stripslider .cardView .productBox{
+	.stripslider > :first-child > *{
 		flex: 1;
 		display: flex;
-		width: auto;
+		width: auto !important;
 	}
 	.stripslider-holder a.fas{
 		position: absolute;

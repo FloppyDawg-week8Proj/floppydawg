@@ -1,19 +1,19 @@
 $(function(){
 	const holder = $('.stripslider-holder');
 	const slider = holder.find('.stripslider');
-	const elements = $('.sliderElement');
+	const elements = slider.find('.sliderElement');
 	
-	slider.css('width', (elements.length/4)*100+'%')
+	slider.css('width', ((100*elements.length)/4)+'%')
 	
 	const moveSlide = function(){
-		const maxPos = -(slider.outerWidth() - holder.outerWidth());
+		const maxPos = -($(this).siblings( ".stripslider" ).outerWidth() - $(this).parent().outerWidth());
 		const minPos = 0;
-		const currPos = parseInt(slider.css('left'));
+		const currPos = parseInt($(this).siblings( ".stripslider" ).css('left'));
 		if($(this).hasClass('next') && currPos > maxPos){
-			slider.css('left', (currPos-(elements.eq(0).outerWidth()))+'px');
+			$(this).siblings( ".stripslider" ).css('left', (currPos-(elements.eq(0).outerWidth()))+'px');
 		}
 		else if($(this).hasClass('back') && currPos < minPos){
-			slider.css('left', (currPos+(elements.eq(0).outerWidth()))+'px');
+			$(this).siblings( ".stripslider" ).css('left', (currPos+(elements.eq(0).outerWidth()))+'px');
 		}
 		return false;
 	}

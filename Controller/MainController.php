@@ -12,7 +12,7 @@ Class MainController
 		$arrData['products'] = Products::getProductsInfo('features');
 		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 		$cards = $this->loadView("card",$arrData);
-		$content .= $this->loadView("featurestrip",$cards);
+		$content .= $this->loadView("stripslider",$cards);
 		
 		include("Views/publiclayout-view.php");
 	}
@@ -35,13 +35,15 @@ Class MainController
 			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 			$arrData['product'] = Product::getProduct($productID);
 			$arrData['product']['advantages'] = Product::getAdvantages($productID);
+			$variants = $this->loadView("showvariants", $arrData['product']['photos']);
+			$arrData['product']['variants'] = $this->loadView("stripslider",$variants);
 			$prodDetails = $this->loadView("productDetails",$arrData);
 			
 			$prodDetails .= "<h2 class='page-title'>Feature Products</h2>";
 			$arrData['products'] = Products::getProductsInfo('features');
 			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 			$cards = $this->loadView("card",$arrData);
-			$prodDetails .= $this->loadView("featurestrip",$cards);
+			$prodDetails .= $this->loadView("stripslider",$cards);
 			
 			$content = $this->loadView("products", $prodDetails);	
 		}else{
