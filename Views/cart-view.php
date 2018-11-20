@@ -14,9 +14,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<?php
-					echo $arrData;
-				?>
+				<?=$arrData;?>
 				</tbody>
 			</table>
 		</div><!--cart-resume-->

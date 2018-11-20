@@ -12,7 +12,7 @@ Class Product
 					photos.bMainPhoto
 				FROM 
 					photos
-				WHERE photos.nProductID=".$_GET["id"];
+				WHERE photos.nProductID=".$productID;
 		$results = DB::getRecord()->runSQL("getAllData", $sql);
 
 		$productDetails['photos'] = [];

@@ -18,8 +18,7 @@
 		<script src="js/showDropList.js"></script>
 		<script src="js/initMap.js"></script>
 		<script src="js/form_validation.js"></script>
-		<script src="js/modalShow.js"></script>
-		<script src="js/productRate.js"></script>
+		<script src="js/modalAjax.js"></script>
 		<script src="js/incrementQuantity.js"></script>
 		<script src="js/addAndDeleteCart.js"></script>
 		<script src="js/stripslider.js"></script>

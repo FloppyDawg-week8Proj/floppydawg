@@ -1029,6 +1029,7 @@ detailsHolder-row{
 	width: 410px;
 	padding: 20px;
 	margin: 10px;
+	background: #fff;
 }
 .addToCartContainer h2{
 	text-align: center;
@@ -1036,8 +1037,9 @@ detailsHolder-row{
 }
 .thanksOkButton
 {
-	margin-left: 40%;
-	margin-top: 20px;
+	text-align: center;
+    width: 100%;
+    display: inline-block;
 }
 .thanksOkButton a /*delete later*/
 {

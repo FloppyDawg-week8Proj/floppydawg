@@ -6,21 +6,27 @@ Class CartController extends MainController
 		/// home page
 		$arrData = Cart::getItems();		
 		$cartContent = '';
-		$i = 0;
+		$arrData['cartitem'] = [];
 		if(!empty($arrData)){
-			foreach($arrData as $cardItem){
-				$cardItem['itemKey'] = $i;
-				$cartContent .= $this->loadView("item-card", $cardItem);
+			$i = 0;
+			foreach($_SESSION['cartProducts'] as $cardItem){
+				$newItem = Product::getProduct($cardItem['id']);
+				$newItem['nQuantity'] = $cardItem['nQuantity'];
+				$newItem['itemKey'] = $i;
+				array_push($arrData['cartitem'], $newItem);
 				$i++;
 			};
+			foreach($arrData['cartitem'] as $item){		
+				$cartContent .= $this->loadView("item-card", $item);
+			}		
 		}
-		
 		$content = $this->loadView("cart", $cartContent);
 
 		$content .= "<h2 class='page-title'>Feature Products</h2>";		
 		$arrData['products'] = Products::getProductsInfo('features');
 		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
-		$content .= $this->loadView("card",$arrData);
+		$cards = $this->loadView("card",$arrData);
+		$content .= $this->loadView("stripslider",$cards);
 		
 		include("Views/publiclayout-view.php");
 	}
@@ -28,6 +34,12 @@ Class CartController extends MainController
 	{	
 		$newProduct = $_POST;
 		Cart::insert($newProduct);
+		
+		
+		$arrData = $this->loadView("addToCart");
+		$modalBox = $this->loadView("modalHolder",$arrData);
+		
+		echo $modalBox;
 	}
 	public function delete()
 	{

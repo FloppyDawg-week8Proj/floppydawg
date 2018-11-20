@@ -1,9 +1,9 @@
 				<tr>
-					<td><div class="item-preview"><img src="assets/1.jpg" alt="item-preview"></div></td>
+					<td><div class="item-preview"><img src="assets/<?=$arrData['strFile']?>" alt="item-preview"></div></td>
 
 					<td class="item-name"><?=$arrData['strName']?></td>
 
-					<td class="item-price"><p>$<?=$arrData['nUnityPrice']?></p></td>
+					<td class="item-price"><p><?=$arrData['nPrice']?></p></td>
 
 					<td class="item-quantity">
 						<div class="item-quantity-decrementincrement"><span class="fas fa-minus"></span></div>
@@ -11,7 +11,7 @@
 						<div class="item-quantity-increment"><span class="fas fa-plus"></span></div>
 					</td>
 
-					<td><p class="cart-subtotal-price">$<?=array_product(array($arrData['nQuantity'],$arrData['nUnityPrice']))?></p></td>
+					<td><p class="cart-subtotal-price">$<?=array_product(array($arrData['nQuantity'],$arrData['nPrice']))?></p></td>
 
 					<td>
 						<a href="index.php?controller=cart&action=delete&item=<?=(isset($arrData['itemKey']))?$arrData['itemKey']:'';?>">
