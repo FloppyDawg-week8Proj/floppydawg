@@ -37,11 +37,9 @@ body {
 	display: inline-block;
 }
 
-h2,
-h3,
-h1 {
+h2, h3, h1 {
 	font-family: 'Roboto Slab', serif;
-	color: #ff5a1f;/*orange*/
+	font-weight:normal;
 }
 
 p {
@@ -1010,13 +1008,11 @@ detailsHolder-row{
 	color: #363636;
 }
 
-#shipping-billing-container {
+/*#shipping-billing-container {
 	width:900px;
-	border:1px solid red;
 	height:100%;
-	overflow:hidden;
 	position: relative;
-}
+}*/
 
 .shippingForm {
 	margin-top:120px;
@@ -1051,7 +1047,7 @@ detailsHolder-row{
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid #c1b8b5 /*light grey*/;
 }
 
 .floatStateZip{
@@ -1060,11 +1056,11 @@ detailsHolder-row{
 	position: relative;
 }
 
-.float {
+/*.float {
 	width:50%;
 	float:left;
 	position: relative;
-}
+}*/
 
 label.zipCode {
 	padding-left:35px;
@@ -1102,11 +1098,92 @@ input.zipCode {
 	margin-bottom:30px;
 }
 
-.shippingForm .continue-to-payment {
+.billingForm .continue-to-payment {
 	margin-bottom:100px;
 }
 /**end of billing view**/
 
+
+/*-- Order Summary --*/
+#order-summary {
+	width:350px;
+	padding:30px 40px;
+	box-shadow: 0 0 3px lightgrey;
+	position: absolute;
+	top:0;
+	right:0;
+	height:540px;
+}
+
+#order-summary h1 {
+	font-family: 'Montserrat', sans-serif;
+	color:#000;
+	font-size:16px;
+	margin-bottom:30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#order-summary img.item-preview{
+	width:100px;
+}
+
+#order-summary p{
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	margin:0
+}
+
+#order-summary p.item-name, #order-summary p.item-price {
+	font-weight:600;
+	margin-bottom:5px;
+} 
+
+#order-summary p.item-qty {
+	font-weight:normal;
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+p.free {
+	text-transform: uppercase;
+}
+
+#order-summary .subtotal-summary, #order-summary .item-summary {
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+.subtotal-summary{
+	margin-bottom:3px;
+}
+
+#order-summary .item-summary {
+	margin-bottom:30px;
+}
+
+#order-summary .bottom-border img{
+	width:100%;
+	margin-bottom:40px;
+}
+
+.tax{
+	margin-bottom:30px;
+	display:block;
+}
+
+#order-summary .grand-total {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.float-right {
+	float:right;
+}
+
+
+/*-- End of Order Summary --*/
 /*edit profile*/
 .error{
 	padding: 8px;
@@ -1736,12 +1813,14 @@ ol {
 	width: 100%;
 }
 
-.cardView p,
-h3 {
-	color: #363636;
-	/*dark grey*/
+.cardView li, .cardView h3 {
+	color: #363636 /*dark grey*/;
 	font-size: 15px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cardView h3 {
+	font-weight:600;
 }
 
 .productBox .btn-primary {
@@ -1749,20 +1828,19 @@ h3 {
 	margin-top: 10px;
 	width: auto;
 }
-.price p
-{
+
+.price p {
 	font-size: 25px;
-	margin-top: 10px;
+	margin-top: 20px;
 	font-weight: bold;
 }
 
-.productBox .desc ul
-{
+.productBox .desc ul {
 	margin-left: 40px;
 	text-align: left;
 }
-.fa-paw
-{
+
+.fa-paw{
 	margin-right: 10px;
 }
 /**********END OF CARD VIEW*************/

@@ -8,7 +8,7 @@ Class MainController
 		$content = $this->loadView("hero-slider");
 		$content .= $this->loadView("welcomeText");
 		
-		$content .= "<h2 class='page-title'>Feature Products</h2>";	
+		$content .= "<h2 class='page-title'>Featured Products</h2>";	
 		$arrData['products'] = Products::getProductsInfo('features');
 		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 		$cards = $this->loadView("card",$arrData);
@@ -39,7 +39,7 @@ Class MainController
 			$arrData['product']['variants'] = $this->loadView("stripslider",$variants);
 			$prodDetails = $this->loadView("productDetails",$arrData);
 			
-			$prodDetails .= "<h2 class='page-title'>Feature Products</h2>";
+			$prodDetails .= "<h2 class='page-title'>Featured Products</h2>";
 			$arrData['products'] = Products::getProductsInfo('features');
 			$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 			$cards = $this->loadView("card",$arrData);

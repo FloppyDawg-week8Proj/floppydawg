@@ -29,6 +29,8 @@
 			<ul class="menu">
 			  <li><a href="index.php" class="<?=isset($_GET['action'])?'':'active';?>">Home</a></li>
 			  <li><a href="index.php?action=products" class="<?=(isset($_GET['action']) && $_GET['action']=='products')?'active':'';?>">Products</a>
+			  <li><a href="index.php">Home</a></li>
+			  <li><a href="index.php?action=products">Products</a>
 			    <ul class="dropdown">
 			    	<li><a href="index.php?action=products&categoryID=1">Beds</a>
 					</li>

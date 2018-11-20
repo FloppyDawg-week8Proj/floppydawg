@@ -59,3 +59,5 @@
 	<a href="" class="btn btn-primary continue-to-payment">Continue to payment</a>
 </div><!--billingForm-->
 </section><!--shipping-billing-container-->
+
+<?php include("order-summary-view.php") ?>
