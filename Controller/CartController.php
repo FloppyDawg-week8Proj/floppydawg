@@ -18,7 +18,8 @@ Class CartController extends MainController
 		$content = $this->loadView("cart", $cartContent);
 
 		$content .= "<h2 class='page-title'>Feature Products</h2>";		
-		$arrData = Products::getFeatured();
+		$arrData['products'] = Products::getProductsInfo('features');
+		$arrData['advantagesCaption'] = Advantages::getAllAdvantages();
 		$content .= $this->loadView("card",$arrData);
 		
 		include("Views/publiclayout-view.php");

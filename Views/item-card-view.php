@@ -1,4 +1,26 @@
-			<div class="cart-item">
+				<tr>
+					<td><div class="item-preview"><img src="assets/1.jpg" alt="item-preview"></div></td>
+
+					<td class="item-name"><?=$arrData['strName']?></td>
+
+					<td class="item-price"><p>$<?=$arrData['nUnityPrice']?></p></td>
+
+					<td class="item-quantity">
+						<div class="item-quantity-decrementincrement"><span class="fas fa-minus"></span></div>
+						<input name="nQuantity" type="text" value="<?=$arrData['nQuantity']?>" class="qty-box">
+						<div class="item-quantity-increment"><span class="fas fa-plus"></span></div>
+					</td>
+
+					<td><p class="cart-subtotal-price">$<?=array_product(array($arrData['nQuantity'],$arrData['nUnityPrice']))?></p></td>
+
+					<td>
+						<a href="index.php?controller=cart&action=delete&item=<?=(isset($arrData['itemKey']))?$arrData['itemKey']:'';?>">
+						<span><img src="assets/iconRemove.png" alt="iconRemove" class="iconRemove"></span>Remove
+						</a>
+					</td>
+				</tr>
+
+			<!-- <div class="cart-item">
 				<div class="cart-intemcontent cart-itemdetails">
 					<div class="item-nameandrate">
 						<?=$arrData['strName']?>
@@ -25,11 +47,7 @@
 								</div>
 								<div class="item-size">
 									<label>Size:</label>
-									<select name="nSizeID" id="">
-										<option <?=($arrData['nSizeID']==1)?'selected':'';?>>Small</option>
-										<option <?=($arrData['nSizeID']==2)?'selected':'';?>>Medium</option>
-										<option <?=($arrData['nSizeID']==3)?'selected':'';?>>Large</option>
-									</select>
+									<p>small</p>
 								</div>
 							</div>
 							<div class="item-details-row item-quantity" >
@@ -57,4 +75,4 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>	 -->
