@@ -80,6 +80,11 @@ Class MainController
 		$content = $this->loadView("payment");
 		include("Views/publiclayout-view.php");
 	}
+	public function thankyou()
+	{	
+		$content = $this->loadView("thankyouPage");
+		include("Views/publiclayout-view.php");
+	}
 	public function memberDashboard()
 	{	
 		$content = $this->loadView("memberDashboard");

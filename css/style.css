@@ -1255,7 +1255,21 @@ p.free {
 }
 
 /*end of edit profile*/
+/*----------THANKYOU-------------*/
 
+.thankyouContainer
+{
+	margin-left: 20px;
+	margin-top: 100px;
+}
+.thankyouContainer p{
+	margin-top: 10px;
+}
+.thankyouView img
+{
+	max-width: 250px;
+}
+/*----------END OF THANKYOU-------*/
 /**********ABOUT PAGE***********/
 
 
@@ -2246,6 +2260,16 @@ footer .footer
 		left: 0;
 		width: 100%;
 	}
+
+		#order-summary {
+		width:350px;
+		padding:30px 40px;
+		box-shadow: 0 0 3px lightgrey;
+		position: initial;
+		top:0;
+		right:0;
+		height:540px;
+	}
 		.rightNav {
 		position: relative;
 		display: grid;
@@ -2255,6 +2279,12 @@ footer .footer
 		padding: 30px 40px 0 20px;
 		width: 15%;
 	}
+	.thankyouContainer
+	{
+		margin-left: 20px;
+		margin-top: 100px;
+	}
+
 	.dashboard
 	{
 		grid-template-columns: 1fr;
@@ -2412,49 +2442,49 @@ footer .footer
 	width: 200px;
 	margin-top: 5px;
 	font-weight:bold;
-}
+	}
 
-.socialMedia {
-	text-align: right;
-}
+	.socialMedia {
+		text-align: right;
+	}
 
-.socialMedia p {
-	color: #ff5a1f/*orange*/;
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight:bold;
-}
+	.socialMedia p {
+		color: #ff5a1f/*orange*/;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight:bold;
+	}
 
-.socialMedia span {
-	font-size: 25px;
-	margin-right: 10px;
-	margin-top: 5px;
-}
-.dashboard .fa-history
-{
-	font-size: 20px;
-}
-.editProfile .fa-edit
-{
-	font-size: 20px;
-	color: #fff;
-	margin-bottom: 20px;
-}
-.editProfile
-{
-	margin-bottom: 100px;
-}
-.editProfile h2
-{
-	color: #fff;
-	font-size: 20px;
-}
-.purchaseHistory h2
-{
-	color: #fff;
-	font-size: 20px;
-}
-.history-orderInfo p
+	.socialMedia span {
+		font-size: 25px;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	.dashboard .fa-history
+	{
+		font-size: 20px;
+	}
+	.editProfile .fa-edit
+	{
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	.editProfile
+	{
+		margin-bottom: 100px;
+	}
+	.editProfile h2
+	{
+		color: #fff;
+		font-size: 20px;
+	}
+	.purchaseHistory h2
+	{
+		color: #fff;
+		font-size: 20px;
+	}
+	.history-orderInfo p
 	{
 		font-size: 15px;
 	}
@@ -2471,7 +2501,17 @@ footer .footer
 		font-size: 12px;
 	}
 }
-
+@media screen and (max-width: 600px) {
+				#order-summary {
+		width:350px;
+		padding:30px 40px;
+		box-shadow: 0 0 3px lightgrey;
+		position: initial;
+		top:0;
+		right:0;
+		height:540px;
+	}
+}
 @media screen and (max-width: 425px) {
 	.container {
 		width: 100%;
@@ -2480,6 +2520,16 @@ footer .footer
 	{
 		margin-bottom: 100px;
 	}
+		#order-summary {
+	width:350px;
+	padding:30px 40px;
+	box-shadow: 0 0 3px lightgrey;
+	position: initial;
+	top:0;
+	right:0;
+	height:540px;
+}
+
 	/*-----Header-----*/
 	.headerNav{
 		position: absolute !important;
