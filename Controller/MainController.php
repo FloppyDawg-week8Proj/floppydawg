@@ -75,6 +75,11 @@ Class MainController
 		$content = $this->loadView("contact");
 		include("Views/publiclayout-view.php");
 	}
+	public function payment()
+	{	
+		$content = $this->loadView("payment");
+		include("Views/publiclayout-view.php");
+	}
 	public function memberDashboard()
 	{	
 		$content = $this->loadView("memberDashboard");

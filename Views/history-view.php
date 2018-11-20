@@ -1,5 +1,5 @@
 <section class="container history-page">
-	<h2 class="page-title">Purchase History</h2>
+	<h2 class="page-title"><br>Purchase History</h2>
 		<div class="history-resume">
 			<div class="cart-item">
 				<div class="history-orderInfo">
@@ -8,28 +8,28 @@
 				</div>
 				<div class="cart-intemcontent cart-itemdetails">
 					<div class="item-nameandrate">
-						Product Name
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						Pillow with Removable Cover 
+						<i class="fas fa-paw"></i>
+						<i class="fas fa-paw"></i>
+						<i class="fas fa-paw"></i>
+						<i class="fas fa-paw"></i>
+						<i class="fas fa-paw"></i>
 					</div>
 					<div class="item-view">
-						<div class="item-preview coverBg"><img src="assets/placeholder.jpg" alt="placeholder"></div>
+						<div class="item-preview coverBg"><img src="assets/3.jpg" alt="placeholder"></div>
 						<div class="item-details">
 							<div class="item-details-row item-price">
 								<label>Unity:</label>
-								<p>$100.00</p>
+								<p>$34.00</p>
 							</div>
 							<div class="item-details-row item-colorandsize">
 								<div class="item-color">
 									<label>Color:</label>
-									<p>Blue</p>
+									<p>Brown</p>
 								</div>
 								<div class="item-size">
 									<label>Size:</label>
-									<p>Small</p>
+									<p>Medium</p>
 								</div>
 							</div>
 							<div class="item-details-row item-quantity" >
@@ -49,14 +49,14 @@
 						<p class="histoy-purchaseStatus">Delivered</p>
 					</div>
 					<div class="history-productdetail-btn">
-						<div class="btn btn-primary">
-							<a>View Product Details</a>
+						<div class="btn btn-primary viewDet">
+							<a href="index.php?action=products&id=81">View Product Details</a>
 						</div>
 					</div>
 				</div>
 			</div>	
 		</div>
-		<div class="btn btn-primary">
+		<div class="btn btn-primary seemore">
 			<a href="index.php?action=products">See more products</a>
 		</div>
 </section>

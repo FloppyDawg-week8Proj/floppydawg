@@ -20,7 +20,7 @@
 		</div><!--cart-resume-->
 
 		<div class="continue-shopping">
-			<a href="#" class="btn btn-secondary">Continue Shopping</a>
+			<a href="index.php?action=products" class="btn btn-secondary">Continue Shopping</a>
 		</div><!--continue-shopping-->
 
 		<div class="subtotal">
